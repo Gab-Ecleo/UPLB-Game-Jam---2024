@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class CrankPlant : MonoBehaviour
 {
+    public bool playerCollision;
     [SerializeField] private Vector3 PlantAscendValue;
     [SerializeField] private bool hasCranked;
     [SerializeField] private bool isLoweringDown;
-    [SerializeField] private bool playerCollision;
-    float CrankLimit = 2.80f;
-    public float Timedecay;
+    [SerializeField] private float CrankLimit = 2.80f;
+    [SerializeField] private float Timedecay; //default is 3f
+    [SerializeField] private float LoweringCooldown; //default is 2.5f
     // Start is called before the first frame update
     void Start()
     {
@@ -23,17 +24,17 @@ public class CrankPlant : MonoBehaviour
     void Update()
     {
         //Detects if it collides with player (has set value to 'true') and has not yet cranked
-        if (Input.GetKey(KeyCode.F) && !hasCranked && playerCollision)
+        if (Input.GetKey(KeyCode.Mouse0) && !hasCranked /*&& playerCollision*/)
         {
             StartCoroutine(TriggerCrankPlant());
             hasCranked = true;
         }
-        if (transform.position.y >= 0 && PlantAscendValue.y >= 0)
+        if (/*transform.position.y >= 0 && */PlantAscendValue.y >= 0)
         {
             Timedecay += Time.deltaTime; //Timedecay counts by default
         }
 
-        if (transform.position.y == 0 && PlantAscendValue.y == 0)
+        if (/*transform.position.y == 0 && */PlantAscendValue.y == 0)
         {
             Timedecay = 0f;
         }
@@ -74,7 +75,7 @@ public class CrankPlant : MonoBehaviour
             PlantAscendValue.y = 0;
             transform.position = PlantAscendValue;
         }
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(LoweringCooldown);
         isLoweringDown = false;
     }
 }

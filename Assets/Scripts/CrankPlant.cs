@@ -7,6 +7,7 @@ public class CrankPlant : MonoBehaviour
     [SerializeField] private Vector3 PlantAscendValue;
     [SerializeField] private bool hasCranked;
     [SerializeField] private bool isLoweringDown;
+    [SerializeField] private bool playerCollision;
     float CrankLimit = 2.80f;
     public float Timedecay;
     // Start is called before the first frame update
@@ -15,12 +16,14 @@ public class CrankPlant : MonoBehaviour
         PlantAscendValue = gameObject.transform.position;
         hasCranked = false;
         isLoweringDown = false;
+        playerCollision = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0) && !hasCranked)
+        //Detects if it collides with player (has set value to 'true') and has not yet cranked
+        if (Input.GetKey(KeyCode.F) && !hasCranked && playerCollision)
         {
             StartCoroutine(TriggerCrankPlant());
             hasCranked = true;

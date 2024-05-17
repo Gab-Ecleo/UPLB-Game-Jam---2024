@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Transform playerTransform;
 
     [SerializeField] private float speed = 2.0f;
+
     private float horizontalInput;
     private bool canMove = true;
     private bool isFacingRight = true;
@@ -29,10 +30,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (canMove)
+        if (canMove )
         {
             MovePlayer();
-            FlipSprite();
+            //FlipSprite();
         }
     }
 

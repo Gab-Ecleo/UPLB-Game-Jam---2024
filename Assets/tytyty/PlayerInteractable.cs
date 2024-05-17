@@ -8,6 +8,7 @@ public class PlayerInteractable : MonoBehaviour
     [SerializeField] private float radius;
     [SerializeField] LayerMask interactLayer;
     [SerializeField] Vector2 offset;
+    bool canInteract;
 
     private void Awake()
     {
@@ -16,22 +17,25 @@ public class PlayerInteractable : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.I))
+        // Interact Button
+        if(Input.GetKeyDown(KeyCode.I) && DetectObject())
         {
-            DetectObject();
+            Debug.Log("Can Interact");
         }
     }
 
-    private void DetectObject()
+    private bool DetectObject()
     {
         Vector2 detectionCenter = (Vector2)transform.position + offset;
         Collider2D hit = Physics2D.OverlapCircle(detectionCenter, radius, interactLayer);
 
         if (hit != null)
         {
-            Debug.Log("hit");
+            return true;
         }
+        return false;
     }
+
 
     private void OnDrawGizmos()
     {

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8077225653010829862
+--- !u!114 &-4522828136468744106
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/SFX.bank
   m_EditorClassIdentifier: 
-  Path: C:/Users/Cedeno/Desktop/UnityProjects/FMOD/UPGJ_Fmod/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
+  Path: FMOD_Project-UPGJ/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638515891096130118
+  lastModified: 638515901636670650
   FileSizes:
   - Name: Desktop
     Value: 12640
   Exists: 1
---- !u!114 &-7997657721429501341
+--- !u!114 &-200048790366469003
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30,15 +30,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: C:/Users/Cedeno/Desktop/UnityProjects/FMOD/UPGJ_Fmod/FMOD_Project-UPGJ/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638515891095119947
+  Path: FMOD_Project-UPGJ/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638515901636615471
   FileSizes:
   - Name: Desktop
-    Value: 802
+    Value: 1036
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -53,19 +53,19 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -7997657721429501341}
-  - {fileID: 7212735020390600459}
-  - {fileID: -8077225653010829862}
+  - {fileID: 1455507739929002852}
+  - {fileID: -200048790366469003}
+  - {fileID: -4522828136468744106}
   EditorEvents:
   - {fileID: 8026816832697797924}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 7212735020390600459}
+  - {fileID: -200048790366469003}
   StringsBanks:
-  - {fileID: -7997657721429501341}
-  cacheTime: 638515891096130118
+  - {fileID: 1455507739929002852}
+  cacheTime: 638515901636670650
   cacheVersion: 131618
---- !u!114 &7212735020390600459
+--- !u!114 &1455507739929002852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,15 +75,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: C:/Users/Cedeno/Desktop/UnityProjects/FMOD/UPGJ_Fmod/FMOD_Project-UPGJ/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638515891095089935
+  Path: FMOD_Project-UPGJ/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638515901636660631
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 802
   Exists: 1
 --- !u!114 &8026816832697797924
 MonoBehaviour:
@@ -104,7 +104,7 @@ MonoBehaviour:
     Data3: 1948428719
     Data4: -1570785440
   Banks:
-  - {fileID: -8077225653010829862}
+  - {fileID: -4522828136468744106}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

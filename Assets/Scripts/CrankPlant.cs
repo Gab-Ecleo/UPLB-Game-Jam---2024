@@ -11,6 +11,8 @@ public class CrankPlant : MonoBehaviour
     [SerializeField] private float CrankLimit = 2.80f;
     [SerializeField] private float Timedecay; //default is 3f
     [SerializeField] private float LoweringCooldown; //default is 2.5f
+
+    PlantEvolve evolve;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,7 @@ public class CrankPlant : MonoBehaviour
         hasCranked = false;
         isLoweringDown = false;
         playerCollision = false;
+        evolve = GetComponent<PlantEvolve>();
     }
 
     // Update is called once per frame
@@ -44,6 +47,8 @@ public class CrankPlant : MonoBehaviour
             StartCoroutine(LowerPlantPlatform());
         }
 
+        //if plant hitbox hits sunlight hitbox, 'isRaised' is activated
+        //if it does function here
     }
 
     IEnumerator TriggerCrankPlant()

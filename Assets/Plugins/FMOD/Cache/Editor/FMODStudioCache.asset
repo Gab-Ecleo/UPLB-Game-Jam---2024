@@ -1,94 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6596072613097158387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience/SpaceAmbience
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/SpaceAmbience
-  Guid:
-    Data1: 1709848350
-    Data2: 1098243739
-    Data3: -1166557292
-    Data4: 873356697
-  Banks:
-  - {fileID: 2494582184777823295}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 5848904452883668691}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 42000
---- !u!114 &-5886247914066553751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Harvest
-  m_EditorClassIdentifier: 
- Path: Assets/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638516502065037684
-  FileSizes:
-  - Name: Desktop
-    Value: 89664
-  Exists: 1
---- !u!114 &-5799393728443819130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638516502064597551
-  FileSizes:
-  - Name: Desktop
-    Value: 1486
-  Exists: 1
---- !u!114 &-2995820893026488101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/MainMenu.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD_Project-UPGJ/Build/Desktop/MainMenu.bank
-  Name: MainMenu
-  StudioPath: bank:/MainMenu
-  lastModified: 638516502064517534
-  FileSizes:
-  - Name: Desktop
-    Value: 372544
-  Exists: 1
---- !u!114 &-2264207793490105729
+--- !u!114 &-8889745136184481568
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,7 +19,7 @@ MonoBehaviour:
     Data3: -1694873187
     Data4: 2093826347
   Banks:
-  - {fileID: 2494582184777823295}
+  - {fileID: -7432873967622781837}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -115,7 +27,74 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 89124
---- !u!114 &-719674468236217172
+--- !u!114 &-7572323946750692038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638516684758166074
+  FileSizes:
+  - Name: Desktop
+    Value: 1486
+  Exists: 1
+--- !u!114 &-7432873967622781837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Dome.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Dome.bank
+  Name: Dome
+  StudioPath: bank:/Dome
+  lastModified: 638516684750615504
+  FileSizes:
+  - Name: Desktop
+    Value: 1281440
+  Exists: 1
+--- !u!114 &-6059603589090852677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Footsteps_Metal
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Footsteps_Metal
+  Guid:
+    Data1: 1070627470
+    Data2: 1261481456
+    Data3: 634959274
+    Data4: -231162526
+  Banks:
+  - {fileID: 7878963742405299713}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 720
+--- !u!114 &-5596672152465558603
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,7 +113,7 @@ MonoBehaviour:
     Data3: 1948428719
     Data4: -1570785440
   Banks:
-  - {fileID: -5886247914066553751}
+  - {fileID: 7878963742405299713}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -151,151 +130,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-EditorBanks:
-  - {fileID: 920563832896275871}
-  - {fileID: -5799393728443819130}
-  - {fileID: -5886247914066553751}
-  - {fileID: 2494582184777823295}
-  - {fileID: -2995820893026488101}
+  EditorBanks:
+  - {fileID: 3759631564748443116}
+  - {fileID: -7432873967622781837}
+  - {fileID: 8340835079542649422}
+  - {fileID: -7572323946750692038}
+  - {fileID: 7878963742405299713}
   EditorEvents:
-  - {fileID: -6596072613097158387}
-  - {fileID: -2264207793490105729}
-  - {fileID: 1123680750619833019}
-  - {fileID: 2256729133157461116}
-  - {fileID: 4540189595121736632}
-  - {fileID: -719674468236217172}
+  - {fileID: 5898936587736510170}
+  - {fileID: -8889745136184481568}
+  - {fileID: 7785562567314520694}
+  - {fileID: 5891520439509974987}
+  - {fileID: -6059603589090852677}
+  - {fileID: -5596672152465558603}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5799393728443819130}
+  - {fileID: -7572323946750692038}
   StringsBanks:
-  - {fileID: 920563832896275871}
-  cacheTime: 638516502065037684
+  - {fileID: 3759631564748443116}
+  cacheTime: 638516684759266797
   cacheVersion: 131618
---- !u!114 &920563832896275871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
- Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638516502064617560
-  FileSizes:
-  - Name: Desktop
-    Value: 1320
-  Exists: 1
---- !u!114 &1123680750619833019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/MainMenuMusic
-  m_EditorClassIdentifier: 
-  Path: event:/Music/MainMenuMusic
-  Guid:
-    Data1: -2102876962
-    Data2: 1230329955
-    Data3: 697766565
-    Data4: -81645515
-  Banks:
-  - {fileID: -2995820893026488101}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 31997
---- !u!114 &2256729133157461116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Cranking
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Cranking
-  Guid:
-    Data1: 1201828214
-    Data2: 1300855617
-    Data3: 1134895543
-    Data4: -1180404440
-  Banks:
-  - {fileID: -5886247914066553751}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 600
---- !u!114 &2494582184777823295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Dome.bank
-  m_EditorClassIdentifier: 
-Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Dome.bank
-  Name: Dome
-  StudioPath: bank:/Dome
-  lastModified: 638516502064042135
-  FileSizes:
-  - Name: Desktop
-    Value: 1281440
-  Exists: 1
---- !u!114 &4540189595121736632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Footsteps_Metal
-  m_EditorClassIdentifier: 
-Path: event:/SFX/Footsteps_Metal
-  Guid:
-    Data1: 1070627470
-    Data2: 1261481456
-    Data3: 634959274
-    Data4: -231162526
-  Banks:
-  - {fileID: -5886247914066553751}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 720
---- !u!114 &5848904452883668691
+--- !u!114 &3026631483855340306
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -318,4 +176,146 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Labels: []
+  Exists: 1
+--- !u!114 &3759631564748443116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638516684758176051
+  FileSizes:
+  - Name: Desktop
+    Value: 1320
+  Exists: 1
+--- !u!114 &5891520439509974987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Cranking
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Cranking
+  Guid:
+    Data1: 1201828214
+    Data2: 1300855617
+    Data3: 1134895543
+    Data4: -1180404440
+  Banks:
+  - {fileID: 7878963742405299713}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
+--- !u!114 &5898936587736510170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/SpaceAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/SpaceAmbience
+  Guid:
+    Data1: 1709848350
+    Data2: 1098243739
+    Data3: -1166557292
+    Data4: 873356697
+  Banks:
+  - {fileID: -7432873967622781837}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3026631483855340306}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42000
+--- !u!114 &7785562567314520694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/MainMenuMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/MainMenuMusic
+  Guid:
+    Data1: -2102876962
+    Data2: 1230329955
+    Data3: 697766565
+    Data4: -81645515
+  Banks:
+  - {fileID: 8340835079542649422}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 31997
+--- !u!114 &7878963742405299713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638516684759266797
+  FileSizes:
+  - Name: Desktop
+    Value: 89664
+  Exists: 1
+--- !u!114 &8340835079542649422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/MainMenu.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_Project-UPGJ/Build/Desktop/MainMenu.bank
+  Name: MainMenu
+  StudioPath: bank:/MainMenu
+  lastModified: 638516684758035995
+  FileSizes:
+  - Name: Desktop
+    Value: 372544
   Exists: 1

@@ -12,11 +12,11 @@ TagManager:
   - 
   - Water
   - UI
+  - Environment Background
+  - Level Background
   - 
   - 
   - Player
-  - 
-  - 
   - Interactables
   - 
   - 
@@ -41,4 +41,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: OuterBackground
+    uniqueID: 697137017
+    locked: 0
+  - name: InnerBackground
+    uniqueID: 180324697
+    locked: 0
+  - name: Background Structures
+    uniqueID: 3788175865
+    locked: 0
+  - name: Ground
+    uniqueID: 1208042933
+    locked: 0
+  - name: Background Objects
+    uniqueID: 1691294535
+    locked: 0
+  - name: Interactables
+    uniqueID: 1028109697
     locked: 0

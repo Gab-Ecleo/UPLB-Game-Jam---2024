@@ -36,8 +36,9 @@ public class CrankPlant : MonoBehaviour
     void Update()
     {
         //Detects if it collides with player (has set value to 'true') and has not yet cranked
-        if (Input.GetKeyDown(KeyCode.E) && !hasCranked && playerCollision && _plantHp.PlantHp >= 0 && !InteractionEnabled) //Player Can crank the machine as long as the hp is > 0
+        if (Input.GetKeyDown(KeyCode.E) && !hasCranked && playerCollision && _plantHp.PlantHp >= 0 && !InteractionEnabled &&movement.canMove) //Player Can crank the machine as long as the hp is > 0
         {
+            movement.canMove = false;
             TriggerPlantMachine();
         }
         if (/*transform.position.y >= 0 && */PlantAscendValue.y >= 0)
@@ -59,7 +60,7 @@ public class CrankPlant : MonoBehaviour
     IEnumerator TriggerCrankPlant()
     {
         Debug.Log("Pressed");
-        PlantAscendValue.y += .57f;
+        PlantAscendValue.y += .85f; //Default Value is .57f
         gameObject.transform.position = PlantAscendValue;
         hasCranked = true;
         Timedecay = 0f;
@@ -77,7 +78,7 @@ public class CrankPlant : MonoBehaviour
     IEnumerator LowerPlantPlatform()
     {
         Debug.Log("Lowering Down");
-        PlantAscendValue.y -= .20f;
+        PlantAscendValue.y -= .15f; //Default is .20f
         gameObject.transform.position = PlantAscendValue;
         isLoweringDown = true;
 
@@ -100,7 +101,7 @@ public class CrankPlant : MonoBehaviour
             Debug.Log("Player Detected");
             playerCollision = true;
         }
-        if (collision.tag == "Player" && evolve.ReadytoHarvestPlant && Input.GetKeyDown(KeyCode.E) && collided)
+        if (collision.tag == "Player" && evolve.ReadytoHarvestPlant && Input.GetKeyDown(KeyCode.F) && collided)
         {
             Debug.Log("PRESSED");
             foodSupply.hasHarvested = true;
@@ -120,6 +121,7 @@ public class CrankPlant : MonoBehaviour
     {
         StartCoroutine(TriggerCrankPlant());
         hasCranked = true;
+        movement.canMove = true;
         Debug.Log("CompletedSpinning");
     }
     void SecondFunction(float numHere)

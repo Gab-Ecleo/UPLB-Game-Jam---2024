@@ -4,29 +4,42 @@ using UnityEngine;
 
 public class PlantEvolve : MonoBehaviour
 {
-    float PlantAbsorption = 0f; //variable for the plant absorption (used for progression starting from 0 then slowly to 1f)
+    public float PlantAbsorption = 0f; //variable for the plant absorption (used for progression starting from 0 then slowly to 1f)
     public bool isRaised; //Check if its cranked
     float PlantGrowthCooldown = 1.7f; //default is 1.7f
     CrankPlant _crankplant;
+    bool hasCalled;
+
+    private void Start()
+    {
+        _crankplant = GetComponent<CrankPlant>();
+    }
 
     private void Update()
     {
-        AccumulateSunlight();
-    }
-
-    private void AccumulateSunlight()
-    {
-        if (isRaised)
+        if (isRaised && !hasCalled && _crankplant.PlantAscendValue.y >= 1.81f)
         {
+            Debug.Log("Now Raised");
             //Absorb sunlight by .15 every 1.7 seconds
             StartCoroutine(PlantGrowth());
+        }
+        if (_crankplant.PlantAscendValue.y <= 1.8f)
+        {
+            isRaised = false;
         }
     }
 
     IEnumerator PlantGrowth()
     {
-        PlantAbsorption += .15f;
+        hasCalled = true;
+        PlantAbsorption += .015f;
         Debug.Log($"Absorption at {PlantAbsorption}");
+
+        if (PlantAbsorption >= .15f)
+        {
+            Debug.Log("Plant to lvl 2");
+        }
         yield return new WaitForSeconds(PlantGrowthCooldown);
+        hasCalled = false;
     }
 }

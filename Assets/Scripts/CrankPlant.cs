@@ -5,7 +5,7 @@ using UnityEngine;
 public class CrankPlant : MonoBehaviour
 {
     public bool playerCollision;
-    [SerializeField] private Vector3 PlantAscendValue;
+    public Vector3 PlantAscendValue;
     [SerializeField] private bool hasCranked;
     [SerializeField] private bool isLoweringDown;
     [SerializeField] private float CrankLimit = 2.80f;
@@ -63,6 +63,7 @@ public class CrankPlant : MonoBehaviour
         {
             PlantAscendValue.y = CrankLimit;
             transform.position = PlantAscendValue;
+            evolve.isRaised = true;
         }
         yield return new WaitForSeconds(.4f);
         hasCranked = false;

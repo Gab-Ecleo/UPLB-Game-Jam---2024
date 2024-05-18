@@ -25,7 +25,7 @@ public class SceneManagerScript : MonoBehaviour
     {
         StartCoroutine(LoadSceneAsync(sceneName));
 
-        if (sceneName == "SampleScene")
+        if (sceneName == "SampleScene" || sceneName == "MainMenuScene")
         {
             AudioManager.instance.StopMusic();
             AudioManager.instance.StopAmbience();

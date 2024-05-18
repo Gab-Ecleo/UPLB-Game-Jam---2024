@@ -43,10 +43,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638516389983415335
+  lastModified: 638516420236330666
   FileSizes:
   - Name: Desktop
-    Value: 89504
+    Value: 89792
   Exists: 1
 --- !u!114 &-5799393728443819130
 MonoBehaviour:
@@ -63,7 +63,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638516396713314807
+  lastModified: 638516420236014530
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -83,7 +83,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/MainMenu.bank
   Name: MainMenu
   StudioPath: bank:/MainMenu
-  lastModified: 638516389993393466
+  lastModified: 638516416686241388
   FileSizes:
   - Name: Desktop
     Value: 372544
@@ -172,7 +172,7 @@ MonoBehaviour:
   - {fileID: -5799393728443819130}
   StringsBanks:
   - {fileID: 920563832896275871}
-  cacheTime: 638516406477818583
+  cacheTime: 638516420236680754
   cacheVersion: 131618
 --- !u!114 &920563832896275871
 MonoBehaviour:
@@ -189,7 +189,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638516396713324804
+  lastModified: 638516420236024542
   FileSizes:
   - Name: Desktop
     Value: 1212
@@ -235,19 +235,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Cranking
   Guid:
-    Data1: 1287774546
-    Data2: 1249251873
-    Data3: 6571136
-    Data4: 253318085
+    Data1: 1201828214
+    Data2: 1300855617
+    Data3: 1134895543
+    Data4: -1180404440
   Banks:
   - {fileID: -5886247914066553751}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1475
 --- !u!114 &2494582184777823295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +263,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Dome.bank
   Name: Dome
   StudioPath: bank:/Dome
-  lastModified: 638516406477818583
+  lastModified: 638516420236680754
   FileSizes:
   - Name: Desktop
     Value: 1281440

@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class PlayerOxygen : MonoBehaviour
 {
-    FoodSupply foodsupply;
+    private static PlayerOxygen instance;
+    public static PlayerOxygen Instance => instance;
+
     public float OxygenDecayTime = 3.2f; //This value is for area if it doesnt have clouds yet
     public float oxygenCount = 1f;
     public bool isWeatherNeutral;
     public bool isWeatherCloudy;
     bool isWeatherCalled;
 
+    private void Awake()
+    {
+        
+    }
     private void Start()
     {
         if (isWeatherNeutral)

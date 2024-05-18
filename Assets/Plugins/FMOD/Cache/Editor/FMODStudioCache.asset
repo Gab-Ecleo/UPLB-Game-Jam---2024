@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 1069340514800978646}
   StringsBanks:
   - {fileID: 6399893280221886074}
-  cacheTime: 638515948868586672
+  cacheTime: 638516036764523743
   cacheVersion: 131618
 --- !u!114 &1069340514800978646
 MonoBehaviour:
@@ -67,7 +67,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638515948868576681
+  lastModified: 638516036764503797
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -87,7 +87,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638515948868586672
+  lastModified: 638516036764523743
   FileSizes:
   - Name: Desktop
     Value: 12640
@@ -107,7 +107,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638515948868576681
+  lastModified: 638516036764513770
   FileSizes:
   - Name: Desktop
     Value: 802

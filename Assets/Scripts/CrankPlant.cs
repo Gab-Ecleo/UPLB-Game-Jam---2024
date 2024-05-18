@@ -9,7 +9,7 @@ public class CrankPlant : MonoBehaviour
     [SerializeField] private bool hasCranked;
     [SerializeField] private bool isLoweringDown;
     [SerializeField] private float CrankLimit = 2.80f;
-    [SerializeField] private float Timedecay; //default is 3f
+    [SerializeField] private float Timedecay; //default is 3f (don't touch unless you want to speed the decay by lowering values)
     [SerializeField] private float LoweringCooldown; //default is 2.5f
 
     PlantEvolve evolve;
@@ -46,9 +46,6 @@ public class CrankPlant : MonoBehaviour
         {
             StartCoroutine(LowerPlantPlatform());
         }
-
-        //if plant hitbox hits sunlight hitbox, 'isRaised' is activated
-        //if it does function here
     }
 
     IEnumerator TriggerCrankPlant()
@@ -88,8 +85,24 @@ public class CrankPlant : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         Debug.Log("Something hit me!");
-        
-        if(collision.tag == "Player")
+
+        if (collision.tag == "Player")
+        {
+            Debug.Log("Player Detected");
+            playerCollision = true;
+        }
+        if (collision.tag == "Sunlight")
+        {
+            Debug.Log("Sunlight Detected");
+            evolve.isRaised = true;
+        }
+    }
+
+/*    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Something hit me!");
+
+        if (collision.tag == "Player")
         {
             Debug.Log("Player Detected");
             playerCollision = true;
@@ -98,7 +111,7 @@ public class CrankPlant : MonoBehaviour
         {
             evolve.isRaised = true;
         }
-    }
+    }*/
 
     private void OnTriggerExit2D(Collider2D collision)
     {

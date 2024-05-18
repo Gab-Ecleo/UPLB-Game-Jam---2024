@@ -27,7 +27,7 @@ public class CrankPlant : MonoBehaviour
     void Update()
     {
         //Detects if it collides with player (has set value to 'true') and has not yet cranked
-        if (Input.GetKey(KeyCode.Mouse0) && !hasCranked /*&& playerCollision*/)
+        if (Input.GetKey(KeyCode.Mouse0) && !hasCranked && playerCollision)
         {
             StartCoroutine(TriggerCrankPlant());
             hasCranked = true;
@@ -84,10 +84,13 @@ public class CrankPlant : MonoBehaviour
         isLoweringDown = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
+        Debug.Log("Something hit me!");
+        
         if(collision.tag == "Player")
         {
+            Debug.Log("Player Detected");
             playerCollision = true;
         }
         if (collision.tag == "Sunlight")

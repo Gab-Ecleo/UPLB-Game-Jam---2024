@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 8602300709853112157}
   - component: {fileID: 2405089584657087025}
   - component: {fileID: 8176170015307271795}
+  - component: {fileID: 4688745850975768922}
+  - component: {fileID: 7821499050282569051}
   - component: {fileID: 7823841091666565652}
   - component: {fileID: 8855200877732336625}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -73,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1572441145
+  m_SortingLayer: 7
   m_SortingOrder: 10
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -100,6 +102,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &4688745850975768922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5181810190362097446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93287ab7badbf347b396091f72e0f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OxygenDecayTime: 3.2
+  oxygenCount: 1
+  isWeatherNeutral: 0
+  isWeatherCloudy: 0
+--- !u!114 &7821499050282569051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5181810190362097446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b742288facb54446bff9f4912257c13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FoodSupplyCount: 0
+  hasHarvested: 0
 --- !u!50 &7823841091666565652
 Rigidbody2D:
   serializedVersion: 4

@@ -90,7 +90,6 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
         else
             if(totalRotation < targetRotation) return;
         
-
         OnCloseUI();
     }
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{607537dc-02d1-402d-8c7f-549749994f1e}">
+		<property name="assetPath">
+			<value>Footsteps_MetalSFX/pl_metal2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.72349206349206352</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5dbe24f0-db86-4b2f-bc87-304784eafa30}</destination>
+		</relationship>
+	</object>
+</objects>

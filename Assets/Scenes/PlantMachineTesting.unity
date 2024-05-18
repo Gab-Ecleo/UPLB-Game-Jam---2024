@@ -2733,12 +2733,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93287ab7badbf347b396091f72e0f0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodsupply: {fileID: 0}
   OxygenDecayTime: 3.2
   oxygenCount: 1
   isWeatherNeutral: 0
   isWeatherCloudy: 0
-  isWeatherCalled: 0
 --- !u!1 &1549326496
 GameObject:
   m_ObjectHideFlags: 0

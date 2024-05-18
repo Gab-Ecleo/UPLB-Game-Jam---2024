@@ -37,10 +37,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Harvest
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
+ Path: Assets/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
   lastModified: 638516502065037684
@@ -151,10 +151,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
   m_EditorClassIdentifier: 
-  EditorBanks:
+EditorBanks:
   - {fileID: 920563832896275871}
   - {fileID: -5799393728443819130}
   - {fileID: -5886247914066553751}

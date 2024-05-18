@@ -14,6 +14,7 @@ public class SceneManagerScript : MonoBehaviour
     public Slider progressBar;
     public TextMeshProUGUI progressCount;
 
+    public string TransitionScene = "Transition";
     private Scene scene;
 
     private void Awake()
@@ -25,7 +26,7 @@ public class SceneManagerScript : MonoBehaviour
     {
         StartCoroutine(LoadSceneAsync(sceneName));
 
-        if (sceneName == "SampleScene" || sceneName == "MainMenuScene")
+        if (sceneName == "SampleScene" || sceneName == "MainMenu")
         {
             AudioManager.instance.StopMusic();
             AudioManager.instance.StopAmbience();
@@ -59,6 +60,11 @@ public class SceneManagerScript : MonoBehaviour
             yield return null;
         }
 
+    }
+
+    public void PlayGameMainMenu()
+    {
+        StartCoroutine(LoadSceneAsync(TransitionScene));
     }
 
 

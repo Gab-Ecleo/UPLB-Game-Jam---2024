@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a6f4cf957ad4c4db16938f3ee3d628, type: 3}
+  m_Name: LorePlastic
+  m_EditorClassIdentifier: 
+  dialogDescription: Plastic Lore with Strau
+  conversation:
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 650684771, guid: 3aa53b0074b47cd4d80f7b769a844f42, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "Oh, that\u2019s a glum face you got there\u2026 How did it go with Scelestus
+      Polymerus?"
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 1
+    dialog: "What did they mean by being called the \u201CSavior of Animals\u201D?
+      Isn\u2019t Polymerus born from plastic?"
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "Well\u2026 It\u2019s said that Polymerus is a manifestation of the very
+      1st plastic\u2019s sentiments."
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "Take a seat, kid. This might be lengthy\u2026 \r"
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: People used to use Elephant tusks and Turtle shells into stuff like combs
+      and cutlery handles.
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: You know, a lot of everyday items.
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: 'The very first plastic was invented to be an inexpensive imitation of
+      ivory for all time. '
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "At that time, plastic was praised as the \u201CSavior of Elephants and
+      Turtles\u201D."
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 1
+    dialog: "I didn\u2019t know it was like that\u2026 And now we\u2019re all trying
+      to get rid of it."
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "I guess it\u2019s a case of too much and leaving it everywhere. "
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "Even the best of medicines can become poison if not handled well. It\u2019s
+      a shame that this is how people see plastic right now\u2026"
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 1
+    dialog: "Because of that wicked human\u2026 Polymerus, the very first plastic,
+      ended up destroying the lives he wanted to save."

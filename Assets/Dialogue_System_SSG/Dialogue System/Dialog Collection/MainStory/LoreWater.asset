@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a6f4cf957ad4c4db16938f3ee3d628, type: 3}
+  m_Name: LoreWater
+  m_EditorClassIdentifier: 
+  dialogDescription: Water Lore with Strau
+  conversation:
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 650684771, guid: 3aa53b0074b47cd4d80f7b769a844f42, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: Hey, welcome back! This time, it was Malum Aqua, right?
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 1
+    dialog: It said something like water beginning to take away lives. The voice
+      sounded to be in a lot of pain.
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: 'Malum Aqua is the embodiment of the sea that practically became a dumpsite.
+
+'
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 1
+    dialog: Malum Aqua had a wish. It was to give life again using their core.
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 1088803938, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "All that invaded the ecosystems and tarnished the homes of the little
+      ones that lived there. The sea became corrupted and now we\u2019re here."

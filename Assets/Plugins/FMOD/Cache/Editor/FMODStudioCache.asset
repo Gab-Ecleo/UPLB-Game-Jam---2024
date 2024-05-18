@@ -122,7 +122,7 @@ MonoBehaviour:
   - {fileID: -5799393728443819130}
   StringsBanks:
   - {fileID: 920563832896275871}
-  cacheTime: 638516667464698633
+  cacheTime: 638516691744887816
   cacheVersion: 131618
 --- !u!114 &26662129519028042
 MonoBehaviour:
@@ -179,7 +179,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Dome.bank
   Name: Dome
   StudioPath: bank:/Dome
-  lastModified: 638516667464632769
+  lastModified: 638516691744887816
   FileSizes:
   - Name: Desktop
     Value: 1281440

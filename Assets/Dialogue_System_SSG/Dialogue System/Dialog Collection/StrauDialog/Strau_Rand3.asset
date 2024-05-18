@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a6f4cf957ad4c4db16938f3ee3d628, type: 3}
+  m_Name: Strau_Rand3
+  m_EditorClassIdentifier: 
+  dialogDescription: Strau_3
+  conversation:
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 650684771, guid: 3aa53b0074b47cd4d80f7b769a844f42, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: 'Yana... '
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 650684771, guid: 3aa53b0074b47cd4d80f7b769a844f42, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: That poor lass...
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 650684771, guid: 3aa53b0074b47cd4d80f7b769a844f42, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: She was once a hunter like you...
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 650684771, guid: 3aa53b0074b47cd4d80f7b769a844f42, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: Til she took an...
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Strau
+      sprite: {fileID: 650684771, guid: 3aa53b0074b47cd4d80f7b769a844f42, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: You know what I think it's best not to talk about her personal life...

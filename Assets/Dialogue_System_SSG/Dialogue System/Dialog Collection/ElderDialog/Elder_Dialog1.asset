@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogDescription: Elder mycelium dialog
   conversation:
   - character1Settings:
-      name: Lautus
+      name: 
       sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
     character2Settings:
       name: Elder
@@ -25,7 +25,7 @@ MonoBehaviour:
     dialog: Hello! I've been using mycelium to create some parts to repair various
       things...
   - character1Settings:
-      name: Lautus
+      name: 
       sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
     character2Settings:
       name: Elder
@@ -34,7 +34,7 @@ MonoBehaviour:
     isLeftTalking: 0
     dialog: I think the town carpenter also does the same to upgrade our town...
   - character1Settings:
-      name: Lautus
+      name: 
       sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
     character2Settings:
       name: Elder

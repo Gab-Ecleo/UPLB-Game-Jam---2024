@@ -12,7 +12,10 @@ public class CrankPlant : MonoBehaviour
     [SerializeField] private float Timedecay; //default is 3f (don't touch unless you want to speed the decay by lowering values)
     [SerializeField] private float LoweringCooldown; //default is 2.5f
 
+    public bool collided;
+
     PlantEvolve evolve;
+    FoodSupply foodSupply;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,7 @@ public class CrankPlant : MonoBehaviour
         isLoweringDown = false;
         playerCollision = false;
         evolve = GetComponent<PlantEvolve>();
+        foodSupply = GetComponent<FoodSupply>();
     }
 
     // Update is called once per frame
@@ -84,12 +88,20 @@ public class CrankPlant : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        collided = true;
         Debug.Log("Something hit me!");
 
         if (collision.tag == "Player")
         {
             Debug.Log("Player Detected");
             playerCollision = true;
+        }
+        if (collision.tag == "Player" && evolve.ReadytoHarvestPlant && Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            Debug.Log("Clicked");
+            foodSupply.hasHarvested = true;
+            if (foodSupply.hasHarvested) foodSupply.AddFoodSupplyCount();
+            evolve.ResetPlantLvl();
         }
         if (collision.tag == "Sunlight")
         {
@@ -98,23 +110,9 @@ public class CrankPlant : MonoBehaviour
         }
     }
 
-/*    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("Something hit me!");
-
-        if (collision.tag == "Player")
-        {
-            Debug.Log("Player Detected");
-            playerCollision = true;
-        }
-        if (collision.tag == "Sunlight")
-        {
-            evolve.isRaised = true;
-        }
-    }*/
-
     private void OnTriggerExit2D(Collider2D collision)
     {
         playerCollision = false;
+        collided = false;
     }
 }

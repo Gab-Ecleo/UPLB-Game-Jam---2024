@@ -263,6 +263,7 @@ GameObject:
   - component: {fileID: 84411113717366731}
   - component: {fileID: 6303159614946013521}
   - component: {fileID: 3390423721129933610}
+  - component: {fileID: 4267947222458380900}
   m_Layer: 0
   m_Name: Plant
   m_TagString: Untagged
@@ -326,6 +327,21 @@ MonoBehaviour:
   PlantLvl3: {fileID: 4598742407022551166}
   PlantAbsorption: 0
   isRaised: 0
+  ReadytoHarvestPlant: 0
+--- !u!114 &4267947222458380900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6449104987800022333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b742288facb54446bff9f4912257c13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FoodSupplyCount: 0
+  hasHarvested: 0
 --- !u!1 &7772880039502173958
 GameObject:
   m_ObjectHideFlags: 0

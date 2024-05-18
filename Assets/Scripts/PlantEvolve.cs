@@ -10,16 +10,20 @@ public class PlantEvolve : MonoBehaviour
     public float PlantAbsorption; //variable for the plant absorption (used for progression starting from 0 then slowly to 1f)
     public bool isRaised; //Check if its cranked
     public bool ReadytoHarvestPlant;
-    float PlantGrowthCooldown = 1.7f; //default is 1.7f
+    public bool hasCalledPlantReset;
+    float PlantGrowthCooldown = 1.2f; //default is 1.7f
     CrankPlant _crankplant;
+    FoodSupply supply;
     bool hasCalled;
 
     private void Start()
     {
         _crankplant = GetComponent<CrankPlant>();
+        supply = GetComponent<FoodSupply>();
         PlantLvl1.SetActive(true);
         PlantLvl2.SetActive(false);
         PlantLvl2.SetActive(false);
+        hasCalledPlantReset = false;
     }
 
     private void Update()
@@ -34,12 +38,16 @@ public class PlantEvolve : MonoBehaviour
         {
             isRaised = false;
         }
-        if (PlantAbsorption >= 1 && !ReadytoHarvestPlant)
+        if (PlantAbsorption >= .25f && !ReadytoHarvestPlant)
         {
             ReadytoHarvestPlant = true;
 
         }
 
+        /*if (supply.hasHarvested)
+        {
+            ResetPlantLvl();
+        }*/
         //Next if player pressed something to harvest plant
         //Sprite goes back to lvl 1 and plant absorption back to 0
     }
@@ -47,24 +55,16 @@ public class PlantEvolve : MonoBehaviour
     IEnumerator PlantGrowth()
     {
         hasCalled = true;
-        bool calledLvl2 = false;
-        bool calledLvl3 = false;
         PlantAbsorption += .015f;
         Debug.Log($"Absorption at {PlantAbsorption}");
 
-        if (PlantAbsorption >= .3f && !calledLvl2)
+        if (PlantAbsorption >= .15f)
         {
-            Debug.Log("CALLED! Plant to lvl 2");
-            PlantLvl1.SetActive(false);
-            PlantLvl2.SetActive(true);
-            calledLvl2 = true;
+            UpgradeToLvl2();
         }
-        if (PlantAbsorption >= .6f && !calledLvl3)
+        if (PlantAbsorption >= .2f)
         {
-            Debug.Log("CALLED! Plant to lvl 3");
-            PlantLvl2.SetActive(false);
-            PlantLvl3.SetActive(true);
-            calledLvl3 = true;
+            UpgradeToLvl3();
         }
         if (PlantAbsorption >= 1)
         {
@@ -72,7 +72,40 @@ public class PlantEvolve : MonoBehaviour
         }
         yield return new WaitForSeconds(PlantGrowthCooldown);
         hasCalled = false;
-        if (calledLvl2) calledLvl2 = false;
-        if (calledLvl3) calledLvl3 = false;
+    }
+
+    void UpgradeToLvl2()
+    {
+        bool hasCalledLvl2 = true;
+        PlantLvl1.SetActive(false);
+        PlantLvl2.SetActive(true);
+        //yield return new WaitForSeconds(.1f);
+        hasCalledLvl2 = false;
+    }
+
+    void UpgradeToLvl3()
+    {
+        bool hasCalledLvl3 = true;
+        PlantLvl2.SetActive(false);
+        PlantLvl3.SetActive(true);
+        //yield return new WaitForSeconds(.1f);
+        hasCalledLvl3 = false;
+    }
+
+    public void ResetPlantLvl()
+    {
+        hasCalledPlantReset = true;
+        PlantLvl1.SetActive(true);
+        PlantLvl2.SetActive(false);
+        PlantLvl3.SetActive(false);
+        PlantAbsorption = 0f;
+
+        supply.hasHarvested = false;
+        ReadytoHarvestPlant = false;
+
+        Debug.Log("PlantReset");
+
+        //yield return new WaitForSeconds(.1f);
+        hasCalledPlantReset = false;
     }
 }

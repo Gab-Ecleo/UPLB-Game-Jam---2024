@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{d3e168d6-8c0b-4b9c-9cb5-1dbe7be0550f}">
+		<property name="name">
+			<value>space-intensity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{accdd1d2-cb21-45eb-895f-08bfe2aa3b24}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{2ec9db87-961d-44c1-809a-32db0ae7e60a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{2ec9db87-961d-44c1-809a-32db0ae7e60a}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.65999996662139893</value>
+		</property>
+	</object>
+</objects>

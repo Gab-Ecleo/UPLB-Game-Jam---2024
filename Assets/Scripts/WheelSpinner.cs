@@ -17,6 +17,7 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
 
     [SerializeField] private float minRotations = 3;
     [SerializeField] private float maxRotations = 5;
+    [SerializeField] private float maxOppositeAngle = 45;
 
     private Vector2 startPosition;
     private Vector2 pivotPoint;
@@ -25,6 +26,7 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
     private float targetRotation;
 
     private bool allowCranking = false;
+    private bool isNegative;
 
     private Action<float> crankProgress;
     private Action crankComplete;
@@ -53,6 +55,7 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
 
         targetRotation = rotationCount * 360;
         crankComplete = onCrankComplete;
+        isNegative = targetRotation < 0;
     }
 
     public void StartWheelUI(Action onCrankComplete, Action<float> onCrankProgress)
@@ -82,14 +85,28 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
 
         startPosition = currentPosition;
 
-        Debug.Log(targetRotation + " " + totalRotation);
-        var isNegative = targetRotation < 0;
+        //Debug.Log(targetRotation + " " + totalRotation);
+        isNegative = targetRotation < 0;
 
-        if(isNegative){
-            if(totalRotation > targetRotation) return;}
+        totalRotation += angle;
+
+        var opposingAngle = maxOppositeAngle;
+        opposingAngle *= isNegative ? 1 : -1;
+
+        if (isNegative)
+        {
+            totalRotation = Mathf.Clamp(totalRotation, targetRotation, opposingAngle);
+            Debug.LogError("Wrong Direction!");
+            if (totalRotation > targetRotation) return;
+        }
         else
+        {
+            totalRotation = Mathf.Clamp(totalRotation, opposingAngle, targetRotation);
+            Debug.LogError("Wrong Direction!");
             if(totalRotation < targetRotation) return;
-        
+        }
+
+
         OnCloseUI();
     }
 

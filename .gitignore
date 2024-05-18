@@ -80,10 +80,10 @@ crashlytics-build.properties
 !/[Aa}ssets/Editor Default Resources/FMOD/*
 
 # Ignore the Cache-file since it is updated locally either way
-/[Aa]ssets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
-/[Aa]ssets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset.meta
-/[Aa]ssets/Plugins/FMOD/Cache.meta
-/[Aa]ssets/Plugins/FMOD/Cache/Editor.meta
+[Aa]ssets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
+[Aa]ssets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset.meta
+[Aa]ssets/Plugins/FMOD/Cache.meta
+[Aa]ssets/Plugins/FMOD/Cache/Editor.meta
 
 # Log-files
 fmod.log
@@ -108,3 +108,4 @@ fmod_editor.log
 # Log files can be ignored.
 fmod_editor.log
 .idea/.idea.UPLB-Game-Jam-2024/.idea/workspace.xml
+

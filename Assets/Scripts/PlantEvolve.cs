@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlantEvolve : MonoBehaviour
 {
-    [SerializeField] private GameObject PlantLvl1;
-    [SerializeField] private GameObject PlantLvl2;
-    [SerializeField] private GameObject PlantLvl3;
+    public GameObject PlantLvl1;
+    public GameObject PlantLvl2;
+    public GameObject PlantLvl3;
     public float PlantAbsorption; //variable for the plant absorption (used for progression starting from 0 then slowly to 1f)
     public bool isRaised; //Check if its cranked
     public bool ReadytoHarvestPlant;

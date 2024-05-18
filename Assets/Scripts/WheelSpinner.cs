@@ -83,7 +83,7 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
         startPosition = currentPosition;
 
         Debug.Log(targetRotation + " " + totalRotation);
-        if (totalRotation < targetRotation) return;
+        if (Mathf.Abs(totalRotation) < Mathf.Abs(targetRotation)) return;
 
         OnCloseUI();
     }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{f5370bc6-1edf-45bf-abca-84f1b238b313}">
+		<property name="assetPath">
+			<value>RadioStaticSFX/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5dbe24f0-db86-4b2f-bc87-304784eafa30}</destination>
+		</relationship>
+	</object>
+</objects>

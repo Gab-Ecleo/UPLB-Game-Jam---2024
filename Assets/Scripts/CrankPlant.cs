@@ -5,6 +5,7 @@ using UnityEngine;
 public class CrankPlant : MonoBehaviour
 {
     public bool playerCollision;
+    HpPlantScript _plantHp;
     public Vector3 PlantAscendValue;
     [SerializeField] private bool hasCranked;
     [SerializeField] private bool isLoweringDown;
@@ -25,13 +26,14 @@ public class CrankPlant : MonoBehaviour
         playerCollision = false;
         evolve = GetComponent<PlantEvolve>();
         foodSupply = GetComponent<FoodSupply>();
+        _plantHp = GetComponent<HpPlantScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
         //Detects if it collides with player (has set value to 'true') and has not yet cranked
-        if (Input.GetKey(KeyCode.Mouse0) && !hasCranked && playerCollision)
+        if (Input.GetKey(KeyCode.Mouse0) && !hasCranked && playerCollision && _plantHp.PlantHp >= 0) //Player Can crank the machine as long as the hp is > 0
         {
             StartCoroutine(TriggerCrankPlant());
             hasCranked = true;

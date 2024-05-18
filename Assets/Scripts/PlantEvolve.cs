@@ -8,6 +8,7 @@ public class PlantEvolve : MonoBehaviour
     public GameObject PlantLvl2;
     public GameObject PlantLvl3;
     public float PlantAbsorption; //variable for the plant absorption (used for progression starting from 0 then slowly to 1f)
+    public float PlantHeightRequirement; //A speciic value for the plant to trigger isRaised value (1.8f is default)
     public bool isRaised; //Check if its cranked
     public bool ReadytoHarvestPlant;
     public bool hasCalledPlantReset;
@@ -34,7 +35,7 @@ public class PlantEvolve : MonoBehaviour
             //Absorb sunlight by .15 every 1.7 seconds
             StartCoroutine(PlantGrowth());
         }
-        if (_crankplant.PlantAscendValue.y <= 1.8f)
+        if (_crankplant.PlantAscendValue.y <= PlantHeightRequirement)
         {
             isRaised = false;
         }
@@ -44,13 +45,6 @@ public class PlantEvolve : MonoBehaviour
             ReadytoHarvestPlant = true;
 
         }
-
-        /*if (supply.hasHarvested)
-        {
-            ResetPlantLvl();
-        }*/
-        //Next if player pressed something to harvest plant
-        //Sprite goes back to lvl 1 and plant absorption back to 0
     }
 
     IEnumerator PlantGrowth()

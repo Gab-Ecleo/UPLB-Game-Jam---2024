@@ -1,10 +1,11 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class HpPlantScript : MonoBehaviour
 {
-    [SerializeField] private int PlantHp;
+    public int PlantHp;
     [SerializeField] private float _HpDecayTime;
 
     [SerializeField] private GameObject Plant1Decayed;
@@ -13,23 +14,21 @@ public class HpPlantScript : MonoBehaviour
 
     private bool isDecaying;
     private bool isDecayingInCloud;
-    PlantEvolve evolve;
-    CrankPlant _checkPlant;
+    private bool isDecayingPaused; //Checks if the plant is raised height enough, the decaying stops until it lowers back again
+    PlantEvolve plantMachine;
 
     private void Start()
     {
-        _checkPlant = GetComponent<CrankPlant>();
-        evolve = GetComponent<PlantEvolve>();
+        plantMachine = GetComponent<PlantEvolve>();
     }
 
     private void Update()
     {
-        if (evolve.isRaised)
+        if (plantMachine.isRaised && !isDecayingPaused)
         {
-            isDecaying = false;
-            isDecayingInCloud = false;
+            isDecayingPaused = true;
         }
-        if (isDecaying)
+        if (isDecaying && !isDecayingPaused)
         {
             isDecayingInCloud = false;
             _HpDecayTime += Time.deltaTime;
@@ -40,7 +39,7 @@ public class HpPlantScript : MonoBehaviour
 
             }
         }
-        if (isDecayingInCloud)
+        if (isDecayingInCloud && !isDecayingPaused)
         {
             isDecaying = false;
             _HpDecayTime += Time.deltaTime;
@@ -52,5 +51,20 @@ public class HpPlantScript : MonoBehaviour
             }
         }
 
+        if (PlantHp <= 0 && plantMachine.PlantLvl1.activeSelf)
+        {
+            plantMachine.PlantLvl1.SetActive(false);
+            Plant1Decayed.SetActive(true);
+        }
+        if (PlantHp <= 0 && plantMachine.PlantLvl2.activeSelf)
+        {
+            plantMachine.PlantLvl1.SetActive(false);
+            Plant2Decayed.SetActive(true);
+        }
+        if (PlantHp <= 0 && plantMachine.PlantLvl3.activeSelf)
+        {
+            plantMachine.PlantLvl1.SetActive(false);
+            Plant3Decayed.SetActive(true);
+        }
     }
 }

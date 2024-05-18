@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlayerOxygen : MonoBehaviour
 {
-    FoodSupply foodsupply;
+    //Player's Oxygen cannot stop it's decaying compared to plants since they can be raised to a given height requirement
+
+    public int playerFoodSupplyCount; //Used to get food supply when harvesting for plants that gives 1 food supply point
     public float OxygenDecayTime = 3.2f; //This value is for area if it doesnt have clouds yet
-    public float oxygenCount = 1f;
-    public bool isWeatherNeutral;
-    public bool isWeatherCloudy;
-    bool isWeatherCalled;
+    public float oxygenCount = 1f; //Default value, the scaling is between 0 and 1
+    public bool isWeatherNeutral; //Standard weather drain, for plant its 'isDecaying' bool variable
+    public bool isWeatherCloudy; //Same but 'IsDecayingInCloud
+    bool isWeatherCalled; //This is just used for counter in coroutine
 
     private void Start()
     {
@@ -32,7 +34,7 @@ public class PlayerOxygen : MonoBehaviour
         }
     }
 
-    void DrainOxygenNeutral()
+    void DrainOxygenNeutral() //This is for the default weather for player when the level starts
     {
         Debug.Log($"Decaying, Oxygenleft {oxygenCount}");
         oxygenCount -= .020f;

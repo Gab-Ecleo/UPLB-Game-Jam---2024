@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class FoodSupply : MonoBehaviour
 {
-    public int FoodSupplyCount;
+    public int FoodSupplyCount; //Food count point it gives to the player's food supply count and transfer it to player 'playerFoodSupplyCount'
     public bool hasHarvested;
-    PlantEvolve _plantEvolve;
-
+    PlayerOxygen PlayerFoodSupply;
     private void Start()
     {
-        _plantEvolve = GetComponent<PlantEvolve>();
         hasHarvested = false;
+        PlayerFoodSupply = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerOxygen>();
 
     }
 
@@ -19,5 +18,13 @@ public class FoodSupply : MonoBehaviour
     {
         Debug.Log("Has Collected");
         FoodSupplyCount++;
+        AddToPlayerSupply(FoodSupplyCount);
+    }
+
+    //Add to Player's FoodSupply (Temporary Script Function)
+    public void AddToPlayerSupply(int _playerSupply)
+    {
+        _playerSupply += FoodSupplyCount;
+        FoodSupplyCount = 0;
     }
 }

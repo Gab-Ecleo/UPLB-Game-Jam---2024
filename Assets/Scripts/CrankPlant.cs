@@ -90,6 +90,10 @@ public class CrankPlant : MonoBehaviour
         {
             playerCollision = true;
         }
+        if (collision.tag == "Sunlight")
+        {
+            evolve.isRaised = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)

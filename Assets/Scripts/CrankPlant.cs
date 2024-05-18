@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class CrankPlant : MonoBehaviour
 {
-    [SerializeField] private Vector3 PlantAscendValue;
+    public bool playerCollision;
+    public Vector3 PlantAscendValue;
     [SerializeField] private bool hasCranked;
     [SerializeField] private bool isLoweringDown;
-    [SerializeField] private bool playerCollision;
-    float CrankLimit = 2.80f;
-    public float Timedecay;
+    [SerializeField] private float CrankLimit = 2.80f;
+    [SerializeField] private float Timedecay; //default is 3f (don't touch unless you want to speed the decay by lowering values)
+    [SerializeField] private float LoweringCooldown; //default is 2.5f
+
+    public bool collided;
+
+    PlantEvolve evolve;
+    FoodSupply foodSupply;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,23 +23,25 @@ public class CrankPlant : MonoBehaviour
         hasCranked = false;
         isLoweringDown = false;
         playerCollision = false;
+        evolve = GetComponent<PlantEvolve>();
+        foodSupply = GetComponent<FoodSupply>();
     }
 
     // Update is called once per frame
     void Update()
     {
         //Detects if it collides with player (has set value to 'true') and has not yet cranked
-        if (Input.GetKey(KeyCode.F) && !hasCranked && playerCollision)
+        if (Input.GetKey(KeyCode.Mouse0) && !hasCranked && playerCollision)
         {
             StartCoroutine(TriggerCrankPlant());
             hasCranked = true;
         }
-        if (transform.position.y >= 0 && PlantAscendValue.y >= 0)
+        if (/*transform.position.y >= 0 && */PlantAscendValue.y >= 0)
         {
             Timedecay += Time.deltaTime; //Timedecay counts by default
         }
 
-        if (transform.position.y == 0 && PlantAscendValue.y == 0)
+        if (/*transform.position.y == 0 && */PlantAscendValue.y == 0)
         {
             Timedecay = 0f;
         }
@@ -42,7 +50,6 @@ public class CrankPlant : MonoBehaviour
         {
             StartCoroutine(LowerPlantPlatform());
         }
-
     }
 
     IEnumerator TriggerCrankPlant()
@@ -57,6 +64,7 @@ public class CrankPlant : MonoBehaviour
         {
             PlantAscendValue.y = CrankLimit;
             transform.position = PlantAscendValue;
+            evolve.isRaised = true;
         }
         yield return new WaitForSeconds(.4f);
         hasCranked = false;
@@ -74,20 +82,39 @@ public class CrankPlant : MonoBehaviour
             PlantAscendValue.y = 0;
             transform.position = PlantAscendValue;
         }
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(LoweringCooldown);
         isLoweringDown = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        collided = true;
+        Debug.Log("Something hit me!");
+
+        if (collision.tag == "Player")
         {
+            Debug.Log("Player Detected");
             playerCollision = true;
+        }
+        if (collision.tag == "Player" && evolve.ReadytoHarvestPlant && Input.GetKeyDown(KeyCode.E) && collided)
+        {
+            Debug.Log("PRESSED");
+            foodSupply.hasHarvested = true;
+            if (foodSupply.hasHarvested) foodSupply.AddFoodSupplyCount();
+            evolve.ResetPlantLvl();
+            PlayerOxygen oxygen = collision.GetComponent<PlayerOxygen>();
+            oxygen.RefillOxygen();
+        }
+        if (collision.tag == "Sunlight")
+        {
+            Debug.Log("Sunlight Detected");
+            evolve.isRaised = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         playerCollision = false;
+        collided = false;
     }
 }

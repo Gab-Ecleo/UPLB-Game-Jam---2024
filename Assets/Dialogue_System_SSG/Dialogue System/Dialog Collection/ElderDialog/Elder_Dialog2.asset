@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a6f4cf957ad4c4db16938f3ee3d628, type: 3}
+  m_Name: Elder_Dialog2
+  m_EditorClassIdentifier: 
+  dialogDescription: Elder plastic dialog
+  conversation:
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Elder
+      sprite: {fileID: 133776318, guid: 3aa53b0074b47cd4d80f7b769a844f42, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: While I know that using plastic is kind of wrong, but I guess it does
+      help to reuse and recycle these for other things!
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Elder
+      sprite: {fileID: 936892906, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: Like making a pot for small plants or use them for containing something...

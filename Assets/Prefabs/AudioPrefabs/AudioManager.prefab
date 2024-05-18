@@ -65,6 +65,27 @@ MonoBehaviour:
       Data3: 634959274
       Data4: -231162526
     Path: event:/SFX/Footsteps_Metal
+  <crankingLever>k__BackingField:
+    Guid:
+      Data1: 1201828214
+      Data2: 1300855617
+      Data3: 1134895543
+      Data4: -1180404440
+    Path: event:/SFX/Cranking
+  <radioStatic>k__BackingField:
+    Guid:
+      Data1: -17819255
+      Data2: 1142692017
+      Data3: 1500131482
+      Data4: 198785735
+    Path: event:/SFX/Radio
+  <fixingRadio>k__BackingField:
+    Guid:
+      Data1: -20491345
+      Data2: 1326620536
+      Data3: 1636769455
+      Data4: -1040507700
+    Path: event:/SFX/Fixing
   <domeBGM>k__BackingField:
     Guid:
       Data1: 310903027

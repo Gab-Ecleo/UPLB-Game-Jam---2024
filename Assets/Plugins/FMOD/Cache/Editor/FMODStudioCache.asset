@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5886247914066553751
+--- !u!114 &-6104031512750644399
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,18 +9,50 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Harvest
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638516036764523743
-  FileSizes:
-  - Name: Desktop
-    Value: 12640
-  Exists: 1
---- !u!114 &-5799393728443819130
+  Path: event:/Harvest
+  Guid:
+    Data1: 320263618
+    Data2: 1156481305
+    Data3: 1948428719
+    Data4: -1570785440
+  Banks:
+  - {fileID: 5625013306291006247}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 6399893280221886074}
+  - {fileID: 1069340514800978646}
+  - {fileID: 5625013306291006247}
+  EditorEvents:
+  - {fileID: -6104031512750644399}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 1069340514800978646}
+  StringsBanks:
+  - {fileID: 6399893280221886074}
+  cacheTime: 638516036764523743
+  cacheVersion: 131618
+--- !u!114 &1069340514800978646
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,7 +72,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1036
   Exists: 1
---- !u!114 &11400000
+--- !u!114 &5625013306291006247
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,23 +81,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
   m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 920563832896275871}
-  - {fileID: -5799393728443819130}
-  - {fileID: -5886247914066553751}
-  EditorEvents:
-  - {fileID: 8026816832697797924}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -5799393728443819130}
-  StringsBanks:
-  - {fileID: 920563832896275871}
-  cacheTime: 638516036764523743
-  cacheVersion: 131618
---- !u!114 &920563832896275871
+  Path: Assets/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638516036764523743
+  FileSizes:
+  - Name: Desktop
+    Value: 12640
+  Exists: 1
+--- !u!114 &6399893280221886074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,30 +112,3 @@ MonoBehaviour:
   - Name: Desktop
     Value: 802
   Exists: 1
---- !u!114 &8026816832697797924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Harvest
-  m_EditorClassIdentifier: 
-  Path: event:/Harvest
-  Guid:
-    Data1: 320263618
-    Data2: 1156481305
-    Data3: 1948428719
-    Data4: -1570785440
-  Banks:
-  - {fileID: -5886247914066553751}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0

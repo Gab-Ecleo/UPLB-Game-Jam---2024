@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{dadd9294-b0c9-48f3-b2f9-af0361dbb117}">
+	<object class="AudioFile" id="{52f02994-61f7-4153-a04c-7f79941f7238}">
 		<property name="assetPath">
 			<value>CrankingSFX/Cranking-04.wav</value>
 		</property>

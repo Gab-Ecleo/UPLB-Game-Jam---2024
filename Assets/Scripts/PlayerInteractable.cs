@@ -6,13 +6,14 @@ using UnityEngine;
 public class PlayerInteractable : MonoBehaviour
 {
     [SerializeField] private float radius;
-    [SerializeField] LayerMask interactLayer;
-    [SerializeField] Vector2 offset;
-    bool canInteract;
+    [SerializeField] private LayerMask interactLayer;
+    [SerializeField] private Vector2 offset;
+    private WheelSpinner WheelSpinner;
 
     private void Awake()
     {
         interactLayer = LayerMask.GetMask("Interactables");
+        WheelSpinner = WheelSpinner.Instance;
     }
 
     private void Update()
@@ -20,8 +21,17 @@ public class PlayerInteractable : MonoBehaviour
         // Interact Button
         if(Input.GetKeyDown(KeyCode.I) && DetectObject())
         {
-            Debug.Log("Can Interact");
+            WheelSpinner.StartWheelUI(OnCrankComplete, OnCrankProgress);
         }
+    }
+
+    private void OnCrankComplete()
+    {
+        Debug.Log("Completed Crank!");
+    }
+    private void OnCrankProgress(float progress)
+    {
+        Debug.Log("Progress: " + progress);
     }
 
     private bool DetectObject()

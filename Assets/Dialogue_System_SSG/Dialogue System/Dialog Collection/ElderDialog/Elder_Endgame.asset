@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a6f4cf957ad4c4db16938f3ee3d628, type: 3}
+  m_Name: Elder_Endgame
+  m_EditorClassIdentifier: 
+  dialogDescription: Endgame Dialog for the Elder
+  conversation:
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Elder
+      sprite: {fileID: 133776318, guid: 3aa53b0074b47cd4d80f7b769a844f42, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 1
+    dialog: Hello Elder! I heard that you wanted to talk to me...
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Elder
+      sprite: {fileID: 936892906, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: Lautus, you've done a remarkable job. The town is indebted to you.
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Elder
+      sprite: {fileID: 936892906, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 1
+    dialog: 'Thank you, Elder. But I can''t help but worry about the future. '
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Elder
+      sprite: {fileID: 936892906, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 1
+    dialog: We must ensure that Chordus remains safe and prosperous.
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Elder
+      sprite: {fileID: 936892906, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: I agree, Lautus. The future of Chordus depends on the unity of its people.
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Elder
+      sprite: {fileID: 936892906, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 1
+    dialog: What can we do to ensure our town's lasting safety?
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Elder
+      sprite: {fileID: 936892906, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: 'We''ll establish a committee for environmental protection, and you will
+      lead it. '
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Elder
+      sprite: {fileID: 936892906, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: Your dedication is an inspiration to us all.
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Elder
+      sprite: {fileID: 936892906, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 1
+    dialog: With everyone's help, Chordus will remain a place of beauty and hope.
+  - character1Settings:
+      name: Lautus
+      sprite: {fileID: -2097029897, guid: cf5c7365865cdf84bb8950e58a5a50c3, type: 3}
+    character2Settings:
+      name: Elder
+      sprite: {fileID: 936892906, guid: 5574fb73dab75bb42a808023dc86c09b, type: 3}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: Together, we'll safeguard our town for generations to come.

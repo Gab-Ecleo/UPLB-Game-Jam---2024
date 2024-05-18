@@ -804,6 +804,8 @@ GameObject:
   - component: {fileID: 1008772370}
   - component: {fileID: 1008772369}
   - component: {fileID: 1008772374}
+  - component: {fileID: 1008772375}
+  - component: {fileID: 1008772376}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -970,6 +972,36 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   offset: {x: 0.6, y: 0}
+--- !u!114 &1008772375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008772368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93287ab7badbf347b396091f72e0f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OxygenDecayTime: 3.2
+  oxygenCount: 1
+  isWeatherNeutral: 0
+  isWeatherCloudy: 0
+--- !u!114 &1008772376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008772368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b742288facb54446bff9f4912257c13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FoodSupplyCount: 0
+  hasHarvested: 0
 --- !u!1 &1122272234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,6 +1721,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1743630134}
+  - component: {fileID: 1743630135}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -1716,6 +1749,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1743630135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743630133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0520c3a65c860b541869f48976da96d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerOxygen: {fileID: 1008772375}
+  FoodSupply: {fileID: 1008772376}
+  currentOxygen: {fileID: 1976841818}
+  currentFood: {fileID: 1122272236}
 --- !u!1 &1976841816
 GameObject:
   m_ObjectHideFlags: 0

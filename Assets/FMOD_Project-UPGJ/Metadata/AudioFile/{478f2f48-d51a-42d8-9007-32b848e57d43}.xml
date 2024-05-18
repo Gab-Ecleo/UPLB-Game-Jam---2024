@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{478f2f48-d51a-42d8-9007-32b848e57d43}">
+		<property name="assetPath">
+			<value>Music/FalseHope_Loop-Main.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>31.997097505668933</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5dbe24f0-db86-4b2f-bc87-304784eafa30}</destination>
+		</relationship>
+	</object>
+</objects>

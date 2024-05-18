@@ -10,15 +10,21 @@ public class AudioManager : MonoBehaviour
 
     private EventInstance musicEventInstance;
 
+    private EventInstance ambienceEventInstance;
+
     public static AudioManager instance { get; private set;}
 
     private void Awake()
     {
-        if (instance != null)
+        if (instance == null)
         {
-            Debug.LogError("Found more than one Audio Manager in the Scene");
+            instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-        instance = this;
+        else
+        {
+            Destroy(gameObject);
+        }
 
         eventInstances = new List<EventInstance>();
 
@@ -26,7 +32,8 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        InitializeMusic(FMODEvents.instance.music);
+        InitializeMusic(FMODEvents.instance.domeBGM);
+        InitializeAmbiance(FMODEvents.instance.spaceAmbience);
     }
 
     //To use this method:
@@ -44,10 +51,31 @@ public class AudioManager : MonoBehaviour
         return eventInstance;
     }
 
-    private void InitializeMusic(EventReference musicEventReference)
+    public void InitializeAmbiance(EventReference ambienceEventReference)
+    {
+        ambienceEventInstance = CreateEventInstance(ambienceEventReference);
+        ambienceEventInstance.start();
+    }
+
+    public void SetAmbianceParameter(string parameterName, float parameterValue)
+    {
+        ambienceEventInstance.setParameterByName(parameterName, parameterValue);
+    }
+
+    public void StopAmbience()
+    {
+        ambienceEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
+
+    public void InitializeMusic(EventReference musicEventReference)
     {
         musicEventInstance = CreateEventInstance(musicEventReference);
         musicEventInstance.start();
+    }
+
+    public void StopMusic()
+    {
+        musicEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 
     private void CleanUp()

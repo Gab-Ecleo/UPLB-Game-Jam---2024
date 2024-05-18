@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7182461661126061167
+--- !u!114 &-6596072613097158387
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,50 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Cranking
+  m_Name: event:/Ambience/SpaceAmbience
   m_EditorClassIdentifier: 
-  Path: event:/Cranking
+  Path: event:/Ambience/SpaceAmbience
   Guid:
-    Data1: 1287774546
-    Data2: 1249251873
-    Data3: 6571136
-    Data4: 253318085
-  Banks:
-  - {fileID: -5886247914066553751}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-6835845393019185411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/DomeMusic
-  m_EditorClassIdentifier: 
-  Path: event:/DomeMusic
-  Guid:
-    Data1: 310903027
-    Data2: 1317193392
-    Data3: -1694873187
-    Data4: 2093826347
+    Data1: 1709848350
+    Data2: 1098243739
+    Data3: -1166557292
+    Data4: 873356697
   Banks:
   - {fileID: 2494582184777823295}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 5848904452883668691}
   MinDistance: 1
   MaxDistance: 20
-  Length: 89124
+  Length: 42000
 --- !u!114 &-5886247914066553751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +43,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638516307419371217
+  lastModified: 638516389983415335
   FileSizes:
   - Name: Desktop
     Value: 89504
@@ -89,7 +63,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638516327789287695
+  lastModified: 638516396713314807
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -109,11 +83,65 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/MainMenu.bank
   Name: MainMenu
   StudioPath: bank:/MainMenu
-  lastModified: 638516327797673805
+  lastModified: 638516389993393466
   FileSizes:
   - Name: Desktop
     Value: 372544
   Exists: 1
+--- !u!114 &-2264207793490105729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/DomeMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/DomeMusic
+  Guid:
+    Data1: 310903027
+    Data2: 1317193392
+    Data3: -1694873187
+    Data4: 2093826347
+  Banks:
+  - {fileID: 2494582184777823295}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 89124
+--- !u!114 &-719674468236217172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Harvest
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Harvest
+  Guid:
+    Data1: 320263618
+    Data2: 1156481305
+    Data3: 1948428719
+    Data4: -1570785440
+  Banks:
+  - {fileID: -5886247914066553751}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,17 +161,18 @@ MonoBehaviour:
   - {fileID: 2494582184777823295}
   - {fileID: -2995820893026488101}
   EditorEvents:
-  - {fileID: 8026816832697797924}
-  - {fileID: -7182461661126061167}
-  - {fileID: 4197734537336992199}
-  - {fileID: -6835845393019185411}
-  - {fileID: 1644008980184377627}
+  - {fileID: -6596072613097158387}
+  - {fileID: -2264207793490105729}
+  - {fileID: 1123680750619833019}
+  - {fileID: 2256729133157461116}
+  - {fileID: 4540189595121736632}
+  - {fileID: -719674468236217172}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5799393728443819130}
   StringsBanks:
   - {fileID: 920563832896275871}
-  cacheTime: 638516327797673805
+  cacheTime: 638516406477818583
   cacheVersion: 131618
 --- !u!114 &920563832896275871
 MonoBehaviour:
@@ -160,12 +189,12 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638516327789307699
+  lastModified: 638516396713324804
   FileSizes:
   - Name: Desktop
-    Value: 1068
+    Value: 1212
   Exists: 1
---- !u!114 &1644008980184377627
+--- !u!114 &1123680750619833019
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,9 +204,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MainMenuMusic
+  m_Name: event:/Music/MainMenuMusic
   m_EditorClassIdentifier: 
-  Path: event:/MainMenuMusic
+  Path: event:/Music/MainMenuMusic
   Guid:
     Data1: -2102876962
     Data2: 1230329955
@@ -192,6 +221,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 31997
+--- !u!114 &2256729133157461116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Cranking
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Cranking
+  Guid:
+    Data1: 1287774546
+    Data2: 1249251873
+    Data3: 6571136
+    Data4: 253318085
+  Banks:
+  - {fileID: -5886247914066553751}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &2494582184777823295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,12 +263,12 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Dome.bank
   Name: Dome
   StudioPath: bank:/Dome
-  lastModified: 638516327789670252
+  lastModified: 638516406477818583
   FileSizes:
   - Name: Desktop
-    Value: 1124096
+    Value: 1281440
   Exists: 1
---- !u!114 &4197734537336992199
+--- !u!114 &4540189595121736632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -222,9 +278,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Footsteps_Metal
+  m_Name: event:/SFX/Footsteps_Metal
   m_EditorClassIdentifier: 
-  Path: event:/Footsteps_Metal
+  Path: event:/SFX/Footsteps_Metal
   Guid:
     Data1: 1070627470
     Data2: 1261481456
@@ -239,7 +295,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 720
---- !u!114 &8026816832697797924
+--- !u!114 &5848904452883668691
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,21 +304,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Harvest
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SpaceAmbience/space-intensity
   m_EditorClassIdentifier: 
-  Path: event:/Harvest
-  Guid:
-    Data1: 320263618
-    Data2: 1156481305
-    Data3: 1948428719
-    Data4: -1570785440
-  Banks:
-  - {fileID: -5886247914066553751}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
+  Name: space-intensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1783414783
+    data2: 893754749
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1

@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3082333535762962122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7141134576805720453}
+  - component: {fileID: 8082506636452730559}
+  m_Layer: 0
+  m_Name: FMODEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7141134576805720453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3082333535762962122}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8380233017088361332}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8082506636452730559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3082333535762962122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f8a7061b84a77449248deebcee9768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <spaceAmbience>k__BackingField:
+    Guid:
+      Data1: 1709848350
+      Data2: 1098243739
+      Data3: -1166557292
+      Data4: 873356697
+    Path: event:/Ambience/SpaceAmbience
+  <plantHarvest>k__BackingField:
+    Guid:
+      Data1: 320263618
+      Data2: 1156481305
+      Data3: 1948428719
+      Data4: -1570785440
+    Path: event:/SFX/Harvest
+  <playerFootsteps>k__BackingField:
+    Guid:
+      Data1: 1070627470
+      Data2: 1261481456
+      Data3: 634959274
+      Data4: -231162526
+    Path: event:/SFX/Footsteps_Metal
+  <domeBGM>k__BackingField:
+    Guid:
+      Data1: 310903027
+      Data2: 1317193392
+      Data3: -1694873187
+      Data4: 2093826347
+    Path: event:/Music/DomeMusic
+  <mainMenuMusic>k__BackingField:
+    Guid:
+      Data1: -2102876962
+      Data2: 1230329955
+      Data3: 697766565
+      Data4: -81645515
+    Path: event:/Music/MainMenuMusic
+--- !u!1 &6706368077385613361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8380233017088361332}
+  - component: {fileID: 377747902280681577}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8380233017088361332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6706368077385613361}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7141134576805720453}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &377747902280681577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6706368077385613361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca8dba0d46f6e04087c424a21b5717b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -22,6 +22,8 @@ public class TriggerPlantChange : MonoBehaviour
             foodsupply.hasHarvested = true;
             if (foodsupply.hasHarvested) foodsupply.AddFoodSupplyCount();
             evolve.ResetPlantLvl();
+            PlayerOxygen oxygen = collision.GetComponent<PlayerOxygen>();
+            oxygen.RefillOxygen();
         }
     }
 }

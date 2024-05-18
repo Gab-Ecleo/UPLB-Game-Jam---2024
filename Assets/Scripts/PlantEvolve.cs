@@ -38,6 +38,7 @@ public class PlantEvolve : MonoBehaviour
         {
             isRaised = false;
         }
+
         if (PlantAbsorption >= .25f && !ReadytoHarvestPlant)
         {
             ReadytoHarvestPlant = true;
@@ -60,36 +61,23 @@ public class PlantEvolve : MonoBehaviour
 
         if (PlantAbsorption >= .15f)
         {
-            UpgradeToLvl2();
+            //UpgradeToLvl2();
+            PlantLvl1.SetActive(false);
+            PlantLvl2.SetActive(true);
         }
         if (PlantAbsorption >= .2f)
         {
-            UpgradeToLvl3();
+            //UpgradeToLvl3();
+            PlantLvl2.SetActive(false);
+            PlantLvl3.SetActive(true);
+            ReadytoHarvestPlant = true;
         }
         if (PlantAbsorption >= 1)
         {
-            PlantAbsorption = 1;
+            //PlantAbsorption = 1;
         }
         yield return new WaitForSeconds(PlantGrowthCooldown);
         hasCalled = false;
-    }
-
-    void UpgradeToLvl2()
-    {
-        bool hasCalledLvl2 = true;
-        PlantLvl1.SetActive(false);
-        PlantLvl2.SetActive(true);
-        //yield return new WaitForSeconds(.1f);
-        hasCalledLvl2 = false;
-    }
-
-    void UpgradeToLvl3()
-    {
-        bool hasCalledLvl3 = true;
-        PlantLvl2.SetActive(false);
-        PlantLvl3.SetActive(true);
-        //yield return new WaitForSeconds(.1f);
-        hasCalledLvl3 = false;
     }
 
     public void ResetPlantLvl()
@@ -108,4 +96,22 @@ public class PlantEvolve : MonoBehaviour
         //yield return new WaitForSeconds(.1f);
         hasCalledPlantReset = false;
     }
+
+    /* void UpgradeToLvl2()
+   {
+       bool hasCalledLvl2 = true;
+       PlantLvl1.SetActive(false);
+       PlantLvl2.SetActive(true);
+       //yield return new WaitForSeconds(.1f);
+       hasCalledLvl2 = false;
+   }
+
+   void UpgradeToLvl3()
+   {
+       bool hasCalledLvl3 = true;
+       PlantLvl2.SetActive(false);
+       PlantLvl3.SetActive(true);
+       //yield return new WaitForSeconds(.1f);
+       hasCalledLvl3 = false;
+   }*/
 }

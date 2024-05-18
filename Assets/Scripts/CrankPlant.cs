@@ -96,12 +96,14 @@ public class CrankPlant : MonoBehaviour
             Debug.Log("Player Detected");
             playerCollision = true;
         }
-        if (collision.tag == "Player" && evolve.ReadytoHarvestPlant && Input.GetKeyDown(KeyCode.Mouse1))
+        if (collision.tag == "Player" && evolve.ReadytoHarvestPlant && Input.GetKeyDown(KeyCode.E) && collided)
         {
-            Debug.Log("Clicked");
+            Debug.Log("PRESSED");
             foodSupply.hasHarvested = true;
             if (foodSupply.hasHarvested) foodSupply.AddFoodSupplyCount();
             evolve.ResetPlantLvl();
+            PlayerOxygen oxygen = collision.GetComponent<PlayerOxygen>();
+            oxygen.RefillOxygen();
         }
         if (collision.tag == "Sunlight")
         {

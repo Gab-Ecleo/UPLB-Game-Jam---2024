@@ -36,7 +36,7 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
 
         pivotPoint = wheelTransform.position;
     }
-
+    
     public void StartWheelUI(Action onCrankComplete)
     {
         wheelTransform.rotation = Quaternion.identity;
@@ -83,7 +83,13 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
         startPosition = currentPosition;
 
         Debug.Log(targetRotation + " " + totalRotation);
-        if (Mathf.Abs(totalRotation) < Mathf.Abs(targetRotation)) return;
+        var isNegative = targetRotation < 0;
+
+        if(isNegative){
+            if(totalRotation > targetRotation) return;}
+        else
+            if(totalRotation < targetRotation) return;
+        
 
         OnCloseUI();
     }

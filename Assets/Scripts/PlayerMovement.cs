@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        playerFootsteps = AudioManager.instance.CreateEventInstance(FMODEvents.instance.playerFootsteps);
+        //playerFootsteps = AudioManager.instance.CreateEventInstance(FMODEvents.instance.playerFootsteps);
     }
 
     private void Update()

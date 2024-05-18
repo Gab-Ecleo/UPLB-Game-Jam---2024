@@ -33,10 +33,9 @@ public class CrankPlant : MonoBehaviour
     void Update()
     {
         //Detects if it collides with player (has set value to 'true') and has not yet cranked
-        if (Input.GetKey(KeyCode.Mouse0) && !hasCranked && playerCollision && _plantHp.PlantHp >= 0) //Player Can crank the machine as long as the hp is > 0
+        if (Input.GetKey(KeyCode.E) && !hasCranked && playerCollision && _plantHp.PlantHp >= 0) //Player Can crank the machine as long as the hp is > 0
         {
-            StartCoroutine(TriggerCrankPlant());
-            hasCranked = true;
+            TriggerPlantMachine();
         }
         if (/*transform.position.y >= 0 && */PlantAscendValue.y >= 0)
         {
@@ -88,7 +87,7 @@ public class CrankPlant : MonoBehaviour
         isLoweringDown = false;
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         collided = true;
         Debug.Log("Something hit me!");
@@ -112,6 +111,21 @@ public class CrankPlant : MonoBehaviour
             Debug.Log("Sunlight Detected");
             evolve.isRaised = true;
         }
+    }
+
+    void RaisePlant()
+    {
+        StartCoroutine(TriggerCrankPlant());
+        hasCranked = true;
+        Debug.Log("CompletedSpinning");
+    }
+    void SecondFunction(float numHere)
+    {
+        Debug.Log("SpinningProgress:" + numHere);
+    }
+    public void TriggerPlantMachine()
+    {
+        WheelSpinner.Instance.StartWheelUI(RaisePlant, SecondFunction);
     }
 
     private void OnTriggerExit2D(Collider2D collision)

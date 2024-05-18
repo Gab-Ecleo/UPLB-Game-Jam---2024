@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{43333847-7d61-4f4c-b004-331d552816d5}">
+		<property name="assetPath">
+			<value>Music/YAA (You Are Alone).wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>89.123990929705215</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5dbe24f0-db86-4b2f-bc87-304784eafa30}</destination>
+		</relationship>
+	</object>
+</objects>

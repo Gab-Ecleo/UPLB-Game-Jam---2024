@@ -5,17 +5,20 @@ using FMOD.Studio;
 
 //[RequireComponent(typeof(CapsuleCollider2D))]
 //[RequireComponent(typeof(Rigidbody2D))]
+//[RequireComponent(typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
+    private static PlayerMovement instance;
+    public static PlayerMovement Instance => instance;
+
     private Rigidbody2D rb;
-    private CapsuleCollider2D coll;
-    private Transform playerTransform;
+    private Animator animator;
 
     [SerializeField] private float speed = 2.0f;
 
     private float horizontalInput;
-    private bool canMove = true;
     private bool isFacingRight = true;
+    public bool canMove = true;
 
     //Audio
     private EventInstance playerFootsteps;
@@ -23,8 +26,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        coll = GetComponent<CapsuleCollider2D>();
-        playerTransform = transform;
+        animator = GetComponent<Animator>();    
     }
 
     private void Start()
@@ -39,11 +41,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (canMove )
+        if (canMove)
         {
             MovePlayer();
-            //FlipSprite();
+            FlipSprite();
             UpdateSound();
+        }
+
+        // animation
+        if(horizontalInput > 0|| horizontalInput < 0)
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
         }
     }
 
@@ -54,12 +66,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void FlipSprite()
     {
-        if ((horizontalInput < 0 && isFacingRight) || (horizontalInput > 0 && !isFacingRight))
+        if (horizontalInput < 0 && isFacingRight)
         {
             isFacingRight = !isFacingRight;
             Vector3 rotate = new Vector3(transform.rotation.x, 180f, transform.rotation.y);
             transform.rotation = Quaternion.Euler(rotate);
+        }
+        else if(horizontalInput > 0 && !isFacingRight)
+        {
             isFacingRight = !isFacingRight;
+            Vector3 rotate = new Vector3(transform.rotation.x, 0f, transform.rotation.y);
+            transform.rotation = Quaternion.Euler(rotate);
         }
     }
 

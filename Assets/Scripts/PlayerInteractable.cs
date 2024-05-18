@@ -8,12 +8,10 @@ public class PlayerInteractable : MonoBehaviour
     [SerializeField] private float radius;
     [SerializeField] private LayerMask interactLayer;
     [SerializeField] private Vector2 offset;
-    private WheelSpinner WheelSpinner;
 
     private void Awake()
     {
         interactLayer = LayerMask.GetMask("Interactables");
-        WheelSpinner = WheelSpinner.Instance;
     }
 
     private void Update()
@@ -21,8 +19,9 @@ public class PlayerInteractable : MonoBehaviour
         // Interact Button
         if(Input.GetKeyDown(KeyCode.I) && DetectObject())
         {
-            WheelSpinner.StartWheelUI(OnCrankComplete, OnCrankProgress);
+            WheelSpinner.Instance.StartWheelUI(OnCrankComplete, OnCrankProgress);
         }
+        
     }
 
     private void OnCrankComplete()

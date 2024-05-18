@@ -7,6 +7,7 @@ public class CrankPlant : MonoBehaviour
     public bool playerCollision;
     HpPlantScript _plantHp;
     public Vector3 PlantAscendValue;
+    public bool InteractionEnabled;
     [SerializeField] private bool hasCranked;
     [SerializeField] private bool isLoweringDown;
     [SerializeField] private float CrankLimit = 2.80f;
@@ -17,6 +18,7 @@ public class CrankPlant : MonoBehaviour
 
     PlantEvolve evolve;
     FoodSupply foodSupply;
+    PlayerMovement movement;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,13 +29,14 @@ public class CrankPlant : MonoBehaviour
         evolve = GetComponent<PlantEvolve>();
         foodSupply = GetComponent<FoodSupply>();
         _plantHp = GetComponent<HpPlantScript>();
+        movement = FindObjectOfType<PlayerMovement>();
     }
 
     // Update is called once per frame
     void Update()
     {
         //Detects if it collides with player (has set value to 'true') and has not yet cranked
-        if (Input.GetKey(KeyCode.E) && !hasCranked && playerCollision && _plantHp.PlantHp >= 0) //Player Can crank the machine as long as the hp is > 0
+        if (Input.GetKeyDown(KeyCode.E) && !hasCranked && playerCollision && _plantHp.PlantHp >= 0 && !InteractionEnabled) //Player Can crank the machine as long as the hp is > 0
         {
             TriggerPlantMachine();
         }
@@ -125,6 +128,7 @@ public class CrankPlant : MonoBehaviour
     }
     public void TriggerPlantMachine()
     {
+        InteractionEnabled = true;
         WheelSpinner.Instance.StartWheelUI(RaisePlant, SecondFunction);
     }
 
@@ -132,5 +136,6 @@ public class CrankPlant : MonoBehaviour
     {
         playerCollision = false;
         collided = false;
+        InteractionEnabled = false;
     }
 }

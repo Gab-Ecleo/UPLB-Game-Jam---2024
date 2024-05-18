@@ -42,7 +42,11 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638516838730656262
+<<<<<<< Updated upstream
+  lastModified: 638516786449124970
+=======
+  lastModified: 638516792582933762
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 176160
@@ -62,7 +66,11 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638516742145144553
+<<<<<<< Updated upstream
+  lastModified: 638516694920530598
+=======
+  lastModified: 638516792580582094
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 1486
@@ -198,15 +206,25 @@ MonoBehaviour:
   - {fileID: 8931495919368334653}
   - {fileID: 3819518716453318812}
   - {fileID: 7701035597532828501}
+<<<<<<< Updated upstream
   - {fileID: -1748347641606280504}
   - {fileID: -4399621719779257687}
   - {fileID: -7398681245401015171}
+=======
+  - {fileID: 8636593794392407598}
+  - {fileID: 8435629431476914504}
+  - {fileID: 999524860754414110}
+>>>>>>> Stashed changes
   EditorParameters: []
   MasterBanks:
   - {fileID: -5799393728443819130}
   StringsBanks:
   - {fileID: 920563832896275871}
-  cacheTime: 638516838730656262
+<<<<<<< Updated upstream
+  cacheTime: 638516786449124970
+=======
+  cacheTime: 638516792582933762
+>>>>>>> Stashed changes
   cacheVersion: 131618
 --- !u!114 &26662129519028042
 MonoBehaviour:
@@ -223,7 +241,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/MainMenu.bank
   Name: MainMenu
   StudioPath: bank:/MainMenu
-  lastModified: 638516742145124724
+  lastModified: 638516694920520603
   FileSizes:
   - Name: Desktop
     Value: 372544
@@ -243,11 +261,42 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638516838730626058
+<<<<<<< Updated upstream
+  lastModified: 638516786449124970
+=======
+  lastModified: 638516792580602101
+>>>>>>> Stashed changes
   FileSizes:
   - Name: Desktop
     Value: 1448
   Exists: 1
+--- !u!114 &999524860754414110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Fixing
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Fixing
+  Guid:
+    Data1: -20491345
+    Data2: 1326620536
+    Data3: 1636769455
+    Data4: -1040507700
+  Banks:
+  - {fileID: -5886247914066553751}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1659320792105482150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +312,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Dome.bank
   Name: Dome
   StudioPath: bank:/Dome
-  lastModified: 638516742145064791
+  lastModified: 638516695361257953
   FileSizes:
   - Name: Desktop
     Value: 1281440
@@ -376,6 +425,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8435629431476914504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/PlantGrowing
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/PlantGrowing
+  Guid:
+    Data1: 2112948467
+    Data2: 1204330470
+    Data3: -591743611
+    Data4: -1017276027
+  Banks:
+  - {fileID: -5886247914066553751}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8636593794392407598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Radio
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Radio
+  Guid:
+    Data1: -17819255
+    Data2: 1142692017
+    Data3: 1500131482
+    Data4: 198785735
+  Banks:
+  - {fileID: -5886247914066553751}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &8931495919368334653
 MonoBehaviour:
   m_ObjectHideFlags: 0

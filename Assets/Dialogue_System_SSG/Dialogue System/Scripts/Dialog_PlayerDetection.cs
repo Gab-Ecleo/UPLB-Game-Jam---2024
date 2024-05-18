@@ -15,7 +15,7 @@ public class Dialog_PlayerDetection : MonoBehaviour
     [SerializeField] private KeyCode key;
     [SerializeField] private float detectionRange;
 
-    private UnityAction onCompleteAction;
+    private UnityAction onCompleteAction; 
     private float distance;
     private bool allowAction;
 

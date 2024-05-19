@@ -29,13 +29,17 @@ public class PlantEvolve : MonoBehaviour
 
     private void Update()
     {
-        if (isRaised && !hasCalled && _crankplant.PlantAscendValue.y >= 1.81f)
+        if (isRaised && !hasCalled && _crankplant.PlantPos.y >= 1.81f)
         {
             Debug.Log("Now Raised");
             //Absorb sunlight by .15 every 1.7 seconds
             StartCoroutine(PlantGrowth());
         }
+<<<<<<< HEAD
         if (_crankplant.PlantAscendValue.y <= PlantHeightRequirement)
+=======
+        if (_crankplant.PlantPos.y <= 1.8f)
+>>>>>>> main
         {
             isRaised = false;
         }

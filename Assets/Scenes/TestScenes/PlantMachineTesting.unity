@@ -1814,6 +1814,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
+<<<<<<< HEAD
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6449104987800022333, guid: c5a987ab55eed324fa530c03ae1268e6, type: 3}
       insertIndex: -1
@@ -1821,6 +1822,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6449104987800022333, guid: c5a987ab55eed324fa530c03ae1268e6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1373463326}
+=======
+    m_AddedComponents: []
+>>>>>>> main
   m_SourcePrefab: {fileID: 100100000, guid: c5a987ab55eed324fa530c03ae1268e6, type: 3}
 --- !u!1 &939493920
 GameObject:
@@ -2004,15 +2008,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd873d4deace844494fc1c04773a2a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   playerCollision: 0
   PlantAscendValue: {x: 0, y: 0, z: 0}
   InteractionEnabled: 0
   hasCranked: 0
   isLoweringDown: 0
+=======
+  PlantPos: {x: 0, y: 0, z: 0}
+>>>>>>> main
   CrankLimit: 3.2
   Timedecay: 0
   LoweringCooldown: 0.6
+  hasCranked: 0
+  isLoweringDown: 0
   collided: 0
+  playerCollision: 0
+  _plantPlatform: {fileID: 0}
 --- !u!114 &980439505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2340,15 +2352,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd873d4deace844494fc1c04773a2a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   playerCollision: 0
   PlantAscendValue: {x: 0, y: 0, z: 0}
   InteractionEnabled: 0
   hasCranked: 0
   isLoweringDown: 0
+=======
+  PlantPos: {x: 0, y: 0, z: 0}
+>>>>>>> main
   CrankLimit: 3.2
   Timedecay: 0
   LoweringCooldown: 0.6
+  hasCranked: 0
+  isLoweringDown: 0
   collided: 0
+  playerCollision: 0
+  _plantPlatform: {fileID: 0}
 --- !u!4 &1156553760
 Transform:
   m_ObjectHideFlags: 0
@@ -2639,6 +2659,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+<<<<<<< HEAD
 --- !u!1 &1373463320 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6449104987800022333, guid: c5a987ab55eed324fa530c03ae1268e6, type: 3}
@@ -2706,6 +2727,8 @@ MonoBehaviour:
   Plant1Decayed: {fileID: 0}
   Plant2Decayed: {fileID: 0}
   Plant3Decayed: {fileID: 0}
+=======
+>>>>>>> main
 --- !u!1 &1441935371
 GameObject:
   m_ObjectHideFlags: 0
@@ -2908,6 +2931,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07da2e2a92d6a9949ac7843dcc4845ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactSource: {fileID: 0}
+  interactRange: 0
+  interactKey: 0
   radius: 0.62
   interactLayer:
     serializedVersion: 2
@@ -3459,15 +3485,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd873d4deace844494fc1c04773a2a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   playerCollision: 0
   PlantAscendValue: {x: 0, y: 0, z: 0}
   InteractionEnabled: 0
   hasCranked: 0
   isLoweringDown: 0
+=======
+  PlantPos: {x: 0, y: 0, z: 0}
+>>>>>>> main
   CrankLimit: 3.2
   Timedecay: 0
   LoweringCooldown: 0.6
+  hasCranked: 0
+  isLoweringDown: 0
   collided: 0
+  playerCollision: 0
+  _plantPlatform: {fileID: 0}
 --- !u!4 &1636306152
 Transform:
   m_ObjectHideFlags: 0
@@ -3645,15 +3679,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd873d4deace844494fc1c04773a2a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   playerCollision: 0
   PlantAscendValue: {x: 0, y: 0, z: 0}
   InteractionEnabled: 0
   hasCranked: 0
   isLoweringDown: 0
+=======
+  PlantPos: {x: 0, y: 0, z: 0}
+>>>>>>> main
   CrankLimit: 3.2
   Timedecay: 0
   LoweringCooldown: 0.6
+  hasCranked: 0
+  isLoweringDown: 0
   collided: 0
+  playerCollision: 0
+  _plantPlatform: {fileID: 0}
 --- !u!4 &1707229358
 Transform:
   m_ObjectHideFlags: 0

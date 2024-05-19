@@ -34,6 +34,11 @@ public class SceneManagerScript : MonoBehaviour
             AudioManager.instance.StopMusic();
             AudioManager.instance.StopAmbience();
             AudioManager.instance.InitializeMusic(FMODEvents.instance.mainMenuMusic);
+        }else if (sceneName == "GameScene")
+        {
+            AudioManager.instance.StopMusic();
+            AudioManager.instance.InitializeAmbiance(FMODEvents.instance.spaceAmbience);
+            AudioManager.instance.InitializeMusic(FMODEvents.instance.domeBGM);
         }
 
     }

@@ -67,6 +67,7 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
     public void OnBeginDrag(PointerEventData eventData)
     {
         startPosition = eventData.position - pivotPoint;
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.crankingLever, this.transform.position);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -86,6 +87,9 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
         startPosition = currentPosition;
 
         //Debug.Log(targetRotation + " " + totalRotation);
+
+        CheckRevolution();
+
         isNegative = targetRotation < 0;
 
         totalRotation += angle;
@@ -133,4 +137,19 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
         leftArrow.SetActive(isLeft);
         rightArrow.SetActive(!isLeft);
     }
+
+    private void CheckRevolution()
+    {
+        int currentRev = 0;
+        float revs = Mathf.Abs(totalRotation) / 360;
+
+        if ((int)revs <= currentRev)
+        {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.crankingLever, this.transform.position);
+            currentRev = (int)revs;
+            Debug.Log("Revolution Check: " + (int)revs);
+        }
+
+    }
+
 }

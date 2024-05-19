@@ -72,6 +72,8 @@ public class AudioManager : MonoBehaviour
         //InitializeMusic(FMODEvents.instance.mainMenuMusic);
         //InitializeAmbiance(FMODEvents.instance.spaceAmbience);
 
+        Time.timeScale = 1;
+
         scene = SceneManager.GetActiveScene();
         sceneName = scene.name;
 

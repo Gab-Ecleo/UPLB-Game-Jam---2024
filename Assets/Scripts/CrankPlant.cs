@@ -95,6 +95,7 @@ public class CrankPlant : MonoBehaviour, IInteractable
         Debug.Log("Refilling Resources");
         foodSupply.hasHarvested = true;
         if (foodSupply.hasHarvested) foodSupply.AddFoodSupplyCount();
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.plantHarvest, this.transform.position);
         evolve.ResetPlantLvl();
     }
 

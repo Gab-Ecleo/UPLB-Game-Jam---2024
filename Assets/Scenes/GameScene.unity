@@ -957,6 +957,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcc739f871c5f9f4783ae0727687b47a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brokenRadio: {fileID: 21300000, guid: 7d55c34808a721c4680e610aeae5efce, type: 3}
+  patchedRadio: {fileID: 21300000, guid: 154460409d2383c41a117cfc234b7c4b, type: 3}
+  fixedRadio: {fileID: 21300000, guid: 5f520bf8244f0654cb38d8be53ce0271, type: 3}
 --- !u!61 &48523019
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -44,6 +44,7 @@ public class DoorSequence : MonoBehaviour
         Debug.Log("Opening Door");
         for (int i = 0; i < doors.Length; i++)
         {
+            //insert sfx
             doors[i].SetTrigger("Open");
             yield return new WaitForSeconds(.2f);
         }

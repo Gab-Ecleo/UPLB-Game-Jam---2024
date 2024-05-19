@@ -10,7 +10,6 @@ public class Expedition : MonoBehaviour, IInteractable
     {
         Debug.Log("Go to Expedition");
         if (!GameManager.Instance.CanExped()) return;
-            EventManager.ON_DOOR_OPEN?.Invoke();
             GoToExpedition();
     }
     
@@ -22,6 +21,9 @@ public class Expedition : MonoBehaviour, IInteractable
 
     IEnumerator ExpedCutscene()
     {
+        EventManager.ON_DOOR_OPEN?.Invoke();
+        //play dirt sfx
+        //play cutscene
         yield return new WaitForSeconds(2);
         FinishExpedition();
     }

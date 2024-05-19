@@ -30,6 +30,7 @@ public class DoorSequence : MonoBehaviour
     private void OpenDoor()
     {
         StartCoroutine("OpenDoorSeq");
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.buttonPress, this.transform.position);
         isDoorOpen = true;
     }
 

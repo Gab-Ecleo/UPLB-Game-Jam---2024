@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float speed = 2.0f;
 
-    private float horizontalInput;
+    public float horizontalInput;
     private bool isFacingRight = true;
     public bool canMove = true;
 
@@ -25,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        if (instance == null) instance = this;
+        else if (instance != this) Destroy(gameObject);
+        
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();    
     }
@@ -96,6 +99,10 @@ public class PlayerMovement : MonoBehaviour
         {
             playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
         }
+    }
 
+    public bool IsPlayerFacingLeft()
+    {
+        return transform.rotation.y < 0;
     }
 }

@@ -3,30 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DemoScript : MonoBehaviour
+public class DemoScript : MonoBehaviour, IInteractable
 {
-    private void Start()
+    public void Interact()
     {
-        
-    }
-
-    private void myFunc()
-    { 
-        Debug.Log("Cranking is complete");
-    }
-
-    private void myOtherFunct(float num)
-    {
-        Debug.Log($"Current Progress: {num}");
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("This is being called");
-            WheelSpinner.Instance.StartWheelUI(myFunc, myOtherFunct);
-        }
-            
+        Debug.Log("Hello there");
     }
 }

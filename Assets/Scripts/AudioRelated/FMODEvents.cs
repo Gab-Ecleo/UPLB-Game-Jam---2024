@@ -25,6 +25,26 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Fixing SFX")]
     [field: SerializeField] public EventReference fixingRadio { get; private set; }
 
+    [field: Header("Growing SFX")]
+    [field: SerializeField] public EventReference plantGrow { get; private set; }
+
+    [field: Header("PlantRaise SFX")]
+    [field: SerializeField] public EventReference plantRaise { get; private set; }
+
+    [field: Header("Button SFX")]
+    [field: SerializeField] public EventReference buttonPress { get; private set; }
+
+    [field: Header("Door Close SFX")]
+    [field: SerializeField] public EventReference doorClose { get; private set; }
+
+    [field: Header("Door Open SFX")]
+    [field: SerializeField] public EventReference doorOpen { get; private set; }
+
+    [field: Header("Expedition SFX")]
+    [field: SerializeField] public EventReference dirtExpedition { get; private set; }
+
+
+
     //Music
     [field: Header("Dome Music")]
     [field: SerializeField] public EventReference domeBGM { get; private set; }

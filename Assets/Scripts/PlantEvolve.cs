@@ -58,6 +58,7 @@ public class PlantEvolve : MonoBehaviour
             //UpgradeToLvl2();
             PlantLvl1.SetActive(false);
             PlantLvl2.SetActive(true);
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.plantGrow, this.transform.position);
         }
         if (PlantAbsorption >= .2f)
         {
@@ -65,6 +66,7 @@ public class PlantEvolve : MonoBehaviour
             PlantLvl2.SetActive(false);
             PlantLvl3.SetActive(true);
             ReadytoHarvestPlant = true;
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.plantGrow, this.transform.position);
         }
         if (PlantAbsorption >= 1)
         {
@@ -81,6 +83,7 @@ public class PlantEvolve : MonoBehaviour
         PlantLvl2.SetActive(false);
         PlantLvl3.SetActive(false);
         PlantAbsorption = 0f;
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.plantGrow, this.transform.position);
 
         supply.hasHarvested = false;
         ReadytoHarvestPlant = false;

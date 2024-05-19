@@ -14,6 +14,11 @@ public class TransitionOnTimer : MonoBehaviour
         {
             LoadScene(SceneName);
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            LoadScene(SceneName);
+        }
     }
 
     public void LoadScene(string sceneName)

@@ -77,13 +77,19 @@ public class AudioManager : MonoBehaviour
 
         if (sceneName == "MainMenu")
         {
+            StopAmbience();
+            StopMusic();
             InitializeMusic(FMODEvents.instance.mainMenuMusic);
         }else if (sceneName == "GameScene")
         {
+            StopAmbience();
+            StopMusic();
             InitializeAmbiance(FMODEvents.instance.spaceAmbience);
             InitializeMusic(FMODEvents.instance.domeBGM);
         }else if (sceneName == "Credits")
         {
+            StopAmbience();
+            StopMusic();
             InitializeMusic(FMODEvents.instance.fullTheme);
         }
 

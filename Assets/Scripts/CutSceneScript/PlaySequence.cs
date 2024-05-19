@@ -19,6 +19,7 @@ public class PlaySequence : MonoBehaviour
         CanPlaySequence = true;
         Cutscene StartComic = NextComic.GetComponent<Cutscene>();
         StartComic.CloseComic();
+        AudioManager.instance.InitializeAmbiance(FMODEvents.instance.spaceAmbience);
     }
 
     void Update()

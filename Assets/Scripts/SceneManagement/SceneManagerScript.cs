@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Playables;
 
 public class SceneManagerScript : MonoBehaviour
 {
@@ -14,7 +15,9 @@ public class SceneManagerScript : MonoBehaviour
     public Slider progressBar;
     public TextMeshProUGUI progressCount;
 
-    public string TransitionScene = "Transition";
+    public float delayTime;
+    public PlayableDirector director;
+
     private Scene scene;
 
     private void Awake()
@@ -64,9 +67,16 @@ public class SceneManagerScript : MonoBehaviour
 
     public void PlayGameMainMenu()
     {
-        StartCoroutine(LoadSceneAsync(TransitionScene));
+        StartCoroutine(LoadTransitionFromMainMenu(delayTime));
     }
 
+    IEnumerator LoadTransitionFromMainMenu(float _delayTime)
+    {
+        director.Play();
+        yield return new WaitForSeconds(_delayTime);
+        int sceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(sceneToLoad);
+    }
 
     public void QuitGameMainMenu()
     {

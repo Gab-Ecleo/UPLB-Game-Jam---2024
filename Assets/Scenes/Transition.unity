@@ -4706,6 +4706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 3
+  SceneName: Transition
 --- !u!1 &1129547344
 GameObject:
   m_ObjectHideFlags: 0

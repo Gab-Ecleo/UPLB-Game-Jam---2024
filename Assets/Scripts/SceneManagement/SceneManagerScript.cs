@@ -26,12 +26,18 @@ public class SceneManagerScript : MonoBehaviour
     {
         StartCoroutine(LoadSceneAsync(sceneName));
 
-       if (sceneName == "Credits")
-       {
+        if (sceneName == "MainMenu")
+        {
+            AudioManager.instance.StopMusic();
+            AudioManager.instance.StopAmbience();
+            AudioManager.instance.InitializeMusic(FMODEvents.instance.mainMenuMusic);
+        }
+        else if (sceneName == "Credits")
+        {
             AudioManager.instance.StopMusic();
             AudioManager.instance.StopAmbience();
             AudioManager.instance.InitializeMusic(FMODEvents.instance.fullTheme);
-       }
+        }
 
     }
 

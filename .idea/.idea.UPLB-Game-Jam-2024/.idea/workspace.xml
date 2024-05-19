@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e1a13954-4b88-439a-a765-2fd9b0d1b1c6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UPLB-Game-Jam-2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UPLB-Game-Jam-2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_PlayerDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_PlayerDetection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CrankPlant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CrankPlant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlantEvolve.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlantEvolve.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

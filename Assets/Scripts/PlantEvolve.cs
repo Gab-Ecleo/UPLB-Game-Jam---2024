@@ -35,11 +35,7 @@ public class PlantEvolve : MonoBehaviour
             //Absorb sunlight by .15 every 1.7 seconds
             StartCoroutine(PlantGrowth());
         }
-<<<<<<< HEAD
-        if (_crankplant.PlantAscendValue.y <= PlantHeightRequirement)
-=======
         if (_crankplant.PlantPos.y <= 1.8f)
->>>>>>> main
         {
             isRaised = false;
         }

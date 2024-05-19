@@ -78,7 +78,7 @@ public class PlaySequence : MonoBehaviour
         }
         
         //For Comic Endings
-        if (NextComic.CompareTag("End_of_Finale_Comic"))
+        if (NextComic.CompareTag("EndFinaleComic"))
         {
             Debug.Log("End Of Game Finale Comic Sequence");
             //Invoke("LoadMenuSceneTimer", 2f);
@@ -89,7 +89,7 @@ public class PlaySequence : MonoBehaviour
 
     void LoadSceneTimer()
     {
-        SceneManager.LoadScene("Day0");
+        SceneManager.LoadScene("Transition");
     }
 
     void LoadMenuSceneTimer()
@@ -98,6 +98,6 @@ public class PlaySequence : MonoBehaviour
     }
     void LoadCredits()
     {
-        SceneManager.LoadScene("Credits Scene");
+        SceneManager.LoadScene("Credits");
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - Sunlight
   - EndOfComic
   - StartofComic
+  - EndFinaleComic
   layers:
   - Default
   - TransparentFX

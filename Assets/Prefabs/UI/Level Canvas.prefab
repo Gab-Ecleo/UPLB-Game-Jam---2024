@@ -3324,6 +3324,10 @@ PrefabInstance:
       value: event:/SFX/ButtonClick
       objectReference: {fileID: 0}
     - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
+      propertyPath: <dirtExpedition>k__BackingField.Path
+      value: event:/SFX/Expedition
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
       propertyPath: <doorOpen>k__BackingField.Guid.Data1
       value: -92236785
       objectReference: {fileID: 0}
@@ -3402,6 +3406,22 @@ PrefabInstance:
     - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
       propertyPath: <buttonPress>k__BackingField.Guid.Data4
       value: -2036589989
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
+      propertyPath: <dirtExpedition>k__BackingField.Guid.Data1
+      value: 2125266221
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
+      propertyPath: <dirtExpedition>k__BackingField.Guid.Data2
+      value: 1164341019
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
+      propertyPath: <dirtExpedition>k__BackingField.Guid.Data3
+      value: 726829465
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
+      propertyPath: <dirtExpedition>k__BackingField.Guid.Data4
+      value: -1031828165
       objectReference: {fileID: 0}
     - target: {fileID: 8380233017088361332, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
       propertyPath: m_LocalPosition.x

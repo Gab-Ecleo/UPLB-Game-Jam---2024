@@ -15,16 +15,19 @@ public class CrankPlant : MonoBehaviour, IInteractable
     [SerializeField] private float Timedecay = 3f; //default is 3f (don't touch unless you want to speed the decay by lowering values)
     [SerializeField] private float LoweringCooldown = 2.5f; //default is 2.5f
     
+
     [SerializeField] private bool hasCranked;
     [SerializeField] private bool isLoweringDown;
 
+    private HpPlantScript _plantHp;
     public bool collided;
-
+    
     [Header("Must Assign")] 
     [SerializeField] private GameObject _plantPlatform;
 
     private PlantEvolve evolve;
     private FoodSupply foodSupply;
+    
     void Start()
     {
         //Set Booleans
@@ -37,6 +40,7 @@ public class CrankPlant : MonoBehaviour, IInteractable
         //Set Components
         evolve = GetComponent<PlantEvolve>();
         foodSupply = GetComponent<FoodSupply>();
+        _plantHp = GetComponent<HpPlantScript>();
     }
     
     void Update()
@@ -76,9 +80,9 @@ public class CrankPlant : MonoBehaviour, IInteractable
 
     IEnumerator TriggerCrankPlant()
     {
-        Debug.Log("Pressed");
         PlantPos.y += .4f;
         _plantPlatform.transform.position = PlantPos;
+
         hasCranked = true;
         Timedecay = 0f;
 
@@ -97,6 +101,7 @@ public class CrankPlant : MonoBehaviour, IInteractable
         Debug.Log("Lowering Down");
         PlantPos.y -= .20f;
         _plantPlatform.transform.position = PlantPos;
+
         isLoweringDown = true;
 
         if (_plantPlatform.transform.position.y <= 0 && PlantPos.y <= 0)
@@ -111,6 +116,7 @@ public class CrankPlant : MonoBehaviour, IInteractable
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player" && evolve.ReadytoHarvestPlant && Input.GetKeyDown(KeyCode.E))
+
         {
             Debug.Log("PRESSED");
             foodSupply.hasHarvested = true;
@@ -124,5 +130,10 @@ public class CrankPlant : MonoBehaviour, IInteractable
             Debug.Log("Sunlight Detected");
             evolve.isRaised = true;
         }
+    }
+    
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        collided = false;
     }
 }

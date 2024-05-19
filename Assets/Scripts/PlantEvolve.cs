@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlantEvolve : MonoBehaviour
 {
-    [SerializeField] private GameObject PlantLvl1;
-    [SerializeField] private GameObject PlantLvl2;
-    [SerializeField] private GameObject PlantLvl3;
+    public GameObject PlantLvl1;
+    public GameObject PlantLvl2;
+    public GameObject PlantLvl3;
     public float PlantAbsorption; //variable for the plant absorption (used for progression starting from 0 then slowly to 1f)
+    public float PlantHeightRequirement; //A speciic value for the plant to trigger isRaised value (1.8f is default)
     public bool isRaised; //Check if its cranked
     public bool ReadytoHarvestPlant;
     public bool hasCalledPlantReset;
@@ -86,25 +87,6 @@ public class PlantEvolve : MonoBehaviour
 
         Debug.Log("PlantReset");
 
-        //yield return new WaitForSeconds(.1f);
         hasCalledPlantReset = false;
     }
-
-    /* void UpgradeToLvl2()
-   {
-       bool hasCalledLvl2 = true;
-       PlantLvl1.SetActive(false);
-       PlantLvl2.SetActive(true);
-       //yield return new WaitForSeconds(.1f);
-       hasCalledLvl2 = false;
-   }
-
-   void UpgradeToLvl3()
-   {
-       bool hasCalledLvl3 = true;
-       PlantLvl2.SetActive(false);
-       PlantLvl3.SetActive(true);
-       //yield return new WaitForSeconds(.1f);
-       hasCalledLvl3 = false;
-   }*/
 }

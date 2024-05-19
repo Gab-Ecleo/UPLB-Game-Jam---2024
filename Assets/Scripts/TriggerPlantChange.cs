@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class TriggerPlantChange : MonoBehaviour
 {
-    [SerializeField] private GameObject PlantMachine;
+    //Ignore this script, this is just testing 
+
+    /*[SerializeField] private GameObject PlantMachine;
     PlantEvolve evolve;
     FoodSupply foodsupply;
     // Start is called before the first frame update
@@ -25,5 +27,5 @@ public class TriggerPlantChange : MonoBehaviour
             PlayerOxygen oxygen = collision.GetComponent<PlayerOxygen>();
             oxygen.RefillOxygen();
         }
-    }
+    }*/
 }

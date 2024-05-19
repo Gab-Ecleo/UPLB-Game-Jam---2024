@@ -83,6 +83,11 @@ public class SceneManagerScript : MonoBehaviour
         SceneManager.LoadScene(sceneToLoad);
     }
 
+    public void CreditSceneMainMenu(int sceneToLoad)
+    {
+        SceneManager.LoadScene(sceneToLoad);
+    }
+
     public void QuitGameMainMenu()
     {
         Application.Quit();

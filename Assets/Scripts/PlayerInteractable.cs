@@ -44,6 +44,8 @@ public class PlayerInteractable : MonoBehaviour
         Vector2 detectionCenter = (Vector2)transform.position + offset * playerDirection;
         Collider2D hit = Physics2D.OverlapCircle(detectionCenter, radius, interactLayer);
 
+        if (hit == null) return;
+        
         if (hit.gameObject.TryGetComponent(out IInteractable interactObj))
             interactObj.Interact();
     }

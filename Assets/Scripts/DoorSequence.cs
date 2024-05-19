@@ -15,25 +15,25 @@ public class DoorSequence : MonoBehaviour
         isDoorOpen = false;
     }
 
-    private void Update()
+    private void Awake()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if(!isDoorOpen)
-                OpenDoor();
-            else if (isDoorOpen)
-                CloseDoor();
-        }
-            
+        EventManager.ON_DOOR_OPEN += OpenDoor;
+        EventManager.ON_DOOR_CLOSE += CloseDoor;
     }
 
-    public void OpenDoor()
+    private void OnDestroy()
+    {
+        EventManager.ON_DOOR_OPEN -= OpenDoor;
+        EventManager.ON_DOOR_CLOSE -= CloseDoor;
+    }
+
+    private void OpenDoor()
     {
         StartCoroutine("OpenDoorSeq");
         isDoorOpen = true;
     }
 
-    public void CloseDoor()
+    private void CloseDoor()
     {
         StartCoroutine("CloseDoorSeq");
         isDoorOpen = false;

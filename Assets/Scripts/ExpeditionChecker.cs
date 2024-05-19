@@ -37,8 +37,8 @@ public class ExpeditionChecker : ScriptableObject
     {
         var status = new ExpeditionStatus();
         var requirement = expeditionRequirements[currentIndex];
-        bool enoughFood = currentFood < requirement.food;
-        bool enoughOxygen = currentOxygen < requirement.oxygen;
+        bool enoughFood = currentFood > requirement.food;
+        bool enoughOxygen = currentOxygen > requirement.oxygen;
 
         status.status = enoughFood && enoughOxygen;
 

@@ -5064,6 +5064,7 @@ MonoBehaviour:
   playerData: {fileID: 11400000, guid: 2a379848db616e547b61f8f4a72c8b79, type: 2}
   expeditionChecker: {fileID: 11400000, guid: 333acd047a236234e994ef7dc87c20a1, type: 2}
   CanFixRadio: 0
+  playerCanMove: 0
 --- !u!4 &863269431
 Transform:
   m_ObjectHideFlags: 0
@@ -5548,8 +5549,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.36815, y: 2.6527, z: 0}
-    m_Extent: {x: 6.99965, y: 2.5004, z: 0}
+    m_Center: {x: -1.3689499, y: 2.652, z: 0}
+    m_Extent: {x: 7.00025, y: 2.5008001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8822,6 +8823,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4688745850975768922, guid: d4b5f4b3fb8869146a09ae9b99cebc08, type: 3}
+      propertyPath: isWeatherNeutral
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5181810190362097446, guid: d4b5f4b3fb8869146a09ae9b99cebc08, type: 3}
       propertyPath: m_Name
       value: Player

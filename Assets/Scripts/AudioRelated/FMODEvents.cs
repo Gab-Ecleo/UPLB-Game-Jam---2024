@@ -5,9 +5,11 @@ using FMODUnity;
 
 public class FMODEvents : MonoBehaviour
 {
+    //Ambiance
     [field: Header("Ambience Space")]
     [field: SerializeField] public EventReference spaceAmbience { get; private set; }
 
+    //SFX
     [field: Header("Harvest SFX")]
     [field: SerializeField] public EventReference plantHarvest { get; private set; }
 
@@ -23,11 +25,18 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Fixing SFX")]
     [field: SerializeField] public EventReference fixingRadio { get; private set; }
 
+    //Music
     [field: Header("Dome Music")]
     [field: SerializeField] public EventReference domeBGM { get; private set; }
 
     [field: Header("MainMenu Music")]
     [field: SerializeField] public EventReference mainMenuMusic { get; private set; }
+
+    [field: Header("Lose Music")]
+    [field: SerializeField] public EventReference loseMusic { get; private set; }
+
+    [field: Header("Full Theme")]
+    [field: SerializeField] public EventReference fullTheme { get; private set; }
 
     public static FMODEvents instance { get; private set; }
 

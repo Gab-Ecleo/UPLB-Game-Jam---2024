@@ -100,6 +100,20 @@ MonoBehaviour:
       Data3: 697766565
       Data4: -81645515
     Path: event:/Music/MainMenuMusic
+  <loseMusic>k__BackingField:
+    Guid:
+      Data1: -1115676050
+      Data2: 1273806978
+      Data3: 1634558852
+      Data4: 1347712625
+    Path: event:/Music/Lose
+  <fullTheme>k__BackingField:
+    Guid:
+      Data1: 1459536309
+      Data2: 1134609753
+      Data3: -19108729
+      Data4: 182780347
+    Path: event:/Music/FullTheme
 --- !u!1 &6706368077385613361
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,8 +17,8 @@ public class VolumeSlider : MonoBehaviour
         {
             MasterVolumeController();
             MusicVolumeController();
-            SFXVolumeController();
             AmbianceVolumeController();
+            SFXVolumeController();
         }
     }
 
@@ -36,13 +36,6 @@ public class VolumeSlider : MonoBehaviour
         PlayerPrefs.SetFloat("BGM_Vol", BGMVol);
     }
 
-    public void SFXVolumeController()
-    {
-        float SFXVol = SFXSlider.value;
-        AudioManager.instance.SFXVolume(SFXVol);
-        PlayerPrefs.SetFloat("SFX_Vol", SFXVol);
-    }
-
     public void AmbianceVolumeController()
     {
         float ambiVol = ambianceSlider.value;
@@ -50,17 +43,24 @@ public class VolumeSlider : MonoBehaviour
         PlayerPrefs.SetFloat("Ambi_Vol", ambiVol);
     }
 
+    public void SFXVolumeController()
+    {
+        float SFXVol = SFXSlider.value;
+        AudioManager.instance.SFXVolume(SFXVol);
+        PlayerPrefs.SetFloat("SFX_Vol", SFXVol);
+    }
+
     public void loadVolume()
     {
         masterSlider.value = PlayerPrefs.GetFloat("Master_Vol");
         musicSlider.value = PlayerPrefs.GetFloat("BGM_Vol");
-        SFXSlider.value = PlayerPrefs.GetFloat("SFX_Vol");
         ambianceSlider.value = PlayerPrefs.GetFloat("Ambi_Vol");
+        SFXSlider.value = PlayerPrefs.GetFloat("SFX_Vol");
 
         MasterVolumeController();
         MusicVolumeController();
-        SFXVolumeController();
         AmbianceVolumeController();
+        SFXVolumeController();
 
     }
 

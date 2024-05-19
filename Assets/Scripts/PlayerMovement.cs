@@ -93,6 +93,7 @@ public class PlayerMovement : MonoBehaviour
             if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
             {
                 playerFootsteps.start();
+                Debug.Log("Footsteps");
             }
         }
         else

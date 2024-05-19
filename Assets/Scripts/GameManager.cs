@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ExpeditionChecker expeditionChecker;
 
     public bool CanFixRadio;
+    public bool playerCanMove;
 
     private void Awake()
     {
@@ -23,12 +24,29 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         CanFixRadio = false;
+        playerCanMove = true;
+    }
+
+    private void Update()
+    {
+        if (PlayerLost())
+            GameOver();
+    }
+
+    public void GameOver()
+    {
+        Debug.Log("Game Over");
     }
 
     public bool CanExped()
     {
         Debug.Log(expeditionChecker.GetStatus(playerData.FoodSupply, playerData.Oxygen).message);
         return expeditionChecker.GetStatus(playerData.FoodSupply, playerData.Oxygen).status;
+    }
+
+    public bool PlayerLost()
+    {
+        return playerData.Oxygen <= 0;
     }
     
     #region Data Methods

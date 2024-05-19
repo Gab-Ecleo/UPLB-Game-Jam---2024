@@ -87,25 +87,6 @@ public class PlantEvolve : MonoBehaviour
 
         Debug.Log("PlantReset");
 
-        //yield return new WaitForSeconds(.1f);
         hasCalledPlantReset = false;
     }
-
-    /* void UpgradeToLvl2()
-   {
-       bool hasCalledLvl2 = true;
-       PlantLvl1.SetActive(false);
-       PlantLvl2.SetActive(true);
-       //yield return new WaitForSeconds(.1f);
-       hasCalledLvl2 = false;
-   }
-
-   void UpgradeToLvl3()
-   {
-       bool hasCalledLvl3 = true;
-       PlantLvl2.SetActive(false);
-       PlantLvl3.SetActive(true);
-       //yield return new WaitForSeconds(.1f);
-       hasCalledLvl3 = false;
-   }*/
 }

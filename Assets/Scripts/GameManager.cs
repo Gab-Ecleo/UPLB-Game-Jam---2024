@@ -9,11 +9,13 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
     public static GameManager Instance => _instance;
 
+    [SerializeField] private PlayerData defaultData;
     [SerializeField] private PlayerData playerData;
     [SerializeField] private ExpeditionChecker expeditionChecker;
 
     public bool CanFixRadio;
     public bool playerCanMove;
+    public bool inCutscene;
 
     private void Awake()
     {
@@ -24,7 +26,10 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         CanFixRadio = false;
+        inCutscene = false;
         playerCanMove = true;
+
+        SET_DEFAULT_PLAYER_DATA();
     }
 
     private void Update()
@@ -50,6 +55,12 @@ public class GameManager : MonoBehaviour
     }
     
     #region Data Methods
+
+    public void SET_DEFAULT_PLAYER_DATA()
+    {
+        playerData.Oxygen = defaultData.Oxygen;
+        playerData.FoodSupply = defaultData.FoodSupply;
+    }
     
     public PlayerData FetchPlayerData() 
     { 

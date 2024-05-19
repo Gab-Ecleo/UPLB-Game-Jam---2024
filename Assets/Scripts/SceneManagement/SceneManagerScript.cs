@@ -15,9 +15,6 @@ public class SceneManagerScript : MonoBehaviour
     public Slider progressBar;
     public TextMeshProUGUI progressCount;
 
-    public float delayTime;
-    public PlayableDirector director;
-
     private Scene scene;
 
     private void Awake()
@@ -29,18 +26,7 @@ public class SceneManagerScript : MonoBehaviour
     {
         StartCoroutine(LoadSceneAsync(sceneName));
 
-        if (sceneName == "SampleScene" || sceneName == "MainMenu")
-        {
-            AudioManager.instance.StopMusic();
-            AudioManager.instance.StopAmbience();
-            AudioManager.instance.InitializeMusic(FMODEvents.instance.mainMenuMusic);
-        }else if (sceneName == "GameScene")
-        {
-            AudioManager.instance.StopMusic();
-            AudioManager.instance.InitializeAmbiance(FMODEvents.instance.spaceAmbience);
-            AudioManager.instance.InitializeMusic(FMODEvents.instance.domeBGM);
-        }
-        else if (sceneName == "Credits")
+       if (sceneName == "Credits")
         {
             AudioManager.instance.StopMusic();
             AudioManager.instance.StopAmbience();
@@ -76,22 +62,14 @@ public class SceneManagerScript : MonoBehaviour
 
     }
 
-    public void PlayGameMainMenu()
-    {
-        StartCoroutine(LoadTransitionFromMainMenu(delayTime));
-    }
-
-    IEnumerator LoadTransitionFromMainMenu(float _delayTime)
-    {
-        director.Play();
-        yield return new WaitForSeconds(_delayTime);
-        int sceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
-        SceneManager.LoadScene(sceneToLoad);
-    }
 
     public void CreditSceneMainMenu(int sceneToLoad)
     {
         SceneManager.LoadScene(sceneToLoad);
+
+        AudioManager.instance.StopMusic();
+        AudioManager.instance.StopAmbience();
+        AudioManager.instance.InitializeMusic(FMODEvents.instance.fullTheme);
     }
 
     public void QuitGameMainMenu()

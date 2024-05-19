@@ -28,13 +28,13 @@ public class PlantEvolve : MonoBehaviour
 
     private void Update()
     {
-        if (isRaised && !hasCalled && _crankplant.PlantAscendValue.y >= 1.81f)
+        if (isRaised && !hasCalled && _crankplant.PlantPos.y >= 1.81f)
         {
             Debug.Log("Now Raised");
             //Absorb sunlight by .15 every 1.7 seconds
             StartCoroutine(PlantGrowth());
         }
-        if (_crankplant.PlantAscendValue.y <= 1.8f)
+        if (_crankplant.PlantPos.y <= 1.8f)
         {
             isRaised = false;
         }
@@ -44,13 +44,6 @@ public class PlantEvolve : MonoBehaviour
             ReadytoHarvestPlant = true;
 
         }
-
-        /*if (supply.hasHarvested)
-        {
-            ResetPlantLvl();
-        }*/
-        //Next if player pressed something to harvest plant
-        //Sprite goes back to lvl 1 and plant absorption back to 0
     }
 
     IEnumerator PlantGrowth()

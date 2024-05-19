@@ -70,6 +70,7 @@ public class CrankPlant : MonoBehaviour, IInteractable
     {
         StartCoroutine(TriggerCrankPlant());
         hasCranked = true;
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.plantRaise, this.transform.position);
     }
 
     private void DisplayProgress(float num)

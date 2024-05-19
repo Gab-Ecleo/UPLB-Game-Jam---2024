@@ -67,7 +67,7 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
     public void OnBeginDrag(PointerEventData eventData)
     {
         startPosition = eventData.position - pivotPoint;
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.crankingLever, this.transform.position);
+        //AudioManager.instance.PlayOneShot(FMODEvents.instance.crankingLever, this.transform.position);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -140,14 +140,16 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
 
     private void CheckRevolution()
     {
-        int currentRev = 0;
+        int revCount = 0;
         float revs = Mathf.Abs(totalRotation) / 360;
 
-        if ((int)revs <= currentRev)
+        Debug.Log("RevCounter: " + revCount);
+        Debug.Log("Revs: " + revs);
+
+        if (revs >= revCount)
         {
+            revCount += 1;
             AudioManager.instance.PlayOneShot(FMODEvents.instance.crankingLever, this.transform.position);
-            currentRev = (int)revs;
-            Debug.Log("Revolution Check: " + (int)revs);
         }
 
     }

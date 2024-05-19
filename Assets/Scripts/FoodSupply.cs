@@ -6,12 +6,9 @@ public class FoodSupply : MonoBehaviour
 {
     public int FoodSupplyCount; //Food count point it gives to the player's food supply count and transfer it to player 'playerFoodSupplyCount'
     public bool hasHarvested;
-    PlayerOxygen PlayerFoodSupply;
     private void Start()
     {
         hasHarvested = false;
-        PlayerFoodSupply = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerOxygen>();
-
     }
 
     public void AddFoodSupplyCount()

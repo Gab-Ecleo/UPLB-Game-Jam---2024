@@ -11,10 +11,11 @@ public class RadioRepair : MonoBehaviour, IInteractable
     [SerializeField] private Sprite fixedRadio;
 
     private SpriteRenderer _spriteRenderer;
-    private int RadioState = 1; //1 - 2 Broken, 3 - 4 Semi-Fixed, 5-6 Fixed;
+    [SerializeField] private int RadioState = 1; //1 - 2 Broken, 3 - 4 Semi-Fixed, 5-6 Fixed;
 
     private void Start()
     {
+        RadioState = 0;
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -35,10 +36,11 @@ public class RadioRepair : MonoBehaviour, IInteractable
 
         SwapSprite();
         //Display dialog
-        if (RadioState == 6)
+        if (RadioState > 5)
         {
             Debug.Log("Game End");
             //Play Final Cutscene
+            SceneManagerScript.Instance.LoadScene("EndingCutScene");
         }
         else if (RadioState < 6)
         {

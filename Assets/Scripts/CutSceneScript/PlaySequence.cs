@@ -75,6 +75,7 @@ public class PlaySequence : MonoBehaviour
         {
             Debug.Log("End Of Comic Sequence");
             Invoke("LoadSceneTimer", 2f);
+
         }
         
         //For Comic Endings
@@ -89,7 +90,8 @@ public class PlaySequence : MonoBehaviour
 
     void LoadSceneTimer()
     {
-        SceneManager.LoadScene("Transition");
+        //SceneManager.LoadScene("GameScene");
+        SceneManagerScript.Instance.LoadScene("GameScene");
     }
 
     void LoadMenuSceneTimer()

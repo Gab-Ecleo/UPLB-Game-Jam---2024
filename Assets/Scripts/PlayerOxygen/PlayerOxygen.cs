@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,21 +8,38 @@ public class PlayerOxygen : MonoBehaviour
     private static PlayerOxygen instance;
     public static PlayerOxygen Instance => instance;
 
+    private PlayerData _playerData;
+    
     public float OxygenDecayTime = 3.2f; //This value is for area if it doesnt have clouds yet
-    public float oxygenCount = 1f;
+    [SerializeField] private float decayInterval = 2.8f;
+    [SerializeField] private float oxygenGainVal = .25f;
+    [SerializeField] private float decayValue = 0.020f;
+    
     public bool isWeatherNeutral;
     public bool isWeatherCloudy;
     bool isWeatherCalled;
 
     private void Awake()
     {
-        
+        if (instance == null) instance = this;
+        else if (instance !=this) Destroy(gameObject);
+
+        EventManager.ON_END_CUTSCENE += RunOxygenDecay;
     }
+
+    private void OnDestroy()
+    {
+        EventManager.ON_END_CUTSCENE -= RunOxygenDecay;
+    }
+
     private void Start()
     {
+        _playerData = GameManager.Instance.FetchPlayerData();
+        _playerData.Oxygen = Mathf.Clamp(_playerData.Oxygen, 0, 1);
+        
         if (isWeatherNeutral)
         {
-            InvokeRepeating("DrainOxygenNeutral", 1.3f, 2.6f);
+            StartCoroutine("DrainOxygen_Neutral");
         }
     }
     private void Update()
@@ -40,14 +58,14 @@ public class PlayerOxygen : MonoBehaviour
 
     void DrainOxygenNeutral()
     {
-        Debug.Log($"Decaying, Oxygenleft {oxygenCount}");
-        oxygenCount -= .020f;
+        Debug.Log($"Decaying, Oxygen left {_playerData.Oxygen}");
+        _playerData.Oxygen -= decayValue;
     }
     IEnumerator DrainOxygen_Cloudy()
     {
         isWeatherCalled = true;
-        Debug.Log($"Decaying, Oxygenleft {oxygenCount}");
-        oxygenCount -= .045f;
+        Debug.Log($"Decaying, Oxygen left {_playerData.Oxygen}");
+        _playerData.Oxygen -= .045f;
         yield return new WaitForSeconds(1f);
         isWeatherCalled = false;
     }
@@ -55,16 +73,26 @@ public class PlayerOxygen : MonoBehaviour
     IEnumerator DrainOxygen_Neutral()
     {
         isWeatherCalled = true;
-        Debug.Log($"Decaying, Oxygenleft {oxygenCount}");
-        oxygenCount -= .020f;
-        yield return new WaitForSeconds(1.3f);
+        var oxygen = Mathf.Clamp(_playerData.Oxygen, 0, 1);
+        
+        Debug.Log($"Decaying, Oxygenleft {oxygen}");
+        _playerData.Oxygen -= decayValue;
+        yield return new WaitForSeconds(decayInterval);
         isWeatherCalled = false;
+
+        if (!GameManager.Instance.inCutscene)
+            StartCoroutine(DrainOxygen_Neutral());
+    }
+
+    private void RunOxygenDecay()
+    {
+        StartCoroutine(DrainOxygen_Neutral());
     }
 
     public void RefillOxygen()
     {
         Debug.Log($"Gained Oxygen Count by {.25f}");
-        oxygenCount += .25f;
-        if (oxygenCount >= 1f) oxygenCount = 1f;
+        _playerData.Oxygen += oxygenGainVal;
+        Mathf.Clamp(_playerData.Oxygen, 0 , 1);
     }
 }

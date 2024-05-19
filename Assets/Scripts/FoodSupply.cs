@@ -15,13 +15,13 @@ public class FoodSupply : MonoBehaviour
     {
         Debug.Log("Has Collected");
         FoodSupplyCount++;
-        AddToPlayerSupply(FoodSupplyCount);
+        AddToPlayerSupply();
     }
 
     //Add to Player's FoodSupply (Temporary Script Function)
-    public void AddToPlayerSupply(int _playerSupply)
+    public void AddToPlayerSupply()
     {
-        _playerSupply += FoodSupplyCount;
+        GameManager.Instance.FetchPlayerData().FoodSupply += FoodSupplyCount;
         FoodSupplyCount = 0;
     }
 }

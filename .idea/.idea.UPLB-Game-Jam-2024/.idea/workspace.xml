@@ -7,11 +7,14 @@
     <list default="true" id="e1a13954-4b88-439a-a765-2fd9b0d1b1c6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UPLB-Game-Jam-2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UPLB-Game-Jam-2024/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorSequence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ExpeditionChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ExpeditionChecker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CrankPlant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CrankPlant.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FoodSupply.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FoodSupply.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerOxygen/DrainPlayerOxygen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerOxygen/DrainPlayerOxygen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerOxygen/PlayerOxygen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerOxygen/PlayerOxygen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WheelSpinner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WheelSpinner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

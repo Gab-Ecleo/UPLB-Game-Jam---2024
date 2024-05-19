@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -5,7 +6,15 @@ using UnityEngine;
 
 public class DrainPlayerOxygen : MonoBehaviour
 {
+    private PlayerData _playerdata;
+    
     public bool hasCalled;
+
+    private void Start()
+    {
+        _playerdata = GameManager.Instance.FetchPlayerData();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         hasCalled = true;
@@ -34,7 +43,7 @@ public class DrainPlayerOxygen : MonoBehaviour
     void drainoxygen()
     {
         PlayerOxygen oxygen = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerOxygen>();
-        Debug.Log($"Decaying, Oxygenleft {oxygen.oxygenCount}");
-        oxygen.oxygenCount -= .02f;
+        Debug.Log($"Decaying, Oxygenleft {_playerdata.Oxygen}");
+        _playerdata.Oxygen -= .02f;
     }
 }

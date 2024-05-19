@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
 
     public float horizontalInput;
     private bool isFacingRight = true;
-    public bool canMove = true;
 
     //Audio
     private EventInstance playerFootsteps;
@@ -44,14 +43,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (canMove)
-        {
-            MovePlayer();
-            FlipSprite();
-            UpdateSound();
-        }
+        if (!GameManager.Instance.playerCanMove) return;
+            
+        MovePlayer();
+        FlipSprite();
+        UpdateSound();
 
-        // animation
+            // animation
         if(horizontalInput > 0|| horizontalInput < 0)
         {
             animator.SetBool("IsWalking", true);

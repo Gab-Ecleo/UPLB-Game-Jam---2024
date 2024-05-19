@@ -62,6 +62,8 @@ public class WheelSpinner : MonoBehaviour, IDragHandler, IBeginDragHandler
     {
         StartWheelUI(onCrankComplete);
         crankProgress = onCrankProgress;
+        
+        GameManager.Instance.playerCanMove = false;
     }
 
     public void OnBeginDrag(PointerEventData eventData)

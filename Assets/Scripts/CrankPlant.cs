@@ -45,12 +45,12 @@ public class CrankPlant : MonoBehaviour, IInteractable
     
     void Update()
     {
-        if (_plantPlatform.transform.position.y >= 0 && PlantPos.y >= 0)
+        if (_plantPlatform.transform.position.y >= -1.95 && PlantPos.y >= -1.95)
         {
             Timedecay += Time.deltaTime; //Time decay counts by default
         }
 
-        if (_plantPlatform.transform.position.y == 0 && PlantPos.y == 0)
+        if (_plantPlatform.transform.position.y == -1.95f && PlantPos.y == -1.95f)
         {
             Timedecay = 0f;
         }
@@ -68,15 +68,34 @@ public class CrankPlant : MonoBehaviour, IInteractable
 
     private void TriggerPlantMachine()
     {
+        GameManager.Instance.playerCanMove = true;
         StartCoroutine(TriggerCrankPlant());
+        RefillOxygen();
+        
         hasCranked = true;
         AudioManager.instance.PlayOneShot(FMODEvents.instance.plantRaise, this.transform.position);
+        
+        if(evolve.ReadytoHarvestPlant)
+            HarvestPlant();
     }
 
     private void DisplayProgress(float num)
     {
         Math.Round(num, 1);
         Debug.Log($"Crank Progress: {num}%");
+    }
+
+    private void RefillOxygen()
+    {
+        PlayerOxygen.Instance.RefillOxygen();
+    }
+
+    private void HarvestPlant()
+    {
+        Debug.Log("Refilling Resources");
+        foodSupply.hasHarvested = true;
+        if (foodSupply.hasHarvested) foodSupply.AddFoodSupplyCount();
+        evolve.ResetPlantLvl();
     }
 
     IEnumerator TriggerCrankPlant()
@@ -105,9 +124,9 @@ public class CrankPlant : MonoBehaviour, IInteractable
 
         isLoweringDown = true;
 
-        if (_plantPlatform.transform.position.y <= 0 && PlantPos.y <= 0)
+        if (PlantPos.y <= -1.95f)
         {
-            PlantPos.y = 0;
+            PlantPos.y = -1.95f;
             _plantPlatform.transform.position = PlantPos;
         }
         yield return new WaitForSeconds(LoweringCooldown);
@@ -117,7 +136,6 @@ public class CrankPlant : MonoBehaviour, IInteractable
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player" && evolve.ReadytoHarvestPlant && Input.GetKeyDown(KeyCode.E))
-
         {
             Debug.Log("PRESSED");
             foodSupply.hasHarvested = true;

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Playables;
 
 public class SceneManagerScript : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class SceneManagerScript : MonoBehaviour
     public GameObject LoadingScreen;
     public Slider progressBar;
     public TextMeshProUGUI progressCount;
+
+    public float delayTime;
+    public PlayableDirector director;
 
     private Scene scene;
 
@@ -25,7 +29,7 @@ public class SceneManagerScript : MonoBehaviour
     {
         StartCoroutine(LoadSceneAsync(sceneName));
 
-        if (sceneName == "SampleScene" || sceneName == "MainMenuScene")
+        if (sceneName == "SampleScene" || sceneName == "MainMenu")
         {
             AudioManager.instance.StopMusic();
             AudioManager.instance.StopAmbience();
@@ -61,6 +65,18 @@ public class SceneManagerScript : MonoBehaviour
 
     }
 
+    public void PlayGameMainMenu()
+    {
+        StartCoroutine(LoadTransitionFromMainMenu(delayTime));
+    }
+
+    IEnumerator LoadTransitionFromMainMenu(float _delayTime)
+    {
+        director.Play();
+        yield return new WaitForSeconds(_delayTime);
+        int sceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(sceneToLoad);
+    }
 
     public void QuitGameMainMenu()
     {

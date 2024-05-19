@@ -27,11 +27,11 @@ public class SceneManagerScript : MonoBehaviour
         StartCoroutine(LoadSceneAsync(sceneName));
 
        if (sceneName == "Credits")
-        {
+       {
             AudioManager.instance.StopMusic();
             AudioManager.instance.StopAmbience();
             AudioManager.instance.InitializeMusic(FMODEvents.instance.fullTheme);
-        }
+       }
 
     }
 

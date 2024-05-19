@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7927648556338017791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DoorClose
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/DoorClose
+  Guid:
+    Data1: 1778017180
+    Data2: 1271435998
+    Data3: -492338504
+    Data4: -893744407
+  Banks:
+  - {fileID: -295610370284748152}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-7341855255262013486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,11 +120,38 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638517274560073857
+  lastModified: 638517336680289703
   FileSizes:
   - Name: Desktop
-    Value: 1522
+    Value: 1700
   Exists: 1
+--- !u!114 &-2879634480192818843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ButtonClick
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ButtonClick
+  Guid:
+    Data1: 664719557
+    Data2: 1268499438
+    Data3: -845869399
+    Data4: -2036589989
+  Banks:
+  - {fileID: -295610370284748152}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2652696475125950933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +180,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 42000
+--- !u!114 &-1350393193443469481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/PlantRaise
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/PlantRaise
+  Guid:
+    Data1: -1193403726
+    Data2: 1311355448
+    Data3: 258334098
+    Data4: 504850031
+  Banks:
+  - {fileID: -295610370284748152}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1287086910002254218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +222,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638517274560063827
+  lastModified: 638517336680269741
   FileSizes:
   - Name: Desktop
     Value: 1486
@@ -161,10 +242,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638517274560381958
+  lastModified: 638517336681431445
   FileSizes:
   - Name: Desktop
-    Value: 176160
+    Value: 259712
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -196,12 +277,16 @@ MonoBehaviour:
   - {fileID: 2018817597357637403}
   - {fileID: 5334886367230806049}
   - {fileID: -5256342756491993529}
+  - {fileID: 8224114560520838881}
+  - {fileID: -7927648556338017791}
+  - {fileID: -1350393193443469481}
+  - {fileID: -2879634480192818843}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1287086910002254218}
   StringsBanks:
   - {fileID: -4934232723860326747}
-  cacheTime: 638517274560381958
+  cacheTime: 638517336681431445
   cacheVersion: 131618
 --- !u!114 &382211214686472404
 MonoBehaviour:
@@ -459,3 +544,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 127988
+--- !u!114 &8224114560520838881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DoorOpen
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/DoorOpen
+  Guid:
+    Data1: -92236785
+    Data2: 1159992004
+    Data3: 500643484
+    Data4: 90176993
+  Banks:
+  - {fileID: -295610370284748152}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0

@@ -44,6 +44,7 @@ public class DoorSequence : MonoBehaviour
         Debug.Log("Opening Door");
         for (int i = 0; i < doors.Length; i++)
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.doorOpen, this.transform.position);
             doors[i].SetTrigger("Open");
             yield return new WaitForSeconds(.2f);
         }
@@ -54,6 +55,7 @@ public class DoorSequence : MonoBehaviour
         Debug.Log("Closing Door");
         for (int i = doors.Length - 1; i >= 0; i--)
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.doorClose, this.transform.position);
             doors[i].SetTrigger("Close");
             yield return new WaitForSeconds(.2f);
         }

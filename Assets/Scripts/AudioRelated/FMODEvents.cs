@@ -40,6 +40,9 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Door Open SFX")]
     [field: SerializeField] public EventReference doorOpen { get; private set; }
 
+    [field: Header("Expedition SFX")]
+    [field: SerializeField] public EventReference dirtExpedition { get; private set; }
+
 
 
     //Music

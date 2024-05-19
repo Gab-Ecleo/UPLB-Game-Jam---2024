@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class AudioManager : MonoBehaviour
     private EventInstance musicEventInstance;
 
     private EventInstance ambienceEventInstance;
+
+    private Scene scene;
+    public string sceneName;
 
     [Header("Master Volume")]
     [Range(0, 1)]
@@ -37,15 +41,22 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
+        //if (instance == null)
+        //{
+        //    instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
+
+        if (instance != null)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+            Debug.LogError("More than one AUDIO MANAGER found in the scene!");
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+
+        instance = this;
 
         eventInstances = new List<EventInstance>();
 
@@ -58,8 +69,24 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        InitializeMusic(FMODEvents.instance.mainMenuMusic);
-        InitializeAmbiance(FMODEvents.instance.spaceAmbience);
+        //InitializeMusic(FMODEvents.instance.mainMenuMusic);
+        //InitializeAmbiance(FMODEvents.instance.spaceAmbience);
+
+        scene = SceneManager.GetActiveScene();
+        sceneName = scene.name;
+
+        if (sceneName == "MainMenu")
+        {
+            InitializeMusic(FMODEvents.instance.mainMenuMusic);
+        }else if (sceneName == "GameScene")
+        {
+            InitializeAmbiance(FMODEvents.instance.spaceAmbience);
+            InitializeMusic(FMODEvents.instance.domeBGM);
+        }else if (sceneName == "Credits")
+        {
+            InitializeMusic(FMODEvents.instance.fullTheme);
+        }
+
     }
 
 

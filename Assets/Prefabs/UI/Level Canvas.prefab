@@ -181,8 +181,6 @@ MonoBehaviour:
   LoadingScreen: {fileID: 6164114675486223089}
   progressBar: {fileID: 363727593845940791}
   progressCount: {fileID: 5079448844313822288}
-  delayTime: 0
-  director: {fileID: 0}
 --- !u!1 &868129120042951771
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,10 +645,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2374237780600140809}
-  - {fileID: 8243984092792088307}
-  - {fileID: 7751389138297582241}
   - {fileID: 4495068985135302889}
   - {fileID: 5214002760538451944}
+  - {fileID: 8243984092792088307}
+  - {fileID: 7751389138297582241}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2380,7 +2378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.83137256}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

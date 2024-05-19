@@ -1361,21 +1361,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5220575286126695848, guid: c5a987ab55eed324fa530c03ae1268e6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6449104987800022333, guid: c5a987ab55eed324fa530c03ae1268e6, type: 3}
       propertyPath: m_Name
       value: Plant
-      objectReference: {fileID: 0}
-    - target: {fileID: 8827963028045553140, guid: c5a987ab55eed324fa530c03ae1268e6, type: 3}
-      propertyPath: m_SortingLayer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8827963028045553140, guid: c5a987ab55eed324fa530c03ae1268e6, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1028109697
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5545,8 +5533,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.3687, y: 2.65175, z: 0}
-    m_Extent: {x: 7.0008, y: 2.5004501, z: 0}
+    m_Center: {x: -1.3682501, y: 2.6527, z: 0}
+    m_Extent: {x: 6.9993505, y: 2.5, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

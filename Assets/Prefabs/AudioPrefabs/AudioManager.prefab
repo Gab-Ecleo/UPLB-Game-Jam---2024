@@ -128,6 +128,13 @@ MonoBehaviour:
       Data3: 726829465
       Data4: -1031828165
     Path: event:/SFX/Expedition
+  <morseCode>k__BackingField:
+    Guid:
+      Data1: -205749836
+      Data2: 1203936014
+      Data3: 1379443858
+      Data4: -963206909
+    Path: event:/SFX/MorseCode
   <domeBGM>k__BackingField:
     Guid:
       Data1: 310903027
@@ -202,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca8dba0d46f6e04087c424a21b5717b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 
   masterVolume: 1
   volumeBGM: 1
   volumeSFX: 1

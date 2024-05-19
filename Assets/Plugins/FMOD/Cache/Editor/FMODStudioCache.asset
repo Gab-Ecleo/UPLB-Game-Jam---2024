@@ -147,10 +147,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638517422052510897
+  lastModified: 638517567462277017
   FileSizes:
   - Name: Desktop
-    Value: 1740
+    Value: 1780
   Exists: 1
 --- !u!114 &-3042536524576216440
 MonoBehaviour:
@@ -276,7 +276,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638517416382085218
+  lastModified: 638517555844157709
   FileSizes:
   - Name: Desktop
     Value: 1486
@@ -323,10 +323,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638517422052550824
+  lastModified: 638517567462317021
   FileSizes:
   - Name: Desktop
-    Value: 285024
+    Value: 388192
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -363,12 +363,13 @@ MonoBehaviour:
   - {fileID: -666371848449253628}
   - {fileID: 6873445785746071286}
   - {fileID: -5582863936010875750}
+  - {fileID: 7343465976122201578}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1287086910002254218}
   StringsBanks:
   - {fileID: -4934232723860326747}
-  cacheTime: 638517422052550824
+  cacheTime: 638517567462317021
   cacheVersion: 131618
 --- !u!114 &382211214686472404
 MonoBehaviour:
@@ -701,6 +702,33 @@ MonoBehaviour:
   Banks:
   - {fileID: -295610370284748152}
   IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7343465976122201578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/MorseCode
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/MorseCode
+  Guid:
+    Data1: -205749836
+    Data2: 1203936014
+    Data3: 1379443858
+    Data4: -963206909
+  Banks:
+  - {fileID: -295610370284748152}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []

@@ -43,6 +43,8 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Expedition SFX")]
     [field: SerializeField] public EventReference dirtExpedition { get; private set; }
 
+    [field: Header("Morse SFX")]
+    [field: SerializeField] public EventReference morseCode { get; private set; }
 
 
     //Music

@@ -14,6 +14,15 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Footsteps SFX")]
     [field: SerializeField] public EventReference playerFootsteps { get; private set; }
 
+    [field: Header("Cranking SFX")]
+    [field: SerializeField] public EventReference crankingLever { get; private set; }
+
+    [field: Header("Radio SFX")]
+    [field: SerializeField] public EventReference radioStatic { get; private set; }
+
+    [field: Header("Fixing SFX")]
+    [field: SerializeField] public EventReference fixingRadio { get; private set; }
+
     [field: Header("Dome Music")]
     [field: SerializeField] public EventReference domeBGM { get; private set; }
 

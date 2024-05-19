@@ -120,11 +120,38 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638517336680289703
+  lastModified: 638517416738151059
   FileSizes:
   - Name: Desktop
-    Value: 1700
+    Value: 1740
   Exists: 1
+--- !u!114 &-3042536524576216440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Expedition
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Expedition
+  Guid:
+    Data1: 2125266221
+    Data2: 1164341019
+    Data3: 726829465
+    Data4: -1031828165
+  Banks:
+  - {fileID: -295610370284748152}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2879634480192818843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,7 +249,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638517336680269741
+  lastModified: 638517416382085218
   FileSizes:
   - Name: Desktop
     Value: 1486
@@ -242,10 +269,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Project-UPGJ/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638517336681431445
+  lastModified: 638517416738181070
   FileSizes:
   - Name: Desktop
-    Value: 259712
+    Value: 285024
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -281,12 +308,13 @@ MonoBehaviour:
   - {fileID: -7927648556338017791}
   - {fileID: -1350393193443469481}
   - {fileID: -2879634480192818843}
+  - {fileID: -3042536524576216440}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1287086910002254218}
   StringsBanks:
   - {fileID: -4934232723860326747}
-  cacheTime: 638517336681431445
+  cacheTime: 638517416738181070
   cacheVersion: 131618
 --- !u!114 &382211214686472404
 MonoBehaviour:

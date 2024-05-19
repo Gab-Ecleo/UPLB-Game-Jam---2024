@@ -26,6 +26,9 @@ public class TransitionOnTimer : MonoBehaviour
         if (sceneName == "Credits")
         {
             SceneManager.LoadScene(0);
+
+            AudioManager.instance.StopMusic();
+            AudioManager.instance.InitializeMusic(FMODEvents.instance.mainMenuMusic);
         }
         else if (sceneName == "Transition")
         {

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b95ec15a4c919245ae364d5df115099, type: 3}
-  m_Name: Player Data
+  m_Name: Default Player Data
   m_EditorClassIdentifier: 
-  Oxygen: -0.02
+  Oxygen: 1
   FoodSupply: 5

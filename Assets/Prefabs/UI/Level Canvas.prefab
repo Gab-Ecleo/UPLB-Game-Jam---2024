@@ -646,7 +646,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3128007118721973236}
   - {fileID: 2374237780600140809}
   - {fileID: 8243984092792088307}
   - {fileID: 7751389138297582241}
@@ -1212,7 +1211,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1937044893097516923}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: VolumeSlider, Assembly-CSharp
         m_MethodName: SFXVolumeController
         m_Mode: 1
@@ -1314,7 +1313,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1937044893097516923}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: VolumeSlider, Assembly-CSharp
         m_MethodName: MusicVolumeController
         m_Mode: 1
@@ -1566,7 +1565,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1937044893097516923}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: VolumeSlider, Assembly-CSharp
         m_MethodName: MasterVolumeController
         m_Mode: 1
@@ -2908,7 +2907,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1937044893097516923}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: VolumeSlider, Assembly-CSharp
         m_MethodName: AmbianceVolumeController
         m_Mode: 1
@@ -3274,213 +3273,4 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1178062745889979336, guid: 8ccfe5b87fea7d749b85d5e38f529cdb, type: 3}
   m_PrefabInstance: {fileID: 6341783172042740768}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &6855736893336565888
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 8659958437357570803}
-    m_Modifications:
-    - target: {fileID: 5027631751066970107, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: SFXSlider
-      value: 
-      objectReference: {fileID: 8311287525240151331}
-    - target: {fileID: 5027631751066970107, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: musicSlider
-      value: 
-      objectReference: {fileID: 1937813701133081954}
-    - target: {fileID: 5027631751066970107, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: masterSlider
-      value: 
-      objectReference: {fileID: 179430979281954146}
-    - target: {fileID: 5027631751066970107, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: ambianceSlider
-      value: 
-      objectReference: {fileID: 7759328518900420486}
-    - target: {fileID: 6706368077385613361, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: m_Name
-      value: AudioManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <doorOpen>k__BackingField.Path
-      value: event:/SFX/DoorOpen
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <doorClose>k__BackingField.Path
-      value: event:/SFX/DoorClose
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <plantGrow>k__BackingField.Path
-      value: event:/SFX/PlantGrowing
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <plantRaise>k__BackingField.Path
-      value: event:/SFX/PlantRaise
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <buttonPress>k__BackingField.Path
-      value: event:/SFX/ButtonClick
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <dirtExpedition>k__BackingField.Path
-      value: event:/SFX/Expedition
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <doorOpen>k__BackingField.Guid.Data1
-      value: -92236785
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <doorOpen>k__BackingField.Guid.Data2
-      value: 1159992004
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <doorOpen>k__BackingField.Guid.Data3
-      value: 500643484
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <doorOpen>k__BackingField.Guid.Data4
-      value: 90176993
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <doorClose>k__BackingField.Guid.Data1
-      value: 1778017180
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <doorClose>k__BackingField.Guid.Data2
-      value: 1271435998
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <doorClose>k__BackingField.Guid.Data3
-      value: -492338504
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <doorClose>k__BackingField.Guid.Data4
-      value: -893744407
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <plantGrow>k__BackingField.Guid.Data1
-      value: 2112948467
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <plantGrow>k__BackingField.Guid.Data2
-      value: 1204330470
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <plantGrow>k__BackingField.Guid.Data3
-      value: -591743611
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <plantGrow>k__BackingField.Guid.Data4
-      value: -1017276027
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <plantRaise>k__BackingField.Guid.Data1
-      value: -1193403726
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <plantRaise>k__BackingField.Guid.Data2
-      value: 1311355448
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <plantRaise>k__BackingField.Guid.Data3
-      value: 258334098
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <plantRaise>k__BackingField.Guid.Data4
-      value: 504850031
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <buttonPress>k__BackingField.Guid.Data1
-      value: 664719557
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <buttonPress>k__BackingField.Guid.Data2
-      value: 1268499438
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <buttonPress>k__BackingField.Guid.Data3
-      value: -845869399
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <buttonPress>k__BackingField.Guid.Data4
-      value: -2036589989
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <dirtExpedition>k__BackingField.Guid.Data1
-      value: 2125266221
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <dirtExpedition>k__BackingField.Guid.Data2
-      value: 1164341019
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <dirtExpedition>k__BackingField.Guid.Data3
-      value: 726829465
-      objectReference: {fileID: 0}
-    - target: {fileID: 8082506636452730559, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: <dirtExpedition>k__BackingField.Guid.Data4
-      value: -1031828165
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380233017088361332, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -960
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380233017088361332, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -540
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380233017088361332, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380233017088361332, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380233017088361332, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380233017088361332, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380233017088361332, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380233017088361332, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380233017088361332, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380233017088361332, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
---- !u!114 &1937044893097516923 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5027631751066970107, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-  m_PrefabInstance: {fileID: 6855736893336565888}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 562b950558f16ae4b89c4e3736802d93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &3128007118721973236 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8380233017088361332, guid: 68ea3188bb1028d4ea345762806aca5d, type: 3}
-  m_PrefabInstance: {fileID: 6855736893336565888}
   m_PrefabAsset: {fileID: 0}

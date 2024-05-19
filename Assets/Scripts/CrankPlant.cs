@@ -1,47 +1,52 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class CrankPlant : MonoBehaviour
+public class CrankPlant : MonoBehaviour, IInteractable
 {
-    public bool playerCollision;
-    public Vector3 PlantAscendValue;
+    [Header("Transform Values")]
+    public Vector3 PlantPos;
+    
+    [Header("Default Settings")]
+    [SerializeField] private float CrankLimit = 2.80f;
+    [SerializeField] private float Timedecay = 3f; //default is 3f (don't touch unless you want to speed the decay by lowering values)
+    [SerializeField] private float LoweringCooldown = 2.5f; //default is 2.5f
+    
     [SerializeField] private bool hasCranked;
     [SerializeField] private bool isLoweringDown;
-    [SerializeField] private float CrankLimit = 2.80f;
-    [SerializeField] private float Timedecay; //default is 3f (don't touch unless you want to speed the decay by lowering values)
-    [SerializeField] private float LoweringCooldown; //default is 2.5f
 
     public bool collided;
 
-    PlantEvolve evolve;
-    FoodSupply foodSupply;
-    // Start is called before the first frame update
+    [Header("Must Assign")] 
+    [SerializeField] private GameObject _plantPlatform;
+
+    private PlantEvolve evolve;
+    private FoodSupply foodSupply;
     void Start()
     {
-        PlantAscendValue = gameObject.transform.position;
+        //Set Booleans
         hasCranked = false;
         isLoweringDown = false;
-        playerCollision = false;
+
+        //Set Values
+        PlantPos = _plantPlatform.transform.position;
+        
+        //Set Components
         evolve = GetComponent<PlantEvolve>();
         foodSupply = GetComponent<FoodSupply>();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        //Detects if it collides with player (has set value to 'true') and has not yet cranked
-        if (Input.GetKey(KeyCode.Mouse0) && !hasCranked && playerCollision)
+        if (_plantPlatform.transform.position.y >= 0 && PlantPos.y >= 0)
         {
-            StartCoroutine(TriggerCrankPlant());
-            hasCranked = true;
-        }
-        if (/*transform.position.y >= 0 && */PlantAscendValue.y >= 0)
-        {
-            Timedecay += Time.deltaTime; //Timedecay counts by default
+            Timedecay += Time.deltaTime; //Time decay counts by default
         }
 
-        if (/*transform.position.y == 0 && */PlantAscendValue.y == 0)
+        if (_plantPlatform.transform.position.y == 0 && PlantPos.y == 0)
         {
             Timedecay = 0f;
         }
@@ -52,51 +57,60 @@ public class CrankPlant : MonoBehaviour
         }
     }
 
+    public void Interact()
+    {
+        WheelSpinner.Instance.StartWheelUI(TriggerPlantMachine, DisplayProgress);
+    }
+
+    private void TriggerPlantMachine()
+    {
+        StartCoroutine(TriggerCrankPlant());
+        hasCranked = true;
+    }
+
+    private void DisplayProgress(float num)
+    {
+        Math.Round(num, 1);
+        Debug.Log($"Crank Progress: {num}%");
+    }
+
     IEnumerator TriggerCrankPlant()
     {
         Debug.Log("Pressed");
-        PlantAscendValue.y += .57f;
-        gameObject.transform.position = PlantAscendValue;
+        PlantPos.y += .4f;
+        _plantPlatform.transform.position = PlantPos;
         hasCranked = true;
         Timedecay = 0f;
 
-        if (transform.position.y >= CrankLimit) //Plant should not exceed to its origin height
+        if (_plantPlatform.transform.position.y >= CrankLimit) //Plant should not exceed to its origin height
         {
-            PlantAscendValue.y = CrankLimit;
-            transform.position = PlantAscendValue;
+            PlantPos.y = CrankLimit;
+            _plantPlatform.transform.position = PlantPos;
             evolve.isRaised = true;
         }
-        yield return new WaitForSeconds(.4f);
+        yield return new WaitForSeconds(.8f);
         hasCranked = false;
     }
 
     IEnumerator LowerPlantPlatform()
     {
         Debug.Log("Lowering Down");
-        PlantAscendValue.y -= .20f;
-        gameObject.transform.position = PlantAscendValue;
+        PlantPos.y -= .20f;
+        _plantPlatform.transform.position = PlantPos;
         isLoweringDown = true;
 
-        if (transform.position.y <= 0 && PlantAscendValue.y <= 0)
+        if (_plantPlatform.transform.position.y <= 0 && PlantPos.y <= 0)
         {
-            PlantAscendValue.y = 0;
-            transform.position = PlantAscendValue;
+            PlantPos.y = 0;
+            _plantPlatform.transform.position = PlantPos;
         }
         yield return new WaitForSeconds(LoweringCooldown);
         isLoweringDown = false;
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        collided = true;
-        Debug.Log("Something hit me!");
-
-        if (collision.tag == "Player")
-        {
-            Debug.Log("Player Detected");
-            playerCollision = true;
-        }
-        if (collision.tag == "Player" && evolve.ReadytoHarvestPlant && Input.GetKeyDown(KeyCode.E) && collided)
+        if (collision.tag == "Player" && evolve.ReadytoHarvestPlant && Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("PRESSED");
             foodSupply.hasHarvested = true;
@@ -110,11 +124,5 @@ public class CrankPlant : MonoBehaviour
             Debug.Log("Sunlight Detected");
             evolve.isRaised = true;
         }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        playerCollision = false;
-        collided = false;
     }
 }

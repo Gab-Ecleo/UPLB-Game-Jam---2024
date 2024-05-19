@@ -86,6 +86,48 @@ MonoBehaviour:
       Data3: 1636769455
       Data4: -1040507700
     Path: event:/SFX/Fixing
+  <plantGrow>k__BackingField:
+    Guid:
+      Data1: 2112948467
+      Data2: 1204330470
+      Data3: -591743611
+      Data4: -1017276027
+    Path: event:/SFX/PlantGrowing
+  <plantRaise>k__BackingField:
+    Guid:
+      Data1: -1193403726
+      Data2: 1311355448
+      Data3: 258334098
+      Data4: 504850031
+    Path: event:/SFX/PlantRaise
+  <buttonPress>k__BackingField:
+    Guid:
+      Data1: 664719557
+      Data2: 1268499438
+      Data3: -845869399
+      Data4: -2036589989
+    Path: event:/SFX/ButtonClick
+  <doorClose>k__BackingField:
+    Guid:
+      Data1: 1778017180
+      Data2: 1271435998
+      Data3: -492338504
+      Data4: -893744407
+    Path: event:/SFX/DoorClose
+  <doorOpen>k__BackingField:
+    Guid:
+      Data1: -92236785
+      Data2: 1159992004
+      Data3: 500643484
+      Data4: 90176993
+    Path: event:/SFX/DoorOpen
+  <dirtExpedition>k__BackingField:
+    Guid:
+      Data1: 2125266221
+      Data2: 1164341019
+      Data3: 726829465
+      Data4: -1031828165
+    Path: event:/SFX/Expedition
   <domeBGM>k__BackingField:
     Guid:
       Data1: 310903027

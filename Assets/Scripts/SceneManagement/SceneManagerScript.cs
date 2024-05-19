@@ -40,6 +40,12 @@ public class SceneManagerScript : MonoBehaviour
             AudioManager.instance.InitializeAmbiance(FMODEvents.instance.spaceAmbience);
             AudioManager.instance.InitializeMusic(FMODEvents.instance.domeBGM);
         }
+        else if (sceneName == "Credits")
+        {
+            AudioManager.instance.StopMusic();
+            AudioManager.instance.StopAmbience();
+            AudioManager.instance.InitializeMusic(FMODEvents.instance.fullTheme);
+        }
 
     }
 

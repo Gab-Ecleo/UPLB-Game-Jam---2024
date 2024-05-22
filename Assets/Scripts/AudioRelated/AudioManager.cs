@@ -162,6 +162,11 @@ public class AudioManager : MonoBehaviour
         musicEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 
+    public void StopSFXMorse()
+    {
+        
+    }
+
     private void CleanUp()
     {
         foreach (EventInstance eventInstance in eventInstances)

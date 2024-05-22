@@ -48,6 +48,13 @@ public class SceneManagerScript : MonoBehaviour
         StartCoroutine(LoadSceneAsync(sceneName));
     }
 
+    public string GetCurrentSceneName()
+    {
+        scene = SceneManager.GetActiveScene();
+        string sceneName = scene.name;
+        return sceneName;
+    }
+
     IEnumerator LoadSceneAsync(string sceneName)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);

@@ -51,6 +51,13 @@ MonoBehaviour:
       Data3: -1166557292
       Data4: 873356697
     Path: event:/Ambience/SpaceAmbience
+  <morseCode>k__BackingField:
+    Guid:
+      Data1: 1620134680
+      Data2: 1186806545
+      Data3: 673384328
+      Data4: 640617751
+    Path: event:/Ambience/MorseCode
   <plantHarvest>k__BackingField:
     Guid:
       Data1: 320263618
@@ -128,13 +135,6 @@ MonoBehaviour:
       Data3: 726829465
       Data4: -1031828165
     Path: event:/SFX/Expedition
-  <morseCode>k__BackingField:
-    Guid:
-      Data1: -205749836
-      Data2: 1203936014
-      Data3: 1379443858
-      Data4: -963206909
-    Path: event:/SFX/MorseCode
   <domeBGM>k__BackingField:
     Guid:
       Data1: 310903027

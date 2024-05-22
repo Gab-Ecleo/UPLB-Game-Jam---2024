@@ -51,6 +51,13 @@ MonoBehaviour:
       Data3: -1166557292
       Data4: 873356697
     Path: event:/Ambience/SpaceAmbience
+  <morseCode>k__BackingField:
+    Guid:
+      Data1: 1620134680
+      Data2: 1186806545
+      Data3: 673384328
+      Data4: 640617751
+    Path: event:/Ambience/MorseCode
   <plantHarvest>k__BackingField:
     Guid:
       Data1: 320263618
@@ -202,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca8dba0d46f6e04087c424a21b5717b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 
   masterVolume: 1
   volumeBGM: 1
   volumeSFX: 1

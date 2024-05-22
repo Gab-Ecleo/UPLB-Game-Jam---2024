@@ -26,7 +26,13 @@ public class SceneManagerScript : MonoBehaviour
     {
         StartCoroutine(LoadSceneAsync(sceneName));
 
-       if (sceneName == "Credits")
+        if (sceneName == "MainMenu")
+        {
+            AudioManager.instance.StopMusic();
+            AudioManager.instance.StopAmbience();
+            AudioManager.instance.InitializeMusic(FMODEvents.instance.mainMenuMusic);
+        }
+        else if (sceneName == "Credits")
         {
             AudioManager.instance.StopMusic();
             AudioManager.instance.StopAmbience();
@@ -40,6 +46,13 @@ public class SceneManagerScript : MonoBehaviour
         scene = SceneManager.GetActiveScene();
         string sceneName = scene.name;
         StartCoroutine(LoadSceneAsync(sceneName));
+    }
+
+    public string GetCurrentSceneName()
+    {
+        scene = SceneManager.GetActiveScene();
+        string sceneName = scene.name;
+        return sceneName;
     }
 
     IEnumerator LoadSceneAsync(string sceneName)

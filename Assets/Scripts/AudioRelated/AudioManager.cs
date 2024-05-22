@@ -72,18 +72,26 @@ public class AudioManager : MonoBehaviour
         //InitializeMusic(FMODEvents.instance.mainMenuMusic);
         //InitializeAmbiance(FMODEvents.instance.spaceAmbience);
 
+        Time.timeScale = 1;
+
         scene = SceneManager.GetActiveScene();
         sceneName = scene.name;
 
         if (sceneName == "MainMenu")
         {
+            StopAmbience();
+            StopMusic();
             InitializeMusic(FMODEvents.instance.mainMenuMusic);
         }else if (sceneName == "GameScene")
         {
+            StopAmbience();
+            StopMusic();
             InitializeAmbiance(FMODEvents.instance.spaceAmbience);
             InitializeMusic(FMODEvents.instance.domeBGM);
         }else if (sceneName == "Credits")
         {
+            StopAmbience();
+            StopMusic();
             InitializeMusic(FMODEvents.instance.fullTheme);
         }
 
@@ -154,6 +162,11 @@ public class AudioManager : MonoBehaviour
     public void StopMusic()
     {
         musicEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
+
+    public void StopSFXMorse()
+    {
+        
     }
 
     private void CleanUp()

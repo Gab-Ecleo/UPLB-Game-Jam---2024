@@ -627,7 +627,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GameScene
+          m_StringArgument: IntroCutScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &439001254
@@ -5473,7 +5473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a61b51fcbb31509449fb6fa5d8069a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontal_speed: 0.2
+  horizontal_speed: 0.05
   vertical_speed: 0
 --- !u!33 &4942855735437759141
 MeshFilter:
@@ -5567,7 +5567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a61b51fcbb31509449fb6fa5d8069a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontal_speed: -0.2
+  horizontal_speed: -0.04
   vertical_speed: 0
 --- !u!33 &5817316292646369581
 MeshFilter:
@@ -5657,7 +5657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a61b51fcbb31509449fb6fa5d8069a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontal_speed: 0.2
+  horizontal_speed: 0.03
   vertical_speed: 0
 --- !u!1 &7911446565043065943
 GameObject:

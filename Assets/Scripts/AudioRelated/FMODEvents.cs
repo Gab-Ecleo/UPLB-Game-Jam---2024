@@ -9,6 +9,9 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Ambience Space")]
     [field: SerializeField] public EventReference spaceAmbience { get; private set; }
 
+    [field: Header("Morse Code")]
+    [field: SerializeField] public EventReference morseCode { get; private set; }
+
     //SFX
     [field: Header("Harvest SFX")]
     [field: SerializeField] public EventReference plantHarvest { get; private set; }
@@ -42,7 +45,6 @@ public class FMODEvents : MonoBehaviour
 
     [field: Header("Expedition SFX")]
     [field: SerializeField] public EventReference dirtExpedition { get; private set; }
-
 
 
     //Music

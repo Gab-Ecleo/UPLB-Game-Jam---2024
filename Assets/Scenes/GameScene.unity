@@ -960,6 +960,7 @@ MonoBehaviour:
   brokenRadio: {fileID: 21300000, guid: 7d55c34808a721c4680e610aeae5efce, type: 3}
   patchedRadio: {fileID: 21300000, guid: 154460409d2383c41a117cfc234b7c4b, type: 3}
   fixedRadio: {fileID: 21300000, guid: 5f520bf8244f0654cb38d8be53ce0271, type: 3}
+  RadioState: 1
 --- !u!61 &48523019
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1745,7 +1746,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.2
+  m_Intensity: 0.1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 0000000079778d295989bf0af9f9cae1b5450148471bcf6481b5473d492a25a2c77346a2
@@ -5697,7 +5698,7 @@ MonoBehaviour:
   m_Intensity: 6.5
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 0000000079778d295989bf0af9f9cae1b5450148471bcf6481b5473d492a25a2c77346a2
+  m_ApplyToSortingLayers: 00000000f9f9cae1b5450148471bcf6481b5473d492a25a2c77346a25989bf0a
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -5835,8 +5836,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.3687501, y: 2.6521, z: 0}
-    m_Extent: {x: 7.00065, y: 2.5008001, z: 0}
+    m_Center: {x: -1.3683999, y: 2.6514, z: 0}
+    m_Extent: {x: 6.9993, y: 2.5, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

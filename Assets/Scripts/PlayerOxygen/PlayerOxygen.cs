@@ -93,6 +93,6 @@ public class PlayerOxygen : MonoBehaviour
     {
         Debug.Log($"Gained Oxygen Count by {.25f}");
         _playerData.Oxygen += oxygenGainVal;
-        Mathf.Clamp(_playerData.Oxygen, 0 , 1);
+        _playerData.Oxygen = Mathf.Clamp(_playerData.Oxygen, 0, 1);
     }
 }

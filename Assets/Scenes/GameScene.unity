@@ -960,6 +960,8 @@ MonoBehaviour:
   brokenRadio: {fileID: 21300000, guid: 7d55c34808a721c4680e610aeae5efce, type: 3}
   patchedRadio: {fileID: 21300000, guid: 154460409d2383c41a117cfc234b7c4b, type: 3}
   fixedRadio: {fileID: 21300000, guid: 5f520bf8244f0654cb38d8be53ce0271, type: 3}
+  RadioState: 1
+  text: {fileID: 1838092189}
 --- !u!61 &48523019
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5835,8 +5837,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.3687501, y: 2.6521, z: 0}
-    m_Extent: {x: 7.00065, y: 2.5008001, z: 0}
+    m_Center: {x: -1.3684499, y: 2.6527, z: 0}
+    m_Extent: {x: 7.00025, y: 2.5, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9889,6 +9891,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 84411113717366731, guid: c5a987ab55eed324fa530c03ae1268e6, type: 3}
   m_PrefabInstance: {fileID: 1130843824}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1838092189 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5192247187007176611, guid: c690be2bb25b07649ae549295d507aea, type: 3}
+  m_PrefabInstance: {fileID: 1409364534}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1918488237
 GameObject:
   m_ObjectHideFlags: 0

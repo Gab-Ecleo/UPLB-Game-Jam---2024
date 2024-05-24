@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class RadioRepair : MonoBehaviour, IInteractable
 {
@@ -12,6 +13,8 @@ public class RadioRepair : MonoBehaviour, IInteractable
 
     private SpriteRenderer _spriteRenderer;
     [SerializeField] private int RadioState = 1; //1 - 2 Broken, 3 - 4 Semi-Fixed, 5-6 Fixed;
+
+    [SerializeField] private TMP_Text text;
 
     private void Start()
     {
@@ -49,6 +52,7 @@ public class RadioRepair : MonoBehaviour, IInteractable
         }
 
         RadioState++;
+        text.text = RadioState.ToString("D2");
         GameManager.Instance.CanFixRadio = false;
     }
 

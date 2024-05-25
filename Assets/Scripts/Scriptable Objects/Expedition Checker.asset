@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Expedition Checker
   m_EditorClassIdentifier: 
   expeditionRequirements:
-  - oxygen: 0.5
+  - oxygen: 0.7
     food: 3
+  offSet: 0.2
   notEnoughResourcesMessage: Not enough food and oxygen
   notEnoughFoodMessage: Not enough food
   notEnoughOxygenMessage: Not enough oxygen

@@ -19,6 +19,7 @@ public class PlaySequence : MonoBehaviour
         CanPlaySequence = true;
         Cutscene StartComic = NextComic.GetComponent<Cutscene>();
         StartComic.CloseComic();
+        AudioManager.instance.InitializeAmbiance(FMODEvents.instance.spaceAmbience);
     }
 
     void Update()
@@ -40,6 +41,10 @@ public class PlaySequence : MonoBehaviour
         counter++;
         if (counter < BlackBars.Length)
         {
+            if (SceneManagerScript.Instance.GetCurrentSceneName() == "EndingCutScene")
+            {
+                AudioManager.instance.InitializeAmbiance(FMODEvents.instance.morseCode);
+            }
             animate = BlackBars[counter].GetComponent<Cutscene>();
         }
 
@@ -100,6 +105,7 @@ public class PlaySequence : MonoBehaviour
     }
     void LoadCredits()
     {
+        AudioManager.instance.StopAmbience();
         SceneManager.LoadScene("Credits");
     }
 }

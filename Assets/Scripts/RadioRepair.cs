@@ -12,6 +12,7 @@ public class RadioRepair : MonoBehaviour, IInteractable
     [SerializeField] private Sprite fixedRadio;
 
     private SpriteRenderer _spriteRenderer;
+    private string RadioFixProgress;
     [SerializeField] private int RadioState = 1; //1 - 2 Broken, 3 - 4 Semi-Fixed, 5-6 Fixed;
 
     [SerializeField] private TMP_Text text;
@@ -30,14 +31,14 @@ public class RadioRepair : MonoBehaviour, IInteractable
     
     private void RepairRadio()
     {
-        //Replace Radio Spitesheet
         //Display dialog
-        //Itirate Sequence
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.radioStatic, this.transform.position);
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.fixingRadio, this.transform.position);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.radioStatic, transform.position);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.fixingRadio, transform.position);
         Debug.Log("Fixing Radio");
 
+        RadioState++;
         SwapSprite();
+        
         //Display dialog
         if (RadioState > 5)
         {
@@ -50,9 +51,8 @@ public class RadioRepair : MonoBehaviour, IInteractable
             Debug.Log("Playing Radio Dialogue");
             //play dialgoue based on radio state
         }
-
-        RadioState++;
-        text.text = RadioState.ToString("D2");
+        
+        text.text = RadioFixProgress;
         GameManager.Instance.CanFixRadio = false;
     }
 
@@ -61,16 +61,25 @@ public class RadioRepair : MonoBehaviour, IInteractable
         switch (RadioState)
         {
             case 1:
+                RadioFixProgress = "16.67";
+                break;
             case 2:
                 _spriteRenderer.sprite = brokenRadio;
+                RadioFixProgress = "32.27";
                 break;
             case 3:
+                RadioFixProgress = "49.94";
+                break;
             case 4:
                 _spriteRenderer.sprite = patchedRadio;
+                RadioFixProgress = "60.61";
                 break;
             case 5:
+                RadioFixProgress = "83.28";
+                break;
             case 6:
                 _spriteRenderer.sprite = fixedRadio;
+                RadioFixProgress = "100";
                 break;
         }
     } 

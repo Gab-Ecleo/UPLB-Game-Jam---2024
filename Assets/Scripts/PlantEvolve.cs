@@ -32,7 +32,7 @@ public class PlantEvolve : MonoBehaviour
         if (isRaised && !hasCalled && _crankplant.PlantPos.y >= 1.81f)
         {
             Debug.Log("Now Raised");
-            //Absorb sunlight by .15 every 1.7 seconds
+            //Absorb sunlight by .45 every 1.7 seconds
             StartCoroutine(PlantGrowth());
         }
         if (_crankplant.PlantPos.y <= 1.8f)
@@ -50,7 +50,7 @@ public class PlantEvolve : MonoBehaviour
     IEnumerator PlantGrowth()
     {
         hasCalled = true;
-        PlantAbsorption += .015f;
+        PlantAbsorption += .045f;
         Debug.Log($"Absorption at {PlantAbsorption}");
 
         if (PlantAbsorption >= .15f)

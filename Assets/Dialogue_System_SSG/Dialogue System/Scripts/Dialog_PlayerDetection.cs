@@ -8,7 +8,7 @@ public class Dialog_PlayerDetection : MonoBehaviour
 {
     [Header("Must Assign")]
     [SerializeField] private Transform player;
-    [SerializeField] private Dialog_Instance dialog;
+    public Dialog_Instance dialog;
 
     [Header("Default Settings")]
     [SerializeField] private GameObject prompt;

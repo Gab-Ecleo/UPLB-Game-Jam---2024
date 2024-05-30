@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a6f4cf957ad4c4db16938f3ee3d628, type: 3}
+  m_Name: Radio_Repair_3
+  m_EditorClassIdentifier: 
+  dialogDescription: 
+  conversation:
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: Year 18xx Log #52
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "The development of the project has been progressing quite well, however
+      the development team still hasn\u2019t found a solution to mitigate the radioactive
+      gas problem. "
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: During our breaks a few members of the development team started a small
+      project to create a machine to preserve and help the growth of plants. The
+      blueprints of the project are already in the works.
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: 'During the 6th testing phase for the day, one of our members fainted
+      and was sent to the infirmary to check for any symptoms. '
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "Today\u2019s testing phases were all successful. "
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "Once we finish this project we\u2019ll be able to solve our power problems."

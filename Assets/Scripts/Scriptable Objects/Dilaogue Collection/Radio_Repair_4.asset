@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a6f4cf957ad4c4db16938f3ee3d628, type: 3}
+  m_Name: Radio_Repair_4
+  m_EditorClassIdentifier: 
+  dialogDescription: 
+  conversation:
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: Year 18xx Log #074
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: '10 members from our development team called in sick today, and are currently
+      being monitored by the medical team for any symptoms. '
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: We needed to put 4 of our members who showed symptoms of radiation poisoning
+      into cryostasis chambers to slow down the effects of said symptoms.
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "We hope that we\u2019ll be able to cure them in time."
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: 'The remaining 30 members including myself continued the development
+      of the project. '
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: We messed up during the testing phase. The radiation gas leaked outside
+      the laboratory and we are currently evacuating and are setting up perimeters
+      the surrounding areas.
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: We have created a temporary solution to contain the leak.
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: 'During this day as a way to destress few of the members have worked
+      on creating a prototype for the plant machine. '
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: So far we have maintained minimal damage from the radiation leak.

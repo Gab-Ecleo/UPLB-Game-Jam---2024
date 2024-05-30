@@ -6357,8 +6357,10 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.34269977, y: 3.3783002, z: 0}
-    m_Extent: {x: 8.025, y: 1.7746, z: 0}
+    m_Center: {x: -0.3427503, y: 3.37795, z: 0}
+    m_Extent: {x: 8.02485, y: 1.77405, z: 0}
+    m_Center: {x: -0.34275007, y: 3.3776498, z: 0}
+    m_Extent: {x: 8.0252495, y: 1.7749499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6555,6 +6557,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5a987ab55eed324fa530c03ae1268e6, type: 3}
+--- !u!1 &1189501184
 --- !u!1 &1259301118
 GameObject:
   m_ObjectHideFlags: 0
@@ -6563,6 +6566,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+  - component: {fileID: 1189501185}
+  - component: {fileID: 1189501187}
+  - component: {fileID: 1189501186}
+  m_Layer: 5
+  m_Name: Text (TMP)
   - component: {fileID: 1259301119}
   - component: {fileID: 1259301121}
   - component: {fileID: 1259301120}
@@ -6573,18 +6581,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!224 &1189501185
 --- !u!224 &1259301119
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189501184}
   m_GameObject: {fileID: 1259301118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 1794844086}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 721, y: -443}
+  m_SizeDelta: {x: 327.1904, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1189501186
   m_Father: {fileID: 2095428761}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6598,6 +6616,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189501184}
   m_GameObject: {fileID: 1259301118}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -6612,6 +6631,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+  m_text: click to continue...
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: d3ee085e283837449a3bd6f3207dbaaf, type: 2}
+  m_sharedMaterial: {fileID: -5629146146167705667, guid: d3ee085e283837449a3bd6f3207dbaaf, type: 2}
   m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6639,6 +6662,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontSize: 30
   m_fontSizeBase: 30
   m_fontWeight: 400
@@ -6646,6 +6671,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
+  m_HorizontalAlignment: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -6681,12 +6707,14 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1189501187
 --- !u!222 &1259301121
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189501184}
   m_GameObject: {fileID: 1259301118}
   m_CullTransparentMesh: 1
 --- !u!1001 &1284693733
@@ -11013,6 +11041,10 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8659958437357570803, guid: c690be2bb25b07649ae549295d507aea, type: 3}
   m_PrefabInstance: {fileID: 1409364534}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &2130351946 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4790982753185545025, guid: 0cf6fa1141d3051408eb2598d5b01bd5, type: 3}
+  m_PrefabInstance: {fileID: 399211741}
 --- !u!224 &2095428760 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 554133896582631411, guid: c690be2bb25b07649ae549295d507aea, type: 3}

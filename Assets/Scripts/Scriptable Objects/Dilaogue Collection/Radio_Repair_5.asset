@@ -22,4 +22,56 @@ MonoBehaviour:
       sprite: {fileID: 0}
     isSameCharacters: 1
     isLeftTalking: 0
-    dialog: 5
+    dialog: Year 18xx Log # 169
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "The radiation leak\u2019s effects worsened from the 2nd recorded leak
+      and has affected all living organisms outside the laboratory. "
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: 'We have deemed the planet inhabitable by anyone outside the oxygen dome
+      and the government has evacuated most of the population outside the planet
+      and were also put into cryostasis chambers to help them get cured from radiation
+      poisoning if they showed any symptoms. '
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: A few members of the development team and the staff stayed here on earth
+      to fix the radiation problem and as well as take care of the people contained
+      in the cryostasis chambers.
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: 'The prototype plant machine made by our team became useful overtime
+      as our supplies started to drop. '
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: " I hope we\u2019ll be able to fix the problem we created\u2026 "

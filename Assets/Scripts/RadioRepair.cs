@@ -17,6 +17,13 @@ public class RadioRepair : MonoBehaviour, IInteractable
 
     [SerializeField] private TMP_Text radioText;
 
+    [Header("UI Assets")]
+    [SerializeField] private Dialog_PlayerDetection radioDialogue;
+    [SerializeField] private TMP_Text radioProgressText;
+
+    [SerializeField] private Dialog_Instance[] dialogueBank;
+
+
     private void Start()
     {
         RadioState = 0;
@@ -73,10 +80,6 @@ public class RadioRepair : MonoBehaviour, IInteractable
                 radioDialogue.dialog = dialogueBank[3];
                 radioText.text = "2";
                 break;
-            case 3:
-                RadioFixProgress = "49.94";
-                radioText.text = "3";
-                break;
             case 4:
                 _spriteRenderer.sprite = patchedRadio;
                 RadioFixProgress = "60.61";
@@ -86,10 +89,6 @@ public class RadioRepair : MonoBehaviour, IInteractable
                 RadioFixProgress = "83.28";
                 radioDialogue.dialog = dialogueBank[5];
                 radioText.text = "4";
-                break;
-            case 5:
-                RadioFixProgress = "83.28";
-                radioText.text = "5";
                 break;
             case 6:
                 _spriteRenderer.sprite = fixedRadio;

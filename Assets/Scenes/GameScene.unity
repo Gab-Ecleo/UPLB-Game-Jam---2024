@@ -154,7 +154,6 @@ Transform:
   m_Children:
   - {fileID: 1579236842}
   - {fileID: 262563179}
-  - {fileID: 147023539}
   - {fileID: 48523016}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -893,6 +892,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 147023539}
   - {fileID: 964671142}
   m_Father: {fileID: 16688912}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -964,7 +964,7 @@ MonoBehaviour:
   patchedRadio: {fileID: 21300000, guid: 154460409d2383c41a117cfc234b7c4b, type: 3}
   fixedRadio: {fileID: 21300000, guid: 5f520bf8244f0654cb38d8be53ce0271, type: 3}
   RadioState: 1
-  radioText: {fileID: 0}
+  radioText: {fileID: 147023540}
   radioDialogue: {fileID: 48523020}
   radioProgressText: {fileID: 147023540}
   dialogueBank:
@@ -1136,7 +1136,7 @@ GameObject:
   - component: {fileID: 147023541}
   - component: {fileID: 147023540}
   m_Layer: 14
-  m_Name: Text
+  m_Name: Radio Progress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1154,11 +1154,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 16688912}
+  m_Father: {fileID: 48523016}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23.871, y: -3.55}
+  m_AnchoredPosition: {x: 1.071003, y: -0.8299999}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &147023540
@@ -6358,8 +6358,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.3435998, y: 3.3775, z: 0}
-    m_Extent: {x: 8.024799, y: 1.7746, z: 0}
+    m_Center: {x: -0.3432498, y: 3.3783, z: 0}
+    m_Extent: {x: 8.0259495, y: 1.7748001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

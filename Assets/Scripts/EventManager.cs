@@ -8,4 +8,5 @@ public class EventManager : MonoBehaviour
     public static Action ON_DOOR_OPEN;
     public static Action ON_DOOR_CLOSE;
     public static Action ON_END_CUTSCENE;
+    public static Action ON_GAME_OVER;
 }

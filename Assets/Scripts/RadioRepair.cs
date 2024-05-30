@@ -13,14 +13,20 @@ public class RadioRepair : MonoBehaviour, IInteractable
 
     private SpriteRenderer _spriteRenderer;
     private string RadioFixProgress;
-    [SerializeField] private int RadioState = 1; //1 - 2 Broken, 3 - 4 Semi-Fixed, 5-6 Fixed;
+    public int RadioState = 1; //1 - 2 Broken, 3 - 4 Semi-Fixed, 5-6 Fixed;
 
-    [SerializeField] private TMP_Text text;
+    [Header("UI Assets")]
+    [SerializeField] private Dialog_PlayerDetection radioDialogue;
+    [SerializeField] private TMP_Text radioProgressText;
+    
+    [SerializeField] private Dialog_Instance[] dialogueBank;
+    
 
     private void Start()
     {
         RadioState = 0;
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        radioDialogue.dialog = dialogueBank[0];
     }
 
     public void Interact()
@@ -43,16 +49,14 @@ public class RadioRepair : MonoBehaviour, IInteractable
         if (RadioState > 5)
         {
             Debug.Log("Game End");
-            //Play Final Cutscene
             SceneManagerScript.Instance.LoadScene("EndingCutScene");
         }
         else if (RadioState < 6)
         {
             Debug.Log("Playing Radio Dialogue");
-            //play dialgoue based on radio state
         }
         
-        text.text = RadioFixProgress;
+        radioProgressText.text = RadioFixProgress;
         GameManager.Instance.CanFixRadio = false;
     }
 
@@ -62,20 +66,25 @@ public class RadioRepair : MonoBehaviour, IInteractable
         {
             case 1:
                 RadioFixProgress = "16.67";
+                radioDialogue.dialog = dialogueBank[1];
                 break;
             case 2:
                 _spriteRenderer.sprite = brokenRadio;
                 RadioFixProgress = "32.27";
+                radioDialogue.dialog = dialogueBank[2];
                 break;
             case 3:
                 RadioFixProgress = "49.94";
+                radioDialogue.dialog = dialogueBank[3];
                 break;
             case 4:
                 _spriteRenderer.sprite = patchedRadio;
                 RadioFixProgress = "60.61";
+                radioDialogue.dialog = dialogueBank[4];
                 break;
             case 5:
                 RadioFixProgress = "83.28";
+                radioDialogue.dialog = dialogueBank[5];
                 break;
             case 6:
                 _spriteRenderer.sprite = fixedRadio;

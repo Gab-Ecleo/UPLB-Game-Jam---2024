@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b95ec15a4c919245ae364d5df115099, type: 3}
   m_Name: Player Data
   m_EditorClassIdentifier: 
-  Oxygen: 0.41999996
+  Oxygen: 0.94000006
   FoodSupply: 2

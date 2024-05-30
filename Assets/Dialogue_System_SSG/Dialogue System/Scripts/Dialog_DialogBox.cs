@@ -25,14 +25,14 @@ public class Dialog_DialogBox : MonoBehaviour
 
     public void SetLeftCharacterName(string name, bool highlight)
     {
-        nameTextObject1.color = GetHighlight(highlight);
-        nameTextObject1.text = name;
+        // nameTextObject1.color = GetHighlight(highlight);
+        // nameTextObject1.text = name;
     }
 
     public void SetRightCharacterName(string name, bool highlight)
     {
-        nameTextObject2.color = GetHighlight(highlight);
-        nameTextObject2.text = name;
+        // nameTextObject2.color = GetHighlight(highlight);
+        // nameTextObject2.text = name;
     }
 
     public void SetDialogText(string dialog)

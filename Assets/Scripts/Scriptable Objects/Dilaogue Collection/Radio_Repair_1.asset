@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a6f4cf957ad4c4db16938f3ee3d628, type: 3}
+  m_Name: Radio_Repair_1
+  m_EditorClassIdentifier: 
+  dialogDescription: 
+  conversation:
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "Year 18xx Experiment Log #001:\r"
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "It\u2019s the first day.\r"
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "I am recording this in order to archive the greatest discovery of all
+      time.\r"
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "Discovering a way to develop an unlimited source of energy feels surreal.\r"
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "My team is currently studying its source and is preparing to cultivate
+      it.\r"
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "Utilizing this could vastly change how human technology works.\r"
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: "No\u2026"
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: This would change the world.

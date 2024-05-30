@@ -15,12 +15,14 @@ public class RadioRepair : MonoBehaviour, IInteractable
     private string RadioFixProgress;
     public int RadioState = 1; //1 - 2 Broken, 3 - 4 Semi-Fixed, 5-6 Fixed;
 
+    [SerializeField] private TMP_Text radioText;
+
     [Header("UI Assets")]
     [SerializeField] private Dialog_PlayerDetection radioDialogue;
     [SerializeField] private TMP_Text radioProgressText;
-    
+
     [SerializeField] private Dialog_Instance[] dialogueBank;
-    
+
 
     private void Start()
     {
@@ -56,7 +58,6 @@ public class RadioRepair : MonoBehaviour, IInteractable
             Debug.Log("Playing Radio Dialogue");
         }
         
-        radioProgressText.text = RadioFixProgress;
         GameManager.Instance.CanFixRadio = false;
     }
 
@@ -67,6 +68,7 @@ public class RadioRepair : MonoBehaviour, IInteractable
             case 1:
                 RadioFixProgress = "16.67";
                 radioDialogue.dialog = dialogueBank[1];
+                radioText.text = "1";
                 break;
             case 2:
                 _spriteRenderer.sprite = brokenRadio;
@@ -76,6 +78,7 @@ public class RadioRepair : MonoBehaviour, IInteractable
             case 3:
                 RadioFixProgress = "49.94";
                 radioDialogue.dialog = dialogueBank[3];
+                radioText.text = "2";
                 break;
             case 4:
                 _spriteRenderer.sprite = patchedRadio;
@@ -85,10 +88,12 @@ public class RadioRepair : MonoBehaviour, IInteractable
             case 5:
                 RadioFixProgress = "83.28";
                 radioDialogue.dialog = dialogueBank[5];
+                radioText.text = "4";
                 break;
             case 6:
                 _spriteRenderer.sprite = fixedRadio;
                 RadioFixProgress = "100";
+                radioText.text = "6";
                 break;
         }
     } 

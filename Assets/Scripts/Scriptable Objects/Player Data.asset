@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Player Data
   m_EditorClassIdentifier: 
   Oxygen: -0.02
-  FoodSupply: 5
+  FoodSupply: 0

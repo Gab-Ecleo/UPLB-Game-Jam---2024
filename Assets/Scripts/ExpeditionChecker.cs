@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Scriptable Objects/Expedition Checker")]
 public class ExpeditionChecker : ScriptableObject
 {
+    [Header("Requirements")]
     [SerializeField] private ExpeditionRequirement[] expeditionRequirements;
+    [SerializeField] private float offSet = 0.2f;
+    
+    [Header("Messages")]
     [SerializeField] private string notEnoughResourcesMessage; //not enough food and oxygen
     [SerializeField] private string notEnoughFoodMessage;
     [SerializeField] private string notEnoughOxygenMessage;
     [SerializeField] private string expeditionAllowedMessage;
 
     private int currentIndex = 0;
-
+    
     //set the index back to zero for game restart
     public void ResetRequirements()
     {
@@ -54,6 +59,20 @@ public class ExpeditionChecker : ScriptableObject
         else status.message = expeditionAllowedMessage;
 
         return status;
+    }
+
+    public float ConsumeOxygen(float oxygen)
+    {
+        var requirement = expeditionRequirements[currentIndex];
+        
+        return oxygen -= (requirement.oxygen - offSet);
+    }
+    
+    public float ConsumeFood(float food)
+    {
+        var requirement = expeditionRequirements[currentIndex];
+
+        return food -= requirement.food;
     }
 
     [System.Serializable]

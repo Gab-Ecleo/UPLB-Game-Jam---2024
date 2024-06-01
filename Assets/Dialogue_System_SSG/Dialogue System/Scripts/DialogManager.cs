@@ -10,8 +10,8 @@ public class DialogManager : MonoBehaviour
 
     #region IGNORE THESE, DO NOT USE THESE METHODS, DO NOT EDIT THESE METHODS
     [SerializeField] private Dialog_DialogBox dialogBox;
-    [SerializeField] private Dialog_CharacterImage leftCharacterImage;
-    [SerializeField] private Dialog_CharacterImage rightCharacterImage;
+    //[SerializeField] private Dialog_CharacterImage leftCharacterImage;
+    //[SerializeField] private Dialog_CharacterImage rightCharacterImage;
     
     private Animator animator;
     private Dialog_Instance instance;
@@ -23,7 +23,12 @@ public class DialogManager : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+            Instance = this;
+        else if (Instance != this)
+            Destroy(gameObject);
+        
+        
         animator = GetComponent<Animator>();
         onFinish = new UnityEvent();
         allowNext = false;
@@ -90,8 +95,8 @@ public class DialogManager : MonoBehaviour
             onFinish.RemoveAllListeners();
         }
         animator.SetTrigger("hide");
-        leftCharacterImage.ShrinkCharacter();
-        rightCharacterImage.ShrinkCharacter();
+        //leftCharacterImage.ShrinkCharacter();
+        //rightCharacterImage.ShrinkCharacter();
         dialogActive = false;
         allowNext = false;
     }
@@ -111,22 +116,22 @@ public class DialogManager : MonoBehaviour
         //for setting characters
         int promptIndex = isSameCharacters ? 0 : index;
         DialogPrompt characterSettingsPrompt = instance.conversation[promptIndex];
-        leftCharacterImage.SetCharacterImage(characterSettingsPrompt.character1Settings.sprite);
-        rightCharacterImage.SetCharacterImage(characterSettingsPrompt.character2Settings.sprite);
+        //leftCharacterImage.SetCharacterImage(characterSettingsPrompt.character1Settings.sprite);
+        //rightCharacterImage.SetCharacterImage(characterSettingsPrompt.character2Settings.sprite);
         dialogBox.SetLeftCharacterName(characterSettingsPrompt.character1Settings.name, isLeftTalking);
         dialogBox.SetRightCharacterName(characterSettingsPrompt.character2Settings.name, !isLeftTalking);
     }
 
     private void ActivateLeftCharacter()
     {
-        leftCharacterImage.EnlargeCharacter();
-        rightCharacterImage.ShrinkCharacter();
+        //leftCharacterImage.EnlargeCharacter();
+       // rightCharacterImage.ShrinkCharacter();
     }
 
     private void ActivateRightCharacter()
     {
-        rightCharacterImage.EnlargeCharacter();
-        leftCharacterImage.ShrinkCharacter();
+        //rightCharacterImage.EnlargeCharacter();
+        //leftCharacterImage.ShrinkCharacter();
     }
 
     private IEnumerator AllowNextPrompt(float delay)

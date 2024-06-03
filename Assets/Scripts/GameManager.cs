@@ -46,6 +46,10 @@ public class GameManager : MonoBehaviour
     {
         playerCanMove = false;
         //Disable Audio
+        AudioManager.instance.StopAmbience();
+        AudioManager.instance.StopMusic();
+        //Start Audio
+        AudioManager.instance.InitializeMusic(FMODEvents.instance.loseMusic);
 
         GameoverScreen.SetActive(true); //Play Cutscene
         

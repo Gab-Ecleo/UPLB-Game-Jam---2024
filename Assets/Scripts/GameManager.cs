@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        playerCanMove = false;
         Debug.Log("Game Over");
     }
 

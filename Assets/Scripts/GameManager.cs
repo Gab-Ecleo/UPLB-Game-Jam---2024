@@ -41,6 +41,10 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         playerCanMove = false;
+        //Disable Audio
+        //Play Cutscene
+        
+        StartCoroutine(ReturnTimer());
         Debug.Log("Game Over");
     }
 
@@ -54,7 +58,14 @@ public class GameManager : MonoBehaviour
     {
         return playerData.Oxygen <= 0;
     }
-    
+
+    IEnumerator ReturnTimer()
+    {
+        yield return new WaitForSeconds(5);
+        
+        SceneManagerScript.Instance.QuitGameMainMenu();
+    }
+
     #region Data Methods
 
     public void SET_DEFAULT_PLAYER_DATA()

@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private PlayerData playerData;
     [SerializeField] private ExpeditionChecker expeditionChecker;
 
+    [SerializeField] private GameObject GameoverScreen;
+
     public bool CanFixRadio;
     public bool playerCanMove;
     public bool inCutscene;
@@ -29,6 +31,8 @@ public class GameManager : MonoBehaviour
         inCutscene = false;
         playerCanMove = true;
 
+        GameoverScreen.SetActive(false);
+
         SET_DEFAULT_PLAYER_DATA();
     }
 
@@ -40,6 +44,16 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        playerCanMove = false;
+        //Disable Audio
+        AudioManager.instance.StopAmbience();
+        AudioManager.instance.StopMusic();
+        //Start Audio
+        AudioManager.instance.InitializeMusic(FMODEvents.instance.loseMusic);
+
+        GameoverScreen.SetActive(true); //Play Cutscene
+        
+        StartCoroutine(ReturnTimer());
         Debug.Log("Game Over");
     }
 
@@ -53,7 +67,14 @@ public class GameManager : MonoBehaviour
     {
         return playerData.Oxygen <= 0;
     }
-    
+
+    IEnumerator ReturnTimer()
+    {
+        yield return new WaitForSeconds(5);
+        
+        SceneManagerScript.Instance.QuitGameMainMenu();
+    }
+
     #region Data Methods
 
     public void SET_DEFAULT_PLAYER_DATA()

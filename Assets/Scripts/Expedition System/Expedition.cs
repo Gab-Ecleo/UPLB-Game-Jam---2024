@@ -1,15 +1,16 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 public class Expedition : MonoBehaviour, IInteractable
 {
     [SerializeField] private Animator expedCutscene;
+    [SerializeField] private Dialog_Instance dialog;
 
     private ExpeditionChecker expeditionChecker;
     private PlayerData playerData;
+    private UnityAction _onCompleteAction;
 
     private void Start()
     {
@@ -20,8 +21,9 @@ public class Expedition : MonoBehaviour, IInteractable
     public void Interact()
     {
         Debug.Log("Go to Expedition");
-        if (!GameManager.Instance.CanExped()) return;
-            GoToExpedition();
+        
+        if (GameManager.Instance.CanExped()) GoToExpedition();
+        else if (!GameManager.Instance.CanExped()) DialogManager.Instance.SetDialog(dialog);
     }
     
     private void GoToExpedition()

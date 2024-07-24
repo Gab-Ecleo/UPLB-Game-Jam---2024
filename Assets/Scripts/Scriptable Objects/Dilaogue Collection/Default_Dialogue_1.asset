@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a6f4cf957ad4c4db16938f3ee3d628, type: 3}
+  m_Name: Default_Dialogue_1
+  m_EditorClassIdentifier: 
+  dialogDescription: Just a default dialog for an object that can't be opened yet
+  conversation:
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: Now is not the time.
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: Perhaps you could work on fixing the radio first.

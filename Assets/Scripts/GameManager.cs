@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ExpeditionChecker expeditionChecker;
 
     [SerializeField] private GameObject GameoverScreen;
+    [SerializeField] private GameObject PlayerObj;
 
     public bool CanFixRadio;
     public bool playerCanMove;
@@ -86,6 +87,11 @@ public class GameManager : MonoBehaviour
     public PlayerData FetchPlayerData() 
     { 
         return playerData;
+    }
+
+    public GameObject FetchPlayerObj()
+    {
+        return PlayerObj;
     }
 
     public ExpeditionChecker FetchExpeditionChecker() 

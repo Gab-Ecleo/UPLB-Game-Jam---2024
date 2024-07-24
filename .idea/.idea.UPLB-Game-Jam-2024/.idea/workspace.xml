@@ -6,143 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e1a13954-4b88-439a-a765-2fd9b0d1b1c6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UPLB-Game-Jam-2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UPLB-Game-Jam-2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Character.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Character/Dialog_Enemy.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Character/Dialog_Enemy.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Character/Dialog_Player.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Character/Dialog_Player.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Character/scale_enlarge.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Character/scale_enlarge.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Character/scale_large.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Character/scale_large.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Character/scale_shrink.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Character/scale_shrink.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Character/scale_small.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Character/scale_small.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Dialog System.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Dialog System/Dialog System.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Dialog System/Dialog System.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Dialog System/dialog_hidden.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Dialog System/dialog_hidden.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Dialog System/dialog_hide.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Dialog System/dialog_hide.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Dialog System/dialog_show.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Dialog System/dialog_show.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Dialog System/dialog_shown.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Animations/Dialog System/dialog_shown.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/ElderDialog.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/ElderDialog/Elder_Dialog1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/ElderDialog/Elder_Dialog1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/ElderDialog/Elder_Dialog2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/ElderDialog/Elder_Dialog2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/ElderDialog/Elder_Dialog3.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/ElderDialog/Elder_Dialog3.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/ElderDialog/Elder_Dialog4.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/ElderDialog/Elder_Dialog4.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/ElderDialog/Elder_Endgame.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/ElderDialog/Elder_Endgame.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/AllLevel3_GameEnd.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/AllLevel3_GameEnd.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/CoreGet.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/CoreGet.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/Intro.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/Intro.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/LorePlastic.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/LorePlastic.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/LoreWater.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/LoreWater.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/LoreWind.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/LoreWind.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/TutorialDialouge.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/TutorialDialouge.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/UpgradeTutorialStart.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/MainStory/UpgradeTutorialStart.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/QuestMaster.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/QuestMaster/QuestMasterGreet.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/QuestMaster/QuestMasterGreet.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/QuestMaster/QuestMasterYana.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/QuestMaster/QuestMasterYana.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/StrauDialog.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/StrauDialog/StrauPlastic_Dialog.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/StrauDialog/StrauPlastic_Dialog.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/StrauDialog/StrauWater_Dialog.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/StrauDialog/StrauWater_Dialog.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/StrauDialog/StrauWind_Dialog.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/StrauDialog/StrauWind_Dialog.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/StrauDialog/Strau_Rand1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/StrauDialog/Strau_Rand1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/StrauDialog/Strau_Rand2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/StrauDialog/Strau_Rand2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/StrauDialog/Strau_Rand3.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/StrauDialog/Strau_Rand3.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/TwinsDialog.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/TwinsDialog/TwinsIntro.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/TwinsDialog/TwinsIntro.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/TwinsDialog/Twins_Rand1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/TwinsDialog/Twins_Rand1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/TwinsDialog/Twins_Rand2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/TwinsDialog/Twins_Rand2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/TwinsDialog/Twins_Rand3.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/TwinsDialog/Twins_Rand3.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/TwinsDialog/Twins_Rand4.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/TwinsDialog/Twins_Rand4.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/TwinsDialog/Twins_Rand5.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Dialog Collection/TwinsDialog/Twins_Rand5.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Prefabs/Dialog System.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Prefabs/Dialog System.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Prefabs/NPC Dialog Range.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Prefabs/NPC Dialog Range.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/DialogManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/DialogManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_CharacterImage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_CharacterImage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_DialogBox.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_DialogBox.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_Instance.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_Instance.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_NPCSAMPLE.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_NPCSAMPLE.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_NextPrompt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_NextPrompt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_PlayerDetection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Scripts/Dialog_PlayerDetection.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Sprites/sample.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Sprites/sample.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Sprites/sample2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_System_SSG/Dialogue System/Sprites/sample2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CrankPlant.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CrankPlant.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FoodSupply.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FoodSupply.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlantEvolve.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlantEvolve.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInteractable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInteractable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerOxygen.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerOxygen/DrainPlayerOxygen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerOxygen/DrainPlayerOxygen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerOxygen/PlayerOxygen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerOxygen/PlayerOxygen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RadioRepair.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RadioRepair.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TriggerPlantChange.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TriggerPlantChange.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WheelSpinner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WheelSpinner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expedition System/Expedition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Expedition System/Expedition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,6 +101,7 @@
       <updated>1717657918528</updated>
       <workItem from="1717657918531" duration="491000" />
       <workItem from="1721717272499" duration="2567000" />
+      <workItem from="1721799457112" duration="5308000" />
     </task>
     <servers />
   </component>

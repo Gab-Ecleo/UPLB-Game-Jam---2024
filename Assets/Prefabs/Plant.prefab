@@ -453,6 +453,7 @@ GameObject:
   - component: {fileID: 84411113717366731}
   - component: {fileID: 6303159614946013521}
   - component: {fileID: 3390423721129933610}
+  - component: {fileID: 1876924620535052428}
   - component: {fileID: 4267947222458380900}
   - component: {fileID: 1077549949944492654}
   m_Layer: 11
@@ -520,6 +521,20 @@ MonoBehaviour:
   isRaised: 0
   ReadytoHarvestPlant: 0
   hasCalledPlantReset: 0
+--- !u!114 &1876924620535052428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6449104987800022333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bba2c08a23f78542ad60bc970569f42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DetectionRange: 2
+  UI_Prompt: {fileID: 0}
 --- !u!114 &4267947222458380900
 MonoBehaviour:
   m_ObjectHideFlags: 0

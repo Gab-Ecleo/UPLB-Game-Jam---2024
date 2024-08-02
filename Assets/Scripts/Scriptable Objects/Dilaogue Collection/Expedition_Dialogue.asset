@@ -12,5 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2a6f4cf957ad4c4db16938f3ee3d628, type: 3}
   m_Name: Expedition_Dialogue
   m_EditorClassIdentifier: 
-  dialogDescription: 
-  conversation: []
+  dialogDescription: Prompts when there's not enough resources to go to an expedition
+    yet.
+  conversation:
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: You don't have enough resources yet.
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: You need to have atleast 70% oxygen level and 3 Food supplies.
+  - character1Settings:
+      name: 
+      sprite: {fileID: 0}
+    character2Settings:
+      name: 
+      sprite: {fileID: 0}
+    isSameCharacters: 1
+    isLeftTalking: 0
+    dialog: Raise the plants to gather oxygen and food supplies.

@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1a13954-4b88-439a-a765-2fd9b0d1b1c6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.UPLB-Game-Jam-2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UPLB-Game-Jam-2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Expedition System/Expedition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Expedition System/Expedition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Dilaogue Collection/Expedition_Dialogue.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable Objects/Dilaogue Collection/Expedition_Dialogue.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +101,7 @@
       <updated>1717657918528</updated>
       <workItem from="1717657918531" duration="491000" />
       <workItem from="1721717272499" duration="2567000" />
-      <workItem from="1721799457112" duration="5308000" />
+      <workItem from="1721799457112" duration="5910000" />
     </task>
     <servers />
   </component>
